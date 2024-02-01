@@ -11,8 +11,8 @@ redirect_from:
 
 Education
 ======
-* B.S. in bioinformatics, Zhejiang University, 2022-2026 (expected)
-
+* B.S. in biomedical informatics, Zhejiang University, 2022-2026 (expected)
+* B.S. in biomedical informatics, University of Edinburgh, 2022-2026 (expeceted)
 
 Experience
 ======
