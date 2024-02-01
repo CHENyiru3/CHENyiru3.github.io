@@ -43,7 +43,7 @@ Skills
   * Database:
     * Having basic technique to bulid one.
   * Data analysis:
-    * Experience in constructing data analysis pipeline and handle with big data.
+    * Experience in constructing data analysis pipeline and handling with big data.
   * Machine learning:
     * Experience in applying ML in multiple tasks, especially clustering based on T cell CDR3 animo acid sequences, clustering based on single cell RNA sequencing data, constructing classifiers based on T cell characterisitics. In mathematical modeling, learning some basic models in NPL.
 
