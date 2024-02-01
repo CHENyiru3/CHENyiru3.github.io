@@ -18,7 +18,7 @@ Experience
 ======
 * 2023.5 - 2024.2
   * Zhejiang University
-  * Issue:  
+  * Issue:  Identification of specificity bulk T cell receptor sequences in diseases
   * Supervisor: Professor Wanlu Liu
 
 * 2024.2 - 2024.5 (expected): 
