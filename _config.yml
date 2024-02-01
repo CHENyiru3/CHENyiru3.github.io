@@ -81,9 +81,9 @@ analytics:
 # Site Author
 author:
   name             : "Yiru Chen"
-  avatar           : "mine.png"
+  avatar           : "mine.jpg"
   bio              : "Your biography for the left-hand sidebar"
-  location         : "Zhengjiang, China"
+  location         : "International campus, Zhengjiang University, China"
   employer         :
   email            : "yiru.22@intl.zju.edu.cn"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
@@ -94,7 +94,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "CHENyiru"
+  github           : "CHENyiru3"
   google_plus      :
   keybase          :
   instagram        :
