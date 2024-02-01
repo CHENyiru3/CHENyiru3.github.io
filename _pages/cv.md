@@ -11,11 +11,10 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in bioinformatics, Zhejiang University, 2022-2026 (expected)
 
-Work experience
+
+Experience
 ======
 * Summer 2015: Research Assistant
   * Github University
@@ -29,12 +28,24 @@ Work experience
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Coding
+  * Python
+  * R
+  * SQL
+  * JAVA
+  * JavaScript
+  * \Latex
+* Biology backgroud
+  * basic biology perspective
+  * Biomedical genetics
+  * Genomics and protomics
+* Projects
+  * Database:
+    * Having basic technique to bulid one.
+  * Data analysis:
+    * Experience in constructing data analysis pipeline and handle with big data.
+  * Machine learning:
+    * Experience in applying ML in multiple tasks, especially clustering based on T cell CDR3 animo acid sequences, clustering based on single cell RNA sequencing data, constructing classifiers based on T cell characterisitics. In mathematical modeling, learning some basic models in NPL.
 
 Publications
 ======
