@@ -16,6 +16,6 @@ I am learning analysis of single cell sequencing data currently, and also exerci
 # Interests
 I really like the world of data analysis -- facing mess, orderless data, however, by the power of your knowledge, you can find out the inner principles, sometimes just like magic! Therefore, I eager to expand my skills related to data science, including algorithm, processing pipeline, visualization, tool construction, ect. 
 
-I always believe the informatization can be a vital trend of biology and medicine. That's why I chose biomedical informatics as my major, which is a quite new major in the universities in China.
+I always believe that the informatization can be a vital trend of the development of biology and medicine. That's why I chose biomedical informatics as my major, which is a quite new major in the universities in China.
 
 What about my daily life? I enjoy watching movie and reading books in my spare time. Recently I am reading *War and peace* and *Stray Birds*!
