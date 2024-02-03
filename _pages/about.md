@@ -23,6 +23,6 @@ What about my daily life? I enjoy watching movie and reading books in my spare t
 # Future outlook
 Some things I really want to do:
 1. Expand more skills in the erea of bioinformatics/computational biology, ect; especiall developing my insight of the scientific issues
-2. Learn how to develope a application of software to help more people. I admire the contributor to the open-source projects.
-3. Try to publish my first article (hopefully)
-4. Learn to manage a Linux server, or manage a website.
+2. Learn how to develope an application or a software to help more people. I admire the contributors in those open-source projects.
+3. Try to publish my first article (hopefully).
+4. Learn how to manage a Linux server, or manage a website.
