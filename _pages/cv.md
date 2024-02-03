@@ -54,5 +54,5 @@ Skills
 Publications
 ======
   No publication yet. Expecting one!
-  In "Publications" section can view my articals written in mathematical modeling competitions, one in English and one in Chinese (sorry for this).
+  
 
