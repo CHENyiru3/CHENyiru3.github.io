@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello, welcome to my personal academic website! My name is Yiru Chen (陈奕儒 in Chinese), from Hunan province, China. Now I am a sophomore student in Zhejiang University, with the major of biomedical informatics.
+Hello, welcome to my personal academic website! My name is CHEN, Yiru (陈奕儒 in Chinese), from Hunan province, China. Now I am a sophomore student in Zhejiang University, with the major of biomedical informatics.
 
 # News about my current works
 I am learning analysis of single cell sequencing data currently, and also exercising to get more experience in machine learning and deep learning, especially the application of these in biomedical area.
