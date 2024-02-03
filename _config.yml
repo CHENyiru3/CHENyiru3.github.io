@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Yiru Chen's Homepage"
+title                    : "CHEN, Yiru's Homepage"
 title_separator          : "-"
-name                     : &name "Yiru Chen"
+name                     : &name "CHEN, Yiru"
 description              : &description "personal description"
 url                      : https://chenyiru3.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
