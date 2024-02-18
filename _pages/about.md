@@ -20,9 +20,11 @@ I always believe that the informatization can be a vital trend of the developmen
 
 What about my daily life? I enjoy watching movie and reading books in my spare time. Recently I am reading *War and peace* and *Stray Birds*!
 
+# Open-source software Projects
+- [Simple-pyper](https://github.com/CHENyiru3/simple_pyper), can help you to manage scripts and pipelines with user-friendly command line tool.
+
 # Future outlook
 Some things I really want to do:
 1. Expand more skills in the erea of bioinformatics/computational biology, ect; especiall developing my insight of the scientific issues
-2. Learn how to develope an application or a software to help more people. I admire the contributors in those open-source projects.
-3. Try to publish my first article (hopefully).
-4. Learn how to manage a Linux server, or manage a website.
+2. Try to publish my first article (hopefully).
+3. Learn how to manage a Linux server, or manage a website.
