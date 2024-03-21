@@ -1,7 +1,7 @@
 ---
 title: '[Study markdown][1] Introduction of Single-cell trajectory and pseudotime analysis '
 date: 2024-3-21
-permalink: /posts/2013/08/blog-post-2/
+permalink: /posts/trajectory+pseudotime.md
 tags:
   - single cell
   - psedotime analysis
