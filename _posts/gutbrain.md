@@ -1,7 +1,7 @@
 ---
 title: '[Biomedical][course]Gut-brain glucose sensing'
 date: 2023-3-21
-permalink: /posts/gut-brain
+permalink: /posts/gutbrain
 tags:
   - biomedical
   - sensor
