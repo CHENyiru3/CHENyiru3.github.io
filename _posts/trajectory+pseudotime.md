@@ -1,5 +1,5 @@
 ---
-title: '[Study markdown][1] Introduction of Single-cell trajectory and psedotime analysis '
+title: '[Study markdown][1] Introduction of Single-cell trajectory and pseudotime analysis '
 date: 2024-3-21
 permalink: /posts/2013/08/blog-post-2/
 tags:
@@ -7,6 +7,9 @@ tags:
   - psedotime analysis
   - my_study_note
 ---
+Welcome to Chen's learning blog! This is a space where I share my thoughts, experiences, and insights on mostly bioinformatics, many biomedical, some computor science! Whether you're a fellow enthusiast or simply curious, I invite you to join me on this journey as we explore the captivating world of gene, protein, RNA... and codes.
+
+So, sit back, grab a beverage, and let's dive into the fascinating realm of single-cell trajectory and pseudotime analysis together! But just introduction.
 
 - dataset: detect the same section for sc data, lasting for several days
 - then package them into a dataset, using this dataset to visualize the cell change along the time change. (the color in the heatmap means the days )
