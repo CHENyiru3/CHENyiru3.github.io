@@ -23,9 +23,13 @@ Experience
 
 * 2024.2 - 2024.5 (expected): 
   * Zhejiang University
-  * Issue: Assisting the research of single cell sequencing analysis and spatial transcriptome.
+  * Issue: Assisting the research of single cell sequencing analysis and spatial transcriptome, especially spatial transcriptomics deconvolution.
   * Supervisor: Professor Wanlu Liu
-  
+
+* 2024.3 -
+  * Vanderbilt University
+  * Supervisor: Professor Maizie Zhou
+ 
 Skills
 ======
 * Coding
