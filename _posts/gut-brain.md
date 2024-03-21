@@ -8,6 +8,11 @@ tags:
   - study note
 ---
 God, another biomedical course summary!
+
+Welcome to Chen's learning blog! This is a space where I share my thoughts, experiences, and insights on mostly bioinformatics, many biomedical, some computor science! Whether you're a fellow enthusiast or simply curious, I invite you to join me on this journey as we explore the captivating world of gene, protein, RNA... and codes.
+
+So, sit back, grab a beverage, and let's dive into the fascinating realm of Gut-brain glucose sensing together! But just introduction.
+
 # Three major glucose sensor sections
 - Gut glucose sensor
 - Portal vein
