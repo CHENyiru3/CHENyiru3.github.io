@@ -5,15 +5,16 @@ main:
 
   - title: "Publications"
     url: /publications/
-
+  
+  - title: "Blogs"
+    url: /year-archive/
     
 
     
   # - title: "Guide"
   #   url: /markdown/
 
-   - title: "Blog Posts"
-     url: /year-archive/
+
 
        
   # - title: "Portfolio"
