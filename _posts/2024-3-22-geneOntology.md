@@ -7,6 +7,8 @@ tags:
   - biomedical
   - my_study_note
 ---
+What is gene ontology? Such a important concept, but no one teaches us!
+
 Welcome to Chen's learning blog! This is a space where I share my thoughts, experiences, and insights on mostly bioinformatics, many biomedical, some computor science! Whether you're a fellow enthusiast or simply curious, I invite you to join me on this journey as we explore the captivating world of gene, protein, RNA... and codes.
 
 So, sit back, grab a beverage, and let's dive into the fascinating realm of gene ontology together!
