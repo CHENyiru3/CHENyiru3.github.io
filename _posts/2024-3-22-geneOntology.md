@@ -1,7 +1,7 @@
 ---
 title: '[Study markdown][2] What is gene ontology'
 date: 2024-3-22
-permalink: /posts/2024/3/22/gene_ontology
+permalink: /posts/2024/3/22/geneOntology
 tags:
   - gene
   - biomedical
