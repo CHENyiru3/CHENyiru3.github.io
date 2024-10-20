@@ -38,7 +38,7 @@ Experience
 * 2024.5 - 2024.10
   * Zhejiang University
   * Progress: Main part done
-  * Undergraduate Project: High-resolution Spatial Transcriptomics Database programm
+  * Undergraduate Project: High-resolution Spatial Transcriptomics Database programm, focusing on the most advanced subcellular ST methods.
   * ![](https://i.imgur.com/4BPj2UY.png)
     
 Skills
