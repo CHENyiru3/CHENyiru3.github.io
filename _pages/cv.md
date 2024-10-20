@@ -21,7 +21,7 @@ Experience
   * Undergraduate Project:  Identification of specificity bulk T cell receptor sequences in diseases 
   * Progress: DONE
   * Supervisor: Professor Wanlu Liu
-  * ![[(https://i.imgur.com/ci4FQAz.jpeg)]]
+  * ![](https://i.imgur.com/ci4FQAz.jpeg)
 
 * 2024.2 - 2024.5 
   * Zhejiang University
@@ -39,7 +39,7 @@ Experience
   * Zhejiang University
   * Progress: Main part done
   * Undergraduate Project: High-resolution Spatial Transcriptomics Database programm
-  * ![[(https://i.imgur.com/4BPj2UY.png)]]
+  * ![](https://i.imgur.com/4BPj2UY.png)
     
 Skills
 ======
