@@ -38,7 +38,8 @@ Experience
   * Zhejiang University
   * Progress: DONE
   * Project: High-resolution Spatial Transcriptomics Dataabse programm
-  * ![[https://i.imgur.com/4BPj2UY.png]]
+  * ![[(https://i.imgur.com/4BPj2UY.png)]]
+    
 Skills
 ======
 * Coding
