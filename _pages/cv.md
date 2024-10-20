@@ -18,18 +18,27 @@ Experience
 ======
 * 2023.5 - 2024.2
   * Zhejiang University
-  * Issue:  Identification of specificity bulk T cell receptor sequences in diseases
+  * Project:  Identification of specificity bulk T cell receptor sequences in diseases
+  * Progress: DONE
   * Supervisor: Professor Wanlu Liu
 
-* 2024.2 - 2024.5 (expected): 
+* 2024.2 - 2024.5 
   * Zhejiang University
-  * Issue: Assisting the research of single cell sequencing analysis and spatial transcriptome, especially spatial transcriptomics deconvolution.
+  * Project: Assisting the research of single cell sequencing analysis and spatial transcriptome, especially benchmark of spatial transcriptomics deconvolution methods.
+  * Progress: DONE
   * Supervisor: Professor Wanlu Liu
 
-* 2024.3 -
+* 2024.3 - 
   * Vanderbilt University
+  * Project: Simulation of Spatial Transcriptomics data
+  * Progress: Still working on it
   * Supervisor: Professor Maizie Zhou
- 
+
+* 2024.5 - 2024.10
+  * Zhejiang University
+  * Progress: DONE
+  * Project: High-resolution Spatial Transcriptomics Dataabse programm
+  * ![[https://i.imgur.com/4BPj2UY.png]]
 Skills
 ======
 * Coding
@@ -46,13 +55,17 @@ Skills
   * Genomics and protomics
 * Projects
   * Database:
-    * Having basic technique to bulid one.
+    * Having full exprience in front-end to build a database.
+    * Knowing how to plan a well-designed structure.
   * Data analysis:
-    * Experience in constructing data analysis pipeline and handling with big data.
+    * Experience in constructing data analysis pipeline and handling with bulk and sigle cell seqeuncing data.
+    * Experience in processing ATAC and ChIP-seq data.
+    * Experience in processing spatial transcritomics data
   * Machine learning:
-    * Experience in applying ML in multiple tasks, especially clustering based on T cell CDR3 animo acid sequences, clustering based on single cell RNA sequencing data, constructing classifiers based on T cell characterisitics. In mathematical modeling, learning some basic models in NPL.
+    * Experience in applying ML in multiple tasks, especially: DL tools in spatial transcriptomcis data processing, clustering based on T cell CDR3 animo acid sequences, clustering based on single cell RNA sequencing data, constructing classifiers based on T cell characterisitics. In mathematical modeling competition, learning some basic models in NPL.
+    * Understanding basic concepts in pytorch, and finished some toy tasks
 * Linux system
-    * Mostly working in linux servers in the lab.
+    * Advanced Linux user. Mostly working in linux servers in the lab.
     * Managing a small personal Ubuntu machine for daily usage and website construction.
 
 Publications
