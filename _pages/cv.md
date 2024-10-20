@@ -18,27 +18,27 @@ Experience
 ======
 * 2023.5 - 2024.2
   * Zhejiang University
-  * Project:  Identification of specificity bulk T cell receptor sequences in diseases
+  * Undergraduate Project:  Identification of specificity bulk T cell receptor sequences in diseases 
   * Progress: DONE
   * Supervisor: Professor Wanlu Liu
   * ![[(https://i.imgur.com/ci4FQAz.jpeg)]]
 
 * 2024.2 - 2024.5 
   * Zhejiang University
-  * Project: Assisting the research of single cell sequencing analysis and spatial transcriptome, especially benchmark of spatial transcriptomics deconvolution methods.
+  * Assistant Project: Assisting the research of single cell sequencing analysis and spatial transcriptome, especially benchmark of spatial transcriptomics deconvolution methods.
   * Progress: DONE
   * Supervisor: Professor Wanlu Liu
 
 * 2024.3 - 
   * Vanderbilt University
-  * Project: Simulation of Spatial Transcriptomics data
+  * Undergraduate Project: Simulation of Spatial Transcriptomics data
   * Progress: Still working on it
   * Supervisor: Professor Maizie Zhou
 
 * 2024.5 - 2024.10
   * Zhejiang University
-  * Progress: DONE
-  * Project: High-resolution Spatial Transcriptomics Dataabse programm
+  * Progress: Main part done
+  * Undergraduate Project: High-resolution Spatial Transcriptomics Database programm
   * ![[(https://i.imgur.com/4BPj2UY.png)]]
     
 Skills
