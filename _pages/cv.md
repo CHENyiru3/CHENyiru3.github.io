@@ -21,6 +21,7 @@ Experience
   * Project:  Identification of specificity bulk T cell receptor sequences in diseases
   * Progress: DONE
   * Supervisor: Professor Wanlu Liu
+  * ![[(https://i.imgur.com/ci4FQAz.jpeg)]]
 
 * 2024.2 - 2024.5 
   * Zhejiang University
