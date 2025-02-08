@@ -16,9 +16,9 @@ Education
 
 Experience
 ======
-* 2023.5 - 2024.2
+* 2023.6 - 2024.2
   * Zhejiang University
-  * Undergraduate Project:  Identification of specificity bulk T cell receptor sequences in diseases 
+  * Indenpedent Undergraduate Project:  Identification of specificity bulk T cell receptor sequences in diseases 
   * Progress: DONE
   * Supervisor: Professor Wanlu Liu
   * ![](https://i.imgur.com/ci4FQAz.jpeg)
@@ -29,22 +29,37 @@ Experience
   * Progress: DONE
   * Supervisor: Professor Wanlu Liu
 
-* 2024.3 - 
-  * Vanderbilt University
-  * Undergraduate Project: Simulation of Spatial Transcriptomics data
-  * Progress: Still working on it
-  * Supervisor: Professor Maizie Zhou
-
 * 2024.5 - 2024.10
   * Zhejiang University
-  * Progress: Main part done
-  * Undergraduate Project: High-resolution Spatial Transcriptomics Database programm, focusing on the most advanced subcellular ST methods.
+  * Progress: DONE
+  * Indenpedent Undergraduate Project: High-resolution Spatial Transcriptomics Database programm, focusing on the most advanced subcellular ST methods.
   * ![](https://i.imgur.com/4BPj2UY.png)
+ 
+
+* 2024.10 -  2025.1
+  * Zhejiang University
+  * Progress: DONE
+  * Assistant Project: SpatialMETA, A Novel Framework for Integrating Spatial Transcriptomics and Metabolomics Data
+  * Supervisor: Professor Wanlu Liu
+  
+* 2024.3 - 
+  * Vanderbilt University
+  * Indenpedent Undergraduate Project: Simulation of Spatial Transcriptomics data
+  * Progress: Still working on it
+  * Supervisor: Professor Maizie Zhou
+ 
+ 
+* 2024.1 -
+  * Zhejiang Universitu
+  * Independent Undergraduate Project: Spatial T cell receptor sequencing method based on Stereo-seq
+  * Progress: Still working on it
+  * Supervisor: Professor Wanlu Liu
     
 Skills
 ======
 * Coding
   * Python
+  * Pytorch
   * R
   * SQL
   * JAVA
@@ -52,10 +67,11 @@ Skills
   * Shell
   * Latex
 * Biology backgroud
-  * basic biology perspective
-  * Biomedical genetics
+  * Basic biology perspective
+  * Interal Medicine
   * Genomics and protomics
-* Projects
+  * Immunology
+* Specific Techniques
   * Database:
     * Having full exprience in front-end to build a database.
     * Knowing how to plan a well-designed structure.
@@ -72,6 +88,6 @@ Skills
 
 Publications
 ======
-  No publication yet. Expecting one!
+  Two co-author papers under review.
   
 
