@@ -8,23 +8,17 @@ redirect_from:
   - /about.html
 ---
 
-Hello, welcome to my personal academic website! My name is CHEN, Yiru (陈奕儒 in Chinese), from Hunan province, China. Now I am a sophomore student in Zhejiang University, with the major of biomedical informatics.
+Hello, welcome to my personal academic website! My name is CHEN, Yiru (陈奕儒 in Chinese), from Hunan province, China. Now I am a third-year student in Zhejiang University, with the major of bioinformatics.
 
 # News about my current works
-Currently, I am focus on Spatial Trascriptomics, which is a relatively new but promising area.
+Currently, I am focus on Spatial Trascriptomics and realted algorithm, which is a relatively new but promising area. Also, I am extremly interested in the combination of clinical medicine data and data science. 
 
 # Interests
-I really like the world of data analysis -- facing mess, orderless data, however, by the power of your knowledge, you can find out the inner principles, sometimes just like magic! Therefore, I eager to expand my skills related to data science, including algorithm, processing pipeline, visualization, tool construction, ect. 
+I really like the world of data analysis and algorithm construction -- facing mess, orderless data, however, by the power of your knowledge, you can find out the inner principles, sometimes just like magic! I always believe that the informatization can be a vital trend of the development of biology and medicine. That's why I chose biomeinformatics as my major, which is a quite new major in the universities in China.
 
-I always believe that the informatization can be a vital trend of the development of biology and medicine. That's why I chose biomedical informatics as my major, which is a quite new major in the universities in China.
+Therefore, I eager to expand my skills related to computational biology, like realted algorithm, processing pipeline, visualization, tool construction, ect. 
 
-What about my daily life? I enjoy watching movie and reading books in my spare time. Recently I am reading *War and peace* and *Stray Birds*!
+What about my daily life? I enjoy watching movie and reading books in my spare time. Recently I am reading *War and peace*!
 
-# Open-source software Projects
-- [Simple-pyper](https://github.com/CHENyiru3/simple_pyper), can help you to manage scripts and pipelines with user-friendly command line tool.
-
-# Future outlook
-Some things I really want to do:
-1. Expand more skills in the erea of bioinformatics/computational biology, ect; especiall developing my insight of the scientific issues
-2. Try to publish my first article (hopefully).
-3. Learn how to manage a Linux server, or manage a website.
+# Welcome to contact me!
+You can email me if you have anything to discuss: yiru.22@intl.zju.edu.cn or yiru2chen@gmail.com
