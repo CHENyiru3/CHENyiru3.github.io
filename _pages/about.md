@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: cyr.jpg
   image_circular: true
   more_info: >
     <p>Undergraduate student,</p>
@@ -30,3 +30,4 @@ latest_posts:
 Hi there! My name is Yiru CHEN, and current I am an undergraduate student in bioinformatics program in ZJE institution (https://zje.zju.edu.cn/yjld/list.htm), Zhejiang University, China. With the powerful computational methods, I feel extremly exciting to explore more about the story behind the biological phenomena. 
 
 I have received several hard-core computaional biological academic traning experiences from multiple research inistitution, including Zhejiang University, Vanderbilt University, and Georgia Tech. Now I have active interests in algortihm development for spatial omics and computational immunology.
+
