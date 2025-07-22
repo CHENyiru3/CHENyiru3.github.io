@@ -7,11 +7,11 @@ subtitle:
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true
   more_info: >
-    <p>Undergraduate student</p>
-    <p>Zhejaing University</p>
-    <p>Bioinformatics Major</p>
+    <p>Undergraduate student,</p>
+    <p>Zhejaing University,</p>
+    <p>Bioinformatics Major,</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,4 +27,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I am an undergraduate student in bioinformatics program in ZJE institution (https://zje.zju.edu.cn/yjld/list.htm), Zhejiang University. 
+Hi there! My name is Yiru CHEN, and current I am an undergraduate student in bioinformatics program in ZJE institution (https://zje.zju.edu.cn/yjld/list.htm), Zhejiang University, China. With the powerful computational methods, I feel extremly exciting to explore more about the story behind the biological phenomena. 
+
+I have received several hard-core computaional biological academic traning experiences from multiple research inistitution, including Zhejiang University, Vanderbilt University, and Georgia Tech. Now I have active interests in algortihm development for spatial omics and computational immunology.
