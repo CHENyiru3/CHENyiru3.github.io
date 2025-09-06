@@ -1,33 +1,38 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"liu":
+  - firstname: ["Wanlu"]
+    url: # Add URL to Prof. Liu's profile if available
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"tian":
+  - firstname: ["Rui"]
+    url: # Add URL if available
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"xue":
+  - firstname: ["Zhengyang"]
+    url: # Add URL if available
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"qi":
+  - firstname: ["Yingjie"]
+    url: # Add URL if available
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"zhou":
+  - firstname: ["Maizie"]
+    url: # Add URL to Prof. Zhou's profile if available
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"zhang":
+  - firstname: ["Xiuwei"]
+    url: # Add URL to Prof. Zhang's profile if available
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"pan":
+  - firstname: ["Xinyi"]
+    url: # Add URL if available
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"yu":
+  - firstname: ["Zijian"]
+    url: # Add URL if available
+
+"chen":
+  - firstname: ["Yichen"]
+    url: # Add URL if available
 
 "planck":
   - firstname: ["Max"]

@@ -1,14 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - CHENyiru3
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - CHENyiru3/CHENyiru3.github.io
+  # Add your other repositories here when they become public
+  # - CHENyiru3/SpatialMETA
+  # - CHENyiru3/SpatialTCR
+  # - CHENyiru3/STmulator

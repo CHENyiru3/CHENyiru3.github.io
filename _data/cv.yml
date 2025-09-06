@@ -36,7 +36,7 @@
       description:
         - "Project: SpatialTCR - An integrated platform for high-resolution spatial sequencing of T cell receptor repertoires"
         - Collaborated with wet lab members to develop spatial TCR sequencing method
-        - Developed computational methods from upstream processing to downstream TCR-omics analysis
+        - Developed computational methods from upstream processing to downstream TCR-omics analysis tool
         - Active project with ongoing development
         
     - title: Research Assistant (Co-author)
@@ -44,8 +44,8 @@
       year: Nov. 2024 – Spring 2025
       description:
         - "Project: SpatialMETA - Integrating Cross-Sample and Cross-Modal Data for Spatial Transcriptomics and Metabolomics"
-        - Algorithm development using conditional variation autoencoder
-        - Responsible for comprehensive benchmark and metrics for multimodal spatial integration
+        - Algorithm development using conditional variation autoencoder for integration of spatial transcriptomics and spatial metabolomics
+        - Responsible for setting comprehensive benchmark and metrics for the multimodal spatial integration task
         - Project successfully concluded and accepted for publication
         
     - title: Independent Research Project (First author)
@@ -53,24 +53,31 @@
       year: Aug. 2024 – Present
       description:
         - "Project: STmulator - Simulation and interpolation of spatial transcriptomics from parameter cloud"
-        - Developed statistical-based model for ST data simulation with vine-copula modeling
-        - Complete research cycle from literature review to manuscript preparation
+        - Developed statistical-based model for ST data single slice and multiple slice 3D region simulation, with vine-copula modeling on parameter space
+        - Interpolation with optimal transport-driven geodesic path
+        - Complete research cycle including literature review, idea exploration, model construction, benchmark and application, manuscript preparation
+        - Public presentation training at different project milestones
         - Ready for RECOMB 2026 conference submission
-        - Public presentation training at different project timestamps
         
     - title: Research Assistant (Co-author)
       institution: Prof. Xiuwei Zhang Lab, College of Computing, Georgia Institute of Technology
       year: Apr. 2024 – Sep. 2025
       description:
         - "Project: TemSOMap - Mapping lineage-resolved scRNA-seq data with spatial transcriptomics"
-        - Infer cell-to-spot mapping matrix using ML framework
-        - Performed downstream analyses and partial benchmark development
-        - Contributed to manuscript preparation
-        - Project submitted and under review
+        - Infer cell-to-spot mapping matrix by minimizing a loss function based on expression and lineage in ML framework
+        - Performed downstream analyses using TemSOMap, partial benchmark, partial manuscript preparation
+        - Project submitted and waiting for revision after submission
 
 - title: Publications
   type: time_table
   contents:
+    - title: "A pan-disease and population-level single-cell TCRαβ repertoire reference"
+      institution: Cell Discovery (Accepted)
+      year: 2025
+      description:
+        - "Authors: Xue Z†, Wu L†, Gao B†, Tian R, Chen Y, Qi Y, Dong T, Bai Y, Zhao Y, He B, Wang L, Liu Z, Yao J, Lu L*, Liu W*"
+        - Co-author contribution to large-scale TCR repertoire analysis
+        
     - title: "Integrating Cross-Sample and Cross-Modal Data for Spatial Transcriptomics and Metabolomics with SpatialMETA"
       institution: Nature Communications (Accepted)
       year: 2025
@@ -78,19 +85,19 @@
         - "Authors: Tian R†, Xue Z†, Chen Y, Qi Y, Zhang J, Yuan J, Ruan D, Lin J, Liu J, Wang D, Youqiong Y, Liu W*"
         - Co-author contribution to spatial multi-omics integration methodology
         
-    - title: "A pan-disease and population-level single-cell TCRαβ repertoire reference"
-      institution: Cell Discovery (Accepted)
-      year: 2025
-      description:
-        - "Authors: Xue Z†, Wu L†, Gao B†, Tian R, Chen Y, Qi Y, Dong T, Bai Y, Zhao Y, He B, Wang L, Liu Z, Yao J, Lu L*, Liu W*"
-        - Contributed to large-scale TCR repertoire analysis
-        
     - title: "Recent Advances in Single-Cell Isoform Profiling"
       institution: Genomics, Proteomics & Bioinformatics (Under Review)
       year: 2025
       description:
         - "Authors: Yu Z, Chen Y, Chen Y, Qi Y, Liu W*"
         - Review article on single-cell isoform analysis methods
+        
+    - title: "Mapping lineage-resolved scRNA-seq data with spatial transcriptomics using TemSOMap"
+      institution: Pacific Symposium on Biocomputing (Submitted)
+      year: 2026
+      description:
+        - "Authors: Pan X, Danies-Lopez A, Chen Y, Zhang X*"
+        - Presentation submitted to PSB2026 conference
 
 - title: Conference Presentations
   type: time_table
@@ -108,17 +115,17 @@
   contents:
     - title: Programming & Development
       items:
-        - "Programming Languages: Advanced in Python, R, Bash (Shell); coursework in Java, SQL, JavaScript; beginner in C++"
-        - "Development Tools: Linux Server, Git, Docker, Conda, Bash, standard Linux software suites"
-        - "Web Development: Frontend and backend experience, especially for bioinformatics databases and web-based visualization"
-    - title: Machine Learning & Statistics
+        - "Programming Languages: Advanced in Python, R, Bash (Shell); have courses in Java, SQL, JavaScript; beginner of C++"
+        - "Development Toolboxes: Mostly working on Linux Server; Git, Docker, Conda, Bash, other standard Linux software suites"
+        - "Website and application deployment: Frontend (main) and backend web-development experience, especially for bioinformatics databases and web-based visualization"
+    - title: Theoretical and Statistical Tools (learned and used in projects)
       items:
-        - "Machine & Deep Learning: Classical ML for scientific applications, PyTorch for multi-omics data (GCN, VAE), exploring transformers and diffusion models"
-        - "Statistics: Statistical tests, Vine Copula modeling, Bayesian Inference, MLE optimization, Hidden Markov Models, Monte Carlo methods"
-    - title: Academic & Professional Skills
+        - "Machine & Deep Learning: Classical ML for scientific applications, deep learning (more familiar with PyTorch) for multi-omics data (GCN, VAE, etc.); Actively exploring more deep learning architectures (e.g., transformers, diffusion models) for biomedicine contexts"
+        - "Statistics: Frequent-used statistical tests; Vine Copula joint modeling; Bayesian Inference; Maximum Likelihood Estimation optimization; hidden Markov chain model; Monte Carlo method"
+    - title: Language & Other Academic Skills
       items:
-        - "English Proficiency: TOEFL iBT 105 (R:30, L:28, S:23, W:24), fluent in international collaborations"
-        - "Content Creation: Adobe Illustrator, LaTeX for manuscripts, Adobe Premiere Pro for video production"
+        - "English Proficiency: English Academic environment in undergraduate courses; TOEFL iBT 105 (Reading 30/30, Listening 28/30, Speaking 23/30, Writing 24/30); Fluent communication in international collaborations"
+        - "Professional Content Creation: Proficient in Adobe Illustrator and LaTeX for academic manuscript and presentations; Using Adobe Premiere Pro for academic (or personal) video production"
 
 - title: Languages
   type: list

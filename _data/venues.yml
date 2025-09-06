@@ -1,9 +1,18 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"Nat Commun":
+  url: https://www.nature.com/ncomms/
+  color: "#ff6b6b"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"Cell Discov":
+  url: https://www.nature.com/celldisc/
+  color: "#4ecdc4"
 
-"Vision":
-  color: "#009f36"
+"GPB":
+  url: https://www.sciencedirect.com/journal/genomics-proteomics-and-bioinformatics
+  color: "#45b7d1"
+
+"PSB":
+  url: https://psb.stanford.edu/
+  color: "#96ceb4"
+
+"GPB Symp":
+  color: "#ffeaa7"
