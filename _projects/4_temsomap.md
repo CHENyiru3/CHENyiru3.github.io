@@ -2,7 +2,6 @@
 layout: page
 title: TemSOMap
 description: Mapping lineage-resolved scRNA-seq data with spatial transcriptomics
-img: assets/img/temsomap.jpg
 importance: 2
 category: work
 related_publications: true

@@ -2,7 +2,6 @@
 layout: page
 title: SpatialMETA
 description: Integrating Cross-Sample and Cross-Modal Data for Spatial Transcriptomics and Metabolomics
-img: assets/img/spatialmeta.jpg
 importance: 1
 category: work
 related_publications: true

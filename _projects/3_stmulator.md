@@ -2,7 +2,6 @@
 layout: page
 title: STmulator
 description: Simulation and interpolation of spatial transcriptomics from parameter cloud
-img: assets/img/stmulator.jpg
 importance: 1
 category: work
 related_publications: true

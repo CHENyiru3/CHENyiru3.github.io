@@ -2,7 +2,6 @@
 layout: page
 title: SpatialTCR
 description: An integrated platform for high-resolution spatial sequencing of T cell receptor repertoires
-img: assets/img/spatialtcr.jpg
 importance: 1
 category: work
 related_publications: true
