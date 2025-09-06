@@ -2,17 +2,17 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Welcome!
+title: CHEN, Yiru
 first_name: Yiru
 middle_name: 
 last_name: CHEN
 contact_note: >
   Feel free to email me!
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Keep on keeping on.
+  Undergraduate student in Bioinformatics at Zhejiang University. Passionate about developing computational methods for spatial multi-omics and computational immunology.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-keywords: Bioinformatics, Computational Immunology, AI for Omics, Spatial Omics
+keywords: Spatial Multi-Omics, Computational Immunology, Computational Method Development, AI, Bioinformatics, Spatial Transcriptomics
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🌏
 
