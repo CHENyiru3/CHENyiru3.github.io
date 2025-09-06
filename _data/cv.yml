@@ -38,7 +38,7 @@
         - Collaborated with wet lab members to develop spatial TCR sequencing method
         - Developed computational methods from upstream processing to downstream TCR-omics analysis tool
         - Active project with ongoing development
-        
+
     - title: Research Assistant (Co-author)
       institution: Prof. Wanlu Liu Lab, ZJU-UoE Institute, Zhejiang University
       year: Nov. 2024 – Spring 2025
@@ -47,7 +47,7 @@
         - Algorithm development using conditional variation autoencoder for integration of spatial transcriptomics and spatial metabolomics
         - Responsible for setting comprehensive benchmark and metrics for the multimodal spatial integration task
         - Project successfully concluded and accepted for publication
-        
+
     - title: Independent Research Project (First author)
       institution: Prof. Maizie Zhou Lab, BME & CS Department, Vanderbilt University
       year: Aug. 2024 – Present
@@ -58,7 +58,7 @@
         - Complete research cycle including literature review, idea exploration, model construction, benchmark and application, manuscript preparation
         - Public presentation training at different project milestones
         - Ready for RECOMB 2026 conference submission
-        
+
     - title: Research Assistant (Co-author)
       institution: Prof. Xiuwei Zhang Lab, College of Computing, Georgia Institute of Technology
       year: Apr. 2024 – Sep. 2025
@@ -77,21 +77,21 @@
       description:
         - "Authors: Xue Z†, Wu L†, Gao B†, Tian R, Chen Y, Qi Y, Dong T, Bai Y, Zhao Y, He B, Wang L, Liu Z, Yao J, Lu L*, Liu W*"
         - Co-author contribution to large-scale TCR repertoire analysis
-        
+
     - title: "Integrating Cross-Sample and Cross-Modal Data for Spatial Transcriptomics and Metabolomics with SpatialMETA"
       institution: Nature Communications (Accepted)
       year: 2025
       description:
         - "Authors: Tian R†, Xue Z†, Chen Y, Qi Y, Zhang J, Yuan J, Ruan D, Lin J, Liu J, Wang D, Youqiong Y, Liu W*"
         - Co-author contribution to spatial multi-omics integration methodology
-        
+
     - title: "Recent Advances in Single-Cell Isoform Profiling"
       institution: Genomics, Proteomics & Bioinformatics (Under Review)
       year: 2025
       description:
         - "Authors: Yu Z, Chen Y, Chen Y, Qi Y, Liu W*"
         - Review article on single-cell isoform analysis methods
-        
+
     - title: "Mapping lineage-resolved scRNA-seq data with spatial transcriptomics using TemSOMap"
       institution: Pacific Symposium on Biocomputing (Submitted)
       year: 2026

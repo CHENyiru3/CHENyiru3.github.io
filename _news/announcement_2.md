@@ -6,7 +6,7 @@ inline: false
 related_posts: false
 ---
 
-📄 **Great news!** Our paper "Integrating Cross-Sample and Cross-Modal Data for Spatial Transcriptomics and Metabolomics with SpatialMETA" has been **accepted** for publication in *Nature Communications*!
+📄 **Great news!** Our paper "Integrating Cross-Sample and Cross-Modal Data for Spatial Transcriptomics and Metabolomics with SpatialMETA" has been **accepted** for publication in _Nature Communications_!
 
 This work represents a significant advancement in spatial multi-omics analysis, providing researchers with powerful tools for integrating spatial transcriptomics and metabolomics data. As a co-author, I contributed to the comprehensive benchmark development and metrics design for this innovative approach.
 

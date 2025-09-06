@@ -27,11 +27,13 @@ TemSOMap addresses a fundamental challenge in spatial transcriptomics analysis: 
 The methodology employs advanced machine learning techniques:
 
 **Core Algorithm:**
+
 - **Loss Function Optimization:** Development of a comprehensive loss function that balances expression similarity and lineage constraints
 - **Cell-to-Spot Mapping:** Inference of probabilistic mapping matrices between single cells and spatial spots
 - **Lineage Integration:** Novel incorporation of lineage tracing information into spatial mapping
 
 **Machine Learning Framework:**
+
 - Expression-based similarity metrics
 - Lineage-aware constraint incorporation
 - Optimization algorithms for large-scale mapping problems
@@ -41,16 +43,19 @@ The methodology employs advanced machine learning techniques:
 As a research assistant and co-author, my responsibilities included:
 
 **Downstream Analysis:**
+
 - Development and implementation of comprehensive downstream analysis pipelines
 - Validation of mapping results using biological knowledge and independent datasets
 - Creation of visualization tools for mapping quality assessment
 
 **Benchmarking:**
+
 - Partial development of benchmark datasets for method comparison
 - Performance evaluation against existing mapping methods
 - Statistical analysis of mapping accuracy and reliability
 
 **Manuscript Preparation:**
+
 - Partial contribution to manuscript writing and revision
 - Figure preparation and data presentation
 - Literature review and method comparison
@@ -75,4 +80,4 @@ TemSOMap will contribute to the field by:
 - **Lineage-Aware Methods:** Novel consideration of developmental relationships in spatial mapping
 - **Benchmarking Standards:** Establishment of evaluation criteria for mapping method assessment
 
-**Submission:** Pan X, Danies-Lopez A, **Chen Y**, Zhang X*. Mapping lineage-resolved scRNA-seq data with spatial transcriptomics using TemSOMap. *Submitted to PSB2026 conference*
+**Submission:** Pan X, Danies-Lopez A, **Chen Y**, Zhang X*. Mapping lineage-resolved scRNA-seq data with spatial transcriptomics using TemSOMap. *Submitted to PSB2026 conference\*

@@ -27,11 +27,13 @@ STmulator is an innovative statistical modeling framework designed to simulate a
 The core methodology involves:
 
 **Statistical Modeling:**
+
 - **Vine-Copula Modeling:** Advanced statistical modeling of parameter space relationships
 - **Single Slice Simulation:** Realistic generation of individual spatial transcriptomics slices
 - **3D Region Simulation:** Extension to multiple slice and three-dimensional tissue region simulation
 
 **Interpolation Framework:**
+
 - **Optimal Transport Theory:** Mathematical foundation for interpolation between spatial states
 - **Geodesic Path Computation:** Principled interpolation along optimal transport-driven geodesic paths
 - **Parameter Cloud Navigation:** Efficient sampling and navigation through high-dimensional parameter spaces
@@ -71,4 +73,4 @@ STmulator will provide the research community with:
 
 The project is currently being prepared for submission to **RECOMB 2026**, one of the premier conferences in computational biology, demonstrating the high quality and significance of this research.
 
-*This project showcases independent research capability and innovative thinking in computational biology.*
+_This project showcases independent research capability and innovative thinking in computational biology._

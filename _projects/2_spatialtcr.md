@@ -36,7 +36,7 @@ As the lead computational developer, I am responsible for:
 The computational framework includes:
 
 - Novel algorithms for spatial TCR sequence alignment and quality control
-- Advanced statistical methods for TCR repertoire diversity analysis in spatial context  
+- Advanced statistical methods for TCR repertoire diversity analysis in spatial context
 - Machine learning approaches for identifying spatially-enriched TCR clonotypes
 - Visualization tools for spatial TCR repertoire mapping
 
@@ -61,4 +61,4 @@ SpatialTCR will provide the research community with:
 
 **Best Poster Presentation Award** at GPB Omics & Bioinformatics Frontiers Symposium, Zhejiang, China (2025)
 
-*Presenters: Tian R†, **Chen Y**†#, Qi Y†, Xue Z, Yu Z, Liu W* (†Co-first authors, #Presenting author)
+_Presenters: Tian R†, **Chen Y**†#, Qi Y†, Xue Z, Yu Z, Liu W_ (†Co-first authors, #Presenting author)

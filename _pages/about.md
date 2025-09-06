@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle:
 
 profile:
   align: right
@@ -56,4 +56,3 @@ I am actively engaged in several research projects involving:
 - **Lineage-resolved single-cell mapping with spatial data**
 
 Feel free to explore my research projects, publications, and ongoing work through this website!
-
