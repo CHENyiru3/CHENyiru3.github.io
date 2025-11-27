@@ -34,11 +34,11 @@ Hi there — I’m Yiru CHEN.
 
 <a class="btn btn-primary btn-sm" href="/assets/pdf/CHEN_Yiru_CV.pdf" target="_blank" role="button">Download CV (PDF)</a>
 <span class="ml-3 small">
-  <a href="https://orcid.org/0009-0002-5114-4947" target="_blank">ORCID</a>
-  &nbsp;·&nbsp;
-  <a href="https://scholar.google.com/citations?user=Rfv54HwAAAAJ" target="_blank">Google Scholar</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/CHENyiru3" target="_blank">GitHub</a>
+<a href="https://orcid.org/0009-0002-5114-4947" target="_blank">ORCID</a>
+&nbsp;·&nbsp;
+<a href="https://scholar.google.com/citations?user=Rfv54HwAAAAJ" target="_blank">Google Scholar</a>
+&nbsp;·&nbsp;
+<a href="https://github.com/CHENyiru3" target="_blank">GitHub</a>
 </span>
 
 ### Short research statement

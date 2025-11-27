@@ -11,13 +11,16 @@ horizontal: false
 
 <!-- pages/projects.md -->
 <!-- Project file index (published / preprints / posters / coursework) -->
+
 {% comment %} Documents section: groups PDFs under assets/pdf/<category>/ and lists files in reverse name order (use date prefixes like 2025-07-01-title.pdf to order by time). {% endcomment %}
+
 ## Project documents & materials
 
 Below are PDFs related to projects (published papers, preprints, posters, and course projects). Upload PDFs into the corresponding folder under `assets/pdf/` and they will appear below.
 
 {% assign categories = "published,preprint,poster,key_coursework" | split: ',' %}
 {% for cat in categories %}
+
 ### {{ cat | replace:'_',' ' | capitalize }}
 
 {% assign base = '/assets/pdf/' | append: cat | append: '/' %}
@@ -31,19 +34,20 @@ _No items yet. Upload PDFs to `assets/pdf/{{ cat }}/`._
 {% assign parts = base_name | split: '-' %}
 {% assign display_date = '' %}
 {% if parts[0] %}
-  {% if parts[0] | size == 4 %}
-    {% assign display_date = parts[0] %}
-    {% if parts.size > 1 and parts[1] | size == 2 %}
-      {% assign display_date = display_date | append: '-' | append: parts[1] %}
-      {% if parts.size > 2 and parts[2] | size == 2 %}
-        {% assign display_date = display_date | append: '-' | append: parts[2] %}
-      {% endif %}
-    {% endif %}
+{% if parts[0] | size == 4 %}
+{% assign display_date = parts[0] %}
+{% if parts.size > 1 and parts[1] | size == 2 %}
+{% assign display_date = display_date | append: '-' | append: parts[1] %}
+{% if parts.size > 2 and parts[2] | size == 2 %}
+{% assign display_date = display_date | append: '-' | append: parts[2] %}
+{% endif %}
+{% endif %}
+{% endif %}
+{% endif %}
+
+- {% if display_date != '' %}{{ display_date }} — {% endif %}[{{ f.name }}]({{ f.path | relative_url }}){:target="\_blank"}
+  {% endfor %}
   {% endif %}
-{% endif %}
-- {% if display_date != '' %}{{ display_date }} — {% endif %}[{{ f.name }}]({{ f.path | relative_url }}){:target="_blank"}
-{% endfor %}
-{% endif %}
 
 {% endfor %}
 

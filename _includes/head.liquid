@@ -35,8 +35,16 @@
 >
 
 <!-- Code Syntax Highlighting -->
-<link rel="preload" href="{{ '/assets/css/jekyll-pygments-themes-github.css' | relative_url | bust_file_cache }}" as="style" onload="this.rel='stylesheet'" id="highlight_theme_light">
-<noscript><link rel="stylesheet" href="{{ '/assets/css/jekyll-pygments-themes-github.css' | relative_url | bust_file_cache }}" id="highlight_theme_light"></noscript>
+<link
+  rel="preload"
+  href="{{ '/assets/css/jekyll-pygments-themes-github.css' | relative_url | bust_file_cache }}"
+  as="style"
+  onload="this.rel='stylesheet'"
+  id="highlight_theme_light"
+>
+<noscript
+  ><link rel="stylesheet" href="{{ '/assets/css/jekyll-pygments-themes-github.css' | relative_url | bust_file_cache }}" id="highlight_theme_light"
+></noscript>
 
 {% if page.toc and page.toc.sidebar %}
   <!-- Sidebar Table of Contents -->
