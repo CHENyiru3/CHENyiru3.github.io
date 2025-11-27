@@ -2,19 +2,42 @@
 layout: page
 permalink: /life/
 title: Life
-description: Moments and experiences
+description: Beyond the lab — interests, hobbies, and what drives me
 nav: true
 nav_order: 5
 ---
 
-## More about myself, in my personal life
+## Beyond Research
 
-Generally, I am a peaceful guy in my daily life. I love to spend time alone, taking time to clean up everything, making me coffee, cooking and baking. But I am really glad to have conversation with anyone! I can always learn things from others.
+I believe that a balanced life fuels creativity and resilience in research. Outside the lab, I enjoy activities that keep me grounded, curious, and connected.
 
-### Interests & Hobbies
+---
 
-- **Sports:** Running, swimming, all kinds of ball games (competitive one: Table tennis)
-- **Coffee:** From coffee beans to cappuccino. I feel that I am a real chemist!
-- **History:** Study the history of Western Europe Medieval recently. Have a long-time study of the history and development of Abrahamic monotheism and religions. And of course, I always learn about the 5000-year long Chinese history!
-- **Video Games:** Used to play a lot! But now I enjoy learning the technique theory and the development history behind great video games. An unreserved Nintendo fan.
-- **A nap without an alarm clock:** Sounds I am a sleepyhead! But this situation is really relaxing.
+### Sports & Wellness
+
+I stay active through **running**, **swimming**, and various ball games. Table tennis is my competitive sport of choice — it sharpens both reflexes and strategic thinking. Regular exercise helps me maintain focus during long coding and analysis sessions.
+
+---
+
+### Coffee Enthusiast
+
+From selecting beans to perfecting latte art, I approach coffee-making with the same precision I bring to experiments. There's something satisfying about optimizing extraction time, grind size, and temperature — it's chemistry I can drink.
+
+Recently I am trying to make pour over coffee. 
+
+---
+
+### History & Culture
+
+I'm fascinated by how ideas and institutions evolve over time. Current interests include:
+
+- **Medieval Western Europe** — understanding the foundations of modern institutions
+- **Chinese history** — 5,000 years of continuity and change, from dynastic cycles to modern transformation
+
+Studying history gives me perspective on how knowledge accumulates and paradigms shift — lessons that apply to scientific inquiry.
+
+---
+
+### Gaming & Technology
+
+While I played video games extensively in the past, I now find myself more interested in the **design philosophy** and **technical innovation** behind great games. As a longtime Nintendo fan, I appreciate their commitment to creativity and polished user experiences — principles I try to apply in building research tools.
