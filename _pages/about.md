@@ -43,7 +43,9 @@ Hi there — I’m Yiru CHEN.
 
 ### Short research statement
 
-I develop computational methods for spatial multi-omics and immunology. My work focuses on statistical modeling, integrative multimodal analysis, and scalable pipelines for spatial transcriptomics and T-cell receptor profiling. I build open-source tools, evaluate methods on realistic benchmarks, and collaborate closely with wet-lab teams to translate computational findings into biological insights.
+I develop computational methods for **spatial multi-omics** and **immunology**. My work focuses on statistical modeling, integrative multimodal analysis, and scalable pipelines for spatial transcriptomics and T-cell receptor profiling.
+
+---
 
 ## Research interests
 
@@ -52,28 +54,21 @@ I develop computational methods for spatial multi-omics and immunology. My work 
 - Statistical modeling & simulation for high-dimensional spatial data
 - Scalable pipelines for single-cell and spatial data processing
 
+---
+
 ## Academic background
 
 I am an undergraduate student in the Bioinformatics program at the Zhejiang University–University of Edinburgh (ZJE) Institute, Zhejiang University, expected to graduate in 2026. I have collaborated with groups at Vanderbilt University and Georgia Tech on computational biology projects.
 
-With a strong foundation in programming, statistics, and machine learning, I aim to develop computational tools that enable robust biological discovery from spatially resolved data.
+---
 
-## Current projects (select)
+## Current projects
 
-- SpatialTCR — spatial TCR sequencing and analysis pipeline (co-development; see Publications)
-- FEAST — simulation and 3D interpolation for spatial transcriptomics (first author; code available)
-- SpatialMETA — cross-modal integration of spatial transcriptomics and metabolomics (collaborative work)
+| Project                                                               | Role            | Status                 |
+| --------------------------------------------------------------------- | --------------- | ---------------------- |
+| **SpatialTCR** — spatial TCR sequencing and analysis                  | Co-first author | In development         |
+| **FEAST** — simulation & 3D interpolation for spatial transcriptomics | First author    | Submitted              |
+| **SpatialMETA** — cross-modal integration of ST & metabolomics        | Co-author       | Published (Nat Commun) |
+| **TemSOMap** — lineage-resolved scRNA-seq mapping                     | Co-author       | Submitted              |
 
-Explore Publications and Projects in the site menu for details and links to code repositories.
-
-## Growth & milestones
-
-I keep a short timeline of milestones, project releases, and selected coursework to document my growth and skills over time. You can view the timeline here: [Growth & timeline](/timeline/).
-
-Ways you can add growth items:
-
-- Upload a PDF or poster to `assets/pdf/` and link it from the Projects page.
-- Add an entry to the site's timeline (data file at `_data/timeline.yml`) with date, title, type (e.g., publication, poster, coursework), short description, and optional link to a PDF.
-- Use the News page to publish short notes about experiments, reproducibility improvements, or learning milestones.
-
-If you want, I can scaffold `_data/timeline.yml` and a `/timeline/` page so you can add entries as YAML objects — I created a starter timeline page for you.
+See the **Projects** and **Publications** pages for details and code links.

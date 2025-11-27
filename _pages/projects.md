@@ -2,64 +2,14 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Research projects in spatial multi-omics and computational biology.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [work]
 horizontal: false
 ---
 
 <!-- pages/projects.md -->
-<!-- Project file index (published / preprints / posters / coursework) -->
-
-{% comment %} Documents section: groups PDFs under assets/pdf/<category>/ and lists files in reverse name order (use date prefixes like 2025-07-01-title.pdf to order by time). {% endcomment %}
-
-## Project documents & materials
-
-Below are PDFs related to projects (published papers, preprints, posters, and course projects). Upload PDFs into the corresponding folder under `assets/pdf/` and they will appear below.
-
-{% assign categories = "published,preprint,poster,key_coursework" | split: ',' %}
-{% for cat in categories %}
-
-### {{ cat | replace:'_',' ' | capitalize }}
-
-{% assign base = '/assets/pdf/' | append: cat | append: '/' %}
-{% assign files = site.static_files | where_exp: "f", "f.path contains base" %}
-{% if files == empty %}
-_No items yet. Upload PDFs to `assets/pdf/{{ cat }}/`._
-{% else %}
-{% assign sorted = files | sort: 'name' | reverse %}
-{% for f in sorted %}
-{% assign base_name = f.name | remove: '.pdf' %}
-{% assign parts = base_name | split: '-' %}
-{% assign display_date = '' %}
-{% if parts[0] %}
-{% assign part0 = parts[0] %}
-{% assign part0_size = part0 | size %}
-{% if part0_size == 4 %}
-{% assign display_date = part0 %}
-{% if parts.size > 1 %}
-{% assign part1 = parts[1] %}
-{% assign part1_size = part1 | size %}
-{% if part1_size == 2 %}
-{% assign display_date = display_date | append: '-' | append: part1 %}
-{% if parts.size > 2 %}
-{% assign part2 = parts[2] %}
-{% assign part2_size = part2 | size %}
-{% if part2_size == 2 %}
-{% assign display_date = display_date | append: '-' | append: part2 %}
-{% endif %}
-{% endif %}
-{% endif %}
-{% endif %}
-{% endif %}
-{% endif %}
-
-- {% if display_date != '' %}{{ display_date }} — {% endif %}[{{ f.name }}]({{ f.path | relative_url }}){:target="\_blank"}
-  {% endfor %}
-  {% endif %}
-
-{% endfor %}
 
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
