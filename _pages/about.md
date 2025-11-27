@@ -27,8 +27,6 @@ latest_posts:
 
 Hi there — I’m Yiru CHEN. Glad that you find me here!
 
-
-
 <a class="btn btn-primary btn-sm" href="/assets/pdf/CHEN_Yiru_CV.pdf" target="_blank" role="button">Download CV (PDF)</a>
 <span class="ml-3 small">
 <a href="https://orcid.org/0009-0002-5114-4947" target="_blank">ORCID</a>
@@ -38,11 +36,9 @@ Hi there — I’m Yiru CHEN. Glad that you find me here!
 <a href="https://github.com/CHENyiru3" target="_blank">GitHub</a>
 </span>
 
-
 ## Quick Background
 
 I grew up in Hunan Province, China. I am an undergraduate student in the Bioinformatics program at the Zhejiang University–University of Edinburgh (ZJE) Institute, Zhejiang University, expected to graduate in 2026. I have collaborated with groups at Vanderbilt University and Georgia Tech on computational biology projects.
-
 
 ---
 
@@ -54,24 +50,23 @@ I develop computational methods for **spatial multi-omics** and **immunology**. 
 
 ---
 
-
 ## Publications
 
-<p class="note" style="font-size:0.9em;color:#666;">* Equal contribution · † Corresponding author</p>
+<p class="note" style="font-size:0.9em;color:#666;margin-bottom:1.5em;">* Equal contribution · † Corresponding author</p>
 
-### Peer-Reviewed Publications
+<h3 style="border-left: 4px solid #2698BA; padding-left: 12px; margin-top: 1.5em;">Peer-Reviewed Publications</h3>
 
 <div class="publications">
 {% bibliography --query @*[category=published] %}
 </div>
 
-### Manuscripts Under Review
+<h3 style="border-left: 4px solid #FFA500; padding-left: 12px; margin-top: 1.5em;">Manuscripts Under Review / Submitted</h3>
 
 <div class="publications">
 {% bibliography --query @*[category=preprint] %}
 </div>
 
-### Presentations & Posters
+<h3 style="border-left: 4px solid #28A745; padding-left: 12px; margin-top: 1.5em;">Presentations & Posters</h3>
 
 <div class="publications">
 {% bibliography --query @*[category=presentation] %}
