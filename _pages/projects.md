@@ -20,7 +20,7 @@ nav_order: 2
 
 ---
 
-## All Projects
+## All of previous Projects
 
 <details>
 <summary><strong>Posters & Presentations</strong></summary>
@@ -35,7 +35,7 @@ nav_order: 2
 
 <div class="material-item">
 <h4>Spatial Transcriptomics Database Poster</h4>
-<p>A comprehensive database for spatial transcriptomics datasets and analysis tools.</p>
+<p>A comprehensive database for spatial transcriptomics datasets and analysis tools. Presented in Undergraduate Research Poster Day in ZJU, 2024</p>
 <object data="/assets/pdf/poster/STdatabase_poster.pdf" type="application/pdf" width="100%" height="400">
 <a href="/assets/pdf/poster/STdatabase_poster.pdf" class="btn btn-sm btn-outline-primary">Download PDF</a>
 </object>
@@ -43,7 +43,7 @@ nav_order: 2
 
 <div class="material-item">
 <h4>Bulk TCR Repertoire Analysis Poster</h4>
-<p>Computational methods for analyzing bulk T cell receptor repertoire sequencing data.</p>
+<p>Computational methods for analyzing bulk T cell receptor repertoire sequencing data. Presented in Undergraduate Research Poster Day in ZJU</p>
 <img src="/assets/pdf/poster/bulkTCR_poster.jpeg" alt="Bulk TCR Poster" style="width:100%; border:1px solid #ddd; border-radius:4px;">
 </div>
 
@@ -57,24 +57,24 @@ nav_order: 2
 <div class="materials-grid">
 
 <div class="material-item">
-<h4>Computational Molecular Medicine Lab — ICA 1</h4>
-<p>Individual coursework focusing on computational approaches in molecular medicine.</p>
+<h4>Computational Modeling and Machine Learning — ICA 1 (95/100), 2025</h4>
+<p>Individual coursework focusing on protein interaction with MD simulation and AlphaFold3</p>
 <object data="{{ '/assets/pdf/key_coursework/CMML3_ICA1.pdf' | relative_url }}" type="application/pdf" width="100%" height="400">
 <a href="{{ '/assets/pdf/key_coursework/CMML3_ICA1.pdf' | relative_url }}" class="btn btn-sm btn-outline-primary">Download PDF</a>
 </object>
 </div>
 
 <div class="material-item">
-<h4>Computational Molecular Medicine Lab — ICA 2</h4>
-<p>Advanced coursework on computational methods for disease analysis.</p>
+<h4>Computational Modeling and Machine Learning — ICA 2 (97/100), 2025</h4>
+<p>Benchmark of deconvolution methods for spatial transcriptomics</p>
 <object data="{{ '/assets/pdf/key_coursework/CMML3_ICA2.pdf' | relative_url }}" type="application/pdf" width="100%" height="400">
 <a href="{{ '/assets/pdf/key_coursework/CMML3_ICA2.pdf' | relative_url }}" class="btn btn-sm btn-outline-primary">Download PDF</a>
 </object>
 </div>
 
 <div class="material-item">
-<h4>Genetics & Population Report</h4>
-<p>Population genetics analysis and report on genetic variation patterns.</p>
+<h4>Genomics & Proteomics — ICA (97/100), 2024</h4>
+<p>ATAC-seq analysis of Drosophila</p>
 <object data="{{ '/assets/pdf/key_coursework/GP_2137_97.pdf' | relative_url }}" type="application/pdf" width="100%" height="400">
 <a href="{{ '/assets/pdf/key_coursework/GP_2137_97.pdf' | relative_url }}" class="btn btn-sm btn-outline-primary">Download PDF</a>
 </object>

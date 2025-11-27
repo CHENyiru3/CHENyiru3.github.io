@@ -19,7 +19,7 @@ related_publications: true
 
 ### Project Overview
 
-SpatialTCR represents a groundbreaking advancement in spatial immunology, combining cutting-edge wet lab techniques with sophisticated computational methods to enable high-resolution spatial sequencing of T cell receptor (TCR) repertoires. This project bridges experimental innovation with computational biology to provide unprecedented insights into immune cell organization and function within tissues.
+SpatialTCR represents a critical advancement in spatial immunology, combining cutting-edge wet lab techniques with sophisticated computational methods to enable high-resolution spatial sequencing of T cell receptor (TCR) repertoires. This project bridges experimental innovation with computational biology to provide unprecedented insights into immune cell organization and function within tissues.
 
 ### My Responsibilities
 
@@ -45,16 +45,8 @@ This project exemplifies successful interdisciplinary collaboration:
 
 - **Wet Lab Partnership:** Close collaboration with experimental team members to optimize protocols
 - **Method Co-development:** Iterative development process ensuring computational methods align with experimental capabilities
-- **Validation Studies:** Comprehensive validation using both simulated and real experimental data
 
-### Impact and Significance
 
-SpatialTCR will provide the research community with:
-
-- The first comprehensive platform for spatial TCR sequencing analysis
-- Novel insights into immune cell spatial organization
-- Tools for studying tissue-resident immune responses
-- Applications in cancer immunology, autoimmune diseases, and vaccine development
 
 ### Recognition
 

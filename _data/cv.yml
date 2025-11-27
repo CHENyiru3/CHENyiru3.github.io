@@ -52,7 +52,7 @@
       institution: Prof. Maizie Zhou Lab, BME & CS Department, Vanderbilt University
       year: Aug. 2024 – Present
       description:
-        - "Project: STmulator - Simulation and interpolation of spatial transcriptomics from parameter cloud"
+        - "Project: FEAST - Simulation and interpolation of spatial transcriptomics from parameter cloud"
         - Developed statistical-based model for ST data single slice and multiple slice 3D region simulation, with vine-copula modeling on parameter space
         - Interpolation with optimal transport-driven geodesic path
         - Complete research cycle including literature review, idea exploration, model construction, benchmark and application, manuscript preparation

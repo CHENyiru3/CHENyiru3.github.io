@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SpatialMETA
-description: Integrating Cross-Sample and Cross-Modal Data for Spatial Transcriptomics and Metabolomics
+description: Integrating Cross-Sample and Cross-Modality Data for Spatial Transcriptomics and Metabolomics with CVAE
 importance: 1
 category: work
 related_publications: true
@@ -9,7 +9,7 @@ related_publications: true
 
 ## SpatialMETA: Integrating Cross-Sample and Cross-Modal Data for Spatial Transcriptomics and Metabolomics
 
-**Status:** Successfully concluded and accepted for publication in _Nature Communications_ (2025)
+**Status:** Successfully concluded and accepted for publication in _Nature Communications_ as 3rd co-author (2025)
 
 **Role:** Research Assistant, Co-author
 
@@ -31,8 +31,7 @@ SpatialMETA is an innovative algorithm development project that uses conditional
 
 The project leverages advanced machine learning techniques, specifically conditional variational autoencoders, to:
 
-- Learn shared representations between spatial transcriptomics and metabolomics data
-- Preserve spatial relationships during cross-modal integration
+- Learn shared representations between spatial transcriptomics and metabolomics data for deep learning
 - Enable downstream analysis of integrated spatial multi-omics datasets
 
 ### Impact
