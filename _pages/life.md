@@ -23,7 +23,7 @@ I stay active through **running**, **swimming**, and various ball games. Table t
 
 From selecting beans to perfecting latte art, I approach coffee-making with the same precision I bring to experiments. There's something satisfying about optimizing extraction time, grind size, and temperature — it's chemistry I can drink! (And maybe it can improve my wet lab skill in the future!)
 
-Recently I am trying to make pour over coffee. 
+Recently I am trying to make pour over coffee.
 
 ---
 

@@ -46,8 +46,6 @@ This project exemplifies successful interdisciplinary collaboration:
 - **Wet Lab Partnership:** Close collaboration with experimental team members to optimize protocols
 - **Method Co-development:** Iterative development process ensuring computational methods align with experimental capabilities
 
-
-
 ### Recognition
 
 **Best Poster Presentation Award** at GPB Omics & Bioinformatics Frontiers Symposium, Zhejiang, China (2025)

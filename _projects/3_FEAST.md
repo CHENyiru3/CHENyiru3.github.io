@@ -21,7 +21,6 @@ related_publications: true
   <i class="fas fa-file-pdf"></i> Preprint PDF
 </a>
 
-
 ### Project Overview
 
 FEAST (FEAture-space based modeling for Spatial Transcriptomics) is a computational infrastructure that models ST data within a parameter cloud — a latent manifold encoding gene-level mean, variance, and sparsity. By sampling and perturbing this manifold, FEAST generates high-fidelity synthetic slices with tunable spatial and transcriptional variation, enabling systematic evaluation of clustering, deconvolution, and spatial alignment algorithms.
