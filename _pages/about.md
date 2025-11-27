@@ -9,9 +9,7 @@ profile:
   image: cyr.jpg
   image_circular: false
   more_info: >
-    <p>Undergraduate Student</p>
-    <p>Zhejiang University-University of Edinburgh Institute</p>
-    <p>Zhejiang University, China</p>
+    <p>This is Yiru, the version on 2026/11/26</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,9 +25,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi there — I’m Yiru CHEN.
+Hi there — I’m Yiru CHEN. Glad that you find me here!
 
-**Actively applying for PhD positions (2025–2026).** Open to rotations and funded opportunities in computational biology / bioinformatics.
+
 
 <a class="btn btn-primary btn-sm" href="/assets/pdf/CHEN_Yiru_CV.pdf" target="_blank" role="button">Download CV (PDF)</a>
 <span class="ml-3 small">
@@ -40,26 +38,22 @@ Hi there — I’m Yiru CHEN.
 <a href="https://github.com/CHENyiru3" target="_blank">GitHub</a>
 </span>
 
+
+## Quick Background
+
+I grew up in Hunan Province, China. I am an undergraduate student in the Bioinformatics program at the Zhejiang University–University of Edinburgh (ZJE) Institute, Zhejiang University, expected to graduate in 2026. I have collaborated with groups at Vanderbilt University and Georgia Tech on computational biology projects.
+
+
+---
+
+**Actively applying for PhD positions (2025–2026).** Open to rotations and funded opportunities in computational biology / bioinformatics!
+
 ### Short research statement
 
-I develop computational methods for **spatial multi-omics** and **immunology**. My work focuses on statistical modeling, integrative multimodal analysis, and scalable pipelines for spatial transcriptomics and T-cell receptor profiling.
+I develop computational methods for **spatial multi-omics** and **immunology**. My work focuses on statistical modeling, integrative multimodal analysis, and pipeline and algorithm for spatial transcriptomics and spatial resolved T-cell receptor profiling.
 
 ---
 
-## Research interests
-
-- Spatial multi-omics integration and analysis
-- Computational immunology (TCR repertoire analysis, spatial TCR/phenotype mapping)
-- Statistical modeling & simulation for high-dimensional spatial data
-- Scalable pipelines for single-cell and spatial data processing
-
----
-
-## Academic Background
-
-I am an undergraduate student in the Bioinformatics program at the Zhejiang University–University of Edinburgh (ZJE) Institute, Zhejiang University, expected to graduate in 2026. I have collaborated with groups at Vanderbilt University and Georgia Tech on computational biology projects.
-
----
 
 ## Publications
 
