@@ -7,7 +7,7 @@ subtitle:
 profile:
   align: right
   image: cyr.png
-  image_circular: true
+  image_circular: false
   more_info: >
     <p>Undergraduate Student</p>
     <p>Zhejiang University-University of Edinburgh Institute</p>
