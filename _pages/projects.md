@@ -34,12 +34,22 @@ _No items yet. Upload PDFs to `assets/pdf/{{ cat }}/`._
 {% assign parts = base_name | split: '-' %}
 {% assign display_date = '' %}
 {% if parts[0] %}
-{% if parts[0] | size == 4 %}
-{% assign display_date = parts[0] %}
-{% if parts.size > 1 and parts[1] | size == 2 %}
-{% assign display_date = display_date | append: '-' | append: parts[1] %}
-{% if parts.size > 2 and parts[2] | size == 2 %}
-{% assign display_date = display_date | append: '-' | append: parts[2] %}
+{% assign part0 = parts[0] %}
+{% assign part0_size = part0 | size %}
+{% if part0_size == 4 %}
+{% assign display_date = part0 %}
+{% if parts.size > 1 %}
+{% assign part1 = parts[1] %}
+{% assign part1_size = part1 | size %}
+{% if part1_size == 2 %}
+{% assign display_date = display_date | append: '-' | append: part1 %}
+{% if parts.size > 2 %}
+{% assign part2 = parts[2] %}
+{% assign part2_size = part2 | size %}
+{% if part2_size == 2 %}
+{% assign display_date = display_date | append: '-' | append: part2 %}
+{% endif %}
+{% endif %}
 {% endif %}
 {% endif %}
 {% endif %}

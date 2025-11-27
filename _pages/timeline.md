@@ -29,7 +29,7 @@ This timeline lists notable milestones (education, projects, publications, prese
 {% for e in entries %}
 {% assign title_slug = e.title | downcase | replace: ' ', '-' | replace: ':', '' | replace: ',', '' | replace: '.', '' %}
 {% assign match_expr_date = e.date %}
-{% assign files = site.static_files | where_exp: "f", "f.path contains '/assets/pdf/' and (f.name downcase contains '#{e.date}' or f.name downcase contains '#{title_slug}')" %}
+{% assign files = site.static_files | where_exp: "f", "f.path contains '/assets/pdf/' and (f.name downcase contains e.date or f.name downcase contains title_slug)" %}
 {% if files and files != empty %}
 
 ### Files related to: {{ e.title }}
