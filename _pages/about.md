@@ -28,31 +28,52 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi there! My name is Yiru CHEN, and I am currently an undergraduate student in the Bioinformatics program at the Zhejiang University-University of Edinburgh (ZJE) Institute, Zhejiang University, China. I am pursuing a dual-award Bachelor of Science degree in Bioinformatics and am expected to graduate in 2026.
+Hi there — I’m Yiru CHEN.
 
-## Research Interests
+**Actively applying for PhD positions (2025–2026).** Open to rotations and funded opportunities in computational biology / bioinformatics.
 
-I am particularly interested in developing computational methods and modeling for biomedical data, including **spatial multi-omics**, **computational immunology**, and **AI-driven approaches** for biological data analysis. I believe critical biological insights are hiding in these complex data representations and are waiting to be discovered through innovative computational approaches.
+<a class="btn btn-primary btn-sm" href="/assets/pdf/CHEN_Yiru_CV.pdf" target="_blank" role="button">Download CV (PDF)</a>
+<span class="ml-3 small">
+  <a href="https://orcid.org/0009-0002-5114-4947" target="_blank">ORCID</a>
+  &nbsp;·&nbsp;
+  <a href="https://scholar.google.com/citations?user=Rfv54HwAAAAJ" target="_blank">Google Scholar</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/CHENyiru3" target="_blank">GitHub</a>
+</span>
 
-**Keywords**: Spatial Multi-Omics, Computational Immunology, Computational Method Development, AI
+### Short research statement
 
-## Academic Background
+I develop computational methods for spatial multi-omics and immunology. My work focuses on statistical modeling, integrative multimodal analysis, and scalable pipelines for spatial transcriptomics and T-cell receptor profiling. I build open-source tools, evaluate methods on realistic benchmarks, and collaborate closely with wet-lab teams to translate computational findings into biological insights.
 
-I have received extensive computational biology academic training from multiple prestigious research institutions, including:
+## Research interests
 
-- **Zhejiang University** (Current institution)
-- **Vanderbilt University** (Remote and on-site collaboration)
-- **Georgia Institute of Technology** (Remote collaboration)
+- Spatial multi-omics integration and analysis
+- Computational immunology (TCR repertoire analysis, spatial TCR/phenotype mapping)
+- Statistical modeling & simulation for high-dimensional spatial data
+- Scalable pipelines for single-cell and spatial data processing
 
-With a strong foundation in programming, statistics, and machine learning, I am passionate about bridging the gap between computational innovation and biological discovery.
+## Academic background
 
-## Current Research Focus
+I am an undergraduate student in the Bioinformatics program at the Zhejiang University–University of Edinburgh (ZJE) Institute, Zhejiang University, expected to graduate in 2026. I have collaborated with groups at Vanderbilt University and Georgia Tech on computational biology projects.
 
-I am actively engaged in several research projects involving:
+With a strong foundation in programming, statistics, and machine learning, I aim to develop computational tools that enable robust biological discovery from spatially resolved data.
 
-- **Spatial transcriptomics and metabolomics integration**
-- **T cell receptor repertoire analysis in spatial context**
-- **Statistical modeling and simulation of spatial transcriptomics data**
-- **Lineage-resolved single-cell mapping with spatial data**
+## Current projects (select)
 
-Feel free to explore my research projects, publications, and ongoing work through this website!
+- SpatialTCR — spatial TCR sequencing and analysis pipeline (co-development; see Publications)
+- FEAST — simulation and 3D interpolation for spatial transcriptomics (first author; code available)
+- SpatialMETA — cross-modal integration of spatial transcriptomics and metabolomics (collaborative work)
+
+Explore Publications and Projects in the site menu for details and links to code repositories.
+
+## Growth & milestones
+
+I keep a short timeline of milestones, project releases, and selected coursework to document my growth and skills over time. You can view the timeline here: [Growth & timeline](/timeline/).
+
+Ways you can add growth items:
+
+- Upload a PDF or poster to `assets/pdf/` and link it from the Projects page.
+- Add an entry to the site's timeline (data file at `_data/timeline.yml`) with date, title, type (e.g., publication, poster, coursework), short description, and optional link to a PDF.
+- Use the News page to publish short notes about experiments, reproducibility improvements, or learning milestones.
+
+If you want, I can scaffold `_data/timeline.yml` and a `/timeline/` page so you can add entries as YAML objects — I created a starter timeline page for you.

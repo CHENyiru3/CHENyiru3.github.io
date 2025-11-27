@@ -1,0 +1,28 @@
+- date: 2022-09
+  title: Started B.S. in Bioinformatics (ZJE Institute, Zhejiang University)
+  type: education
+  description: Entered the dual-award B.S. program in Bioinformatics (Zhejiang University – University of Edinburgh partnership). Expected graduation: 2026.
+
+- date: 2024-08
+  title: FEAST project (simulation & interpolation for spatial transcriptomics)
+  type: project
+  description: Independent research project; first-author manuscript submitted. Code repository: https://github.com/maiziezhoulab/FEAST
+  link: https://github.com/maiziezhoulab/FEAST
+
+- date: 2024-11
+  title: Joined SpatialMETA collaboration
+  type: project
+  description: Contributed algorithm development and benchmarking for cross-modal spatial integration (paper published in Nature Communications, 2025).
+  link: /assets/pdf/published/SpatialMETA_2025.pdf
+
+- date: 2025-03
+  title: SpatialTCR (presentation & award)
+  type: presentation
+  description: Best Poster Presentation Award at GPB Omics & Bioinformatics Frontiers Symposium, Zhejiang, China.
+  link: /assets/pdf/poster/GPB_2025_SpatialTCR.jpg
+
+- date: 2025-06
+  title: Pan-disease single-cell TCR repertoire reference (Cell Discovery)
+  type: publication
+  description: Co-author on a large pan-disease TCR repertoire reference resource (Cell Discovery, 2025).
+  link: /assets/pdf/published/Pan_disease_Atlas_2025.pdf
