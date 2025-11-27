@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle:
 
@@ -13,7 +13,7 @@ profile:
     <p>Zhejiang University-University of Edinburgh Institute</p>
     <p>Zhejiang University, China</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -55,6 +55,16 @@ I develop computational methods for **spatial multi-omics** and **immunology**. 
 
 ---
 
-## Academic background
+## Academic Background
 
 I am an undergraduate student in the Bioinformatics program at the Zhejiang University–University of Edinburgh (ZJE) Institute, Zhejiang University, expected to graduate in 2026. I have collaborated with groups at Vanderbilt University and Georgia Tech on computational biology projects.
+
+---
+
+## Publications
+
+<p class="note" style="font-size:0.9em;color:#666;">* Equal contribution · † Corresponding author</p>
+
+<div class="publications">
+{% bibliography %}
+</div>
