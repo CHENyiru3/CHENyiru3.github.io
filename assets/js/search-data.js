@@ -4,27 +4,20 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-materials",
-          title: "Materials",
-          description: "Publications, posters, and selected coursework.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/materials/";
-          },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "Research projects in spatial multi-omics and computational biology.",
+  },{id: "nav-projects",
+          title: "Projects",
+          description: "Research projects, posters, and coursework.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-life",
-          title: "life",
+          title: "Life",
           description: "Moments and experiences",
           section: "Navigation",
           handler: () => {
