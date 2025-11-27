@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: cyr.png
+  image: cyr.jpg
   image_circular: false
   more_info: >
     <p>Undergraduate Student</p>
