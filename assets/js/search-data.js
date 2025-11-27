@@ -129,7 +129,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-spatialmeta",
           title: 'SpatialMETA',
-          description: "Integrating Cross-Sample and Cross-Modal Data for Spatial Transcriptomics and Metabolomics",
+          description: "Integrating Cross-Sample and Cross-Modality Data for Spatial Transcriptomics and Metabolomics with CVAE",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_spatialmeta/";
             },},{id: "projects-spatialtcr",
@@ -137,11 +137,11 @@ ninja.data = [{
           description: "An integrated platform for high-resolution spatial sequencing of T cell receptor repertoires",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_spatialtcr/";
-            },},{id: "projects-stmulator",
-          title: 'STmulator',
+            },},{id: "projects-feast",
+          title: 'FEAST',
           description: "Simulation and interpolation of spatial transcriptomics from parameter cloud",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_stmulator/";
+              window.location.href = "/projects/3_FEAST/";
             },},{id: "projects-temsomap",
           title: 'TemSOMap',
           description: "Mapping lineage-resolved scRNA-seq data with spatial transcriptomics",
