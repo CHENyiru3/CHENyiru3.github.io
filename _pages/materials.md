@@ -2,12 +2,22 @@
 layout: page
 permalink: /materials/
 title: Materials
-description: Research papers, posters, and selected coursework.
+description: Publications, posters, and selected coursework.
 nav: true
 nav_order: 3
 ---
 
-## Published Papers
+## Publications
+
+<p class="note">* Equal contribution · † Corresponding author</p>
+
+<div class="publications">
+{% bibliography %}
+</div>
+
+---
+
+## Published Papers (PDF)
 
 <div class="materials-grid">
 
