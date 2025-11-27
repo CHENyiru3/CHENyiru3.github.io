@@ -40,3 +40,11 @@ The project leverages advanced machine learning techniques, specifically conditi
 This work provides the scientific community with a powerful tool for spatial multi-omics analysis, enabling researchers to gain deeper insights into tissue architecture and cellular function through integrated analysis of transcriptomic and metabolomic data.
 
 **Publication:** Tian R†, Xue Z†, **Chen Y**, Qi Y, Zhang J, Yuan J, Ruan D, Lin J, Liu J, Wang D, Youqiong Y, Liu W*. Integrating Cross-Sample and Cross-Modal Data for Spatial Transcriptomics and Metabolomics with SpatialMETA. *Nature Communications\* (Accepted), 2025.
+
+---
+
+### Publication PDF
+
+<object data="/assets/pdf/published/SpatialMETA_2025.pdf" type="application/pdf" width="100%" height="600">
+  <p><a href="/assets/pdf/published/SpatialMETA_2025.pdf">Download SpatialMETA paper (PDF)</a></p>
+</object>

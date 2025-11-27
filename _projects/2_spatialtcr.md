@@ -61,3 +61,9 @@ SpatialTCR will provide the research community with:
 **Best Poster Presentation Award** at GPB Omics & Bioinformatics Frontiers Symposium, Zhejiang, China (2025)
 
 _Presenters: Tian R†, **Chen Y**†#, Qi Y†, Xue Z, Yu Z, Liu W_ (†Co-first authors, #Presenting author)
+
+---
+
+### Award-Winning Poster
+
+<img src="/assets/pdf/poster/GPB_2025_SpatialTCR.jpg" alt="SpatialTCR Poster - GPB 2025" style="width:100%;max-width:800px;" />

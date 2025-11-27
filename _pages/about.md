@@ -12,7 +12,6 @@ profile:
     <p>Undergraduate Student</p>
     <p>Zhejiang University-University of Edinburgh Institute</p>
     <p>Zhejiang University, China</p>
-    <p>Email: yiru.22@intl.zju.edu.cn</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -59,16 +58,3 @@ I develop computational methods for **spatial multi-omics** and **immunology**. 
 ## Academic background
 
 I am an undergraduate student in the Bioinformatics program at the Zhejiang University–University of Edinburgh (ZJE) Institute, Zhejiang University, expected to graduate in 2026. I have collaborated with groups at Vanderbilt University and Georgia Tech on computational biology projects.
-
----
-
-## Current projects
-
-| Project                                                               | Role            | Status                 |
-| --------------------------------------------------------------------- | --------------- | ---------------------- |
-| **SpatialTCR** — spatial TCR sequencing and analysis                  | Co-first author | In development         |
-| **FEAST** — simulation & 3D interpolation for spatial transcriptomics | First author    | Submitted              |
-| **SpatialMETA** — cross-modal integration of ST & metabolomics        | Co-author       | Published (Nat Commun) |
-| **TemSOMap** — lineage-resolved scRNA-seq mapping                     | Co-author       | Submitted              |
-
-See the **Projects** and **Publications** pages for details and code links.
