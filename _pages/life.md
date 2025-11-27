@@ -21,7 +21,7 @@ I stay active through **running**, **swimming**, and various ball games. Table t
 
 ### Coffee Enthusiast
 
-From selecting beans to perfecting latte art, I approach coffee-making with the same precision I bring to experiments. There's something satisfying about optimizing extraction time, grind size, and temperature — it's chemistry I can drink.
+From selecting beans to perfecting latte art, I approach coffee-making with the same precision I bring to experiments. There's something satisfying about optimizing extraction time, grind size, and temperature — it's chemistry I can drink! (And maybe it can improve my wet lab skill in the future!)
 
 Recently I am trying to make pour over coffee. 
 
@@ -31,8 +31,8 @@ Recently I am trying to make pour over coffee.
 
 I'm fascinated by how ideas and institutions evolve over time. Current interests include:
 
-- **Medieval Western Europe** — understanding the foundations of modern institutions
-- **Chinese history** — 5,000 years of continuity and change, from dynastic cycles to modern transformation
+- **Medieval Western Europe** — understanding the foundations of western world! Challenging but interesting for me.
+- **Chinese history** — 5,000 years of continuity and change, from dynastic cycles to modern transformation in China. Love it!
 
 Studying history gives me perspective on how knowledge accumulates and paradigms shift — lessons that apply to scientific inquiry.
 
@@ -40,4 +40,4 @@ Studying history gives me perspective on how knowledge accumulates and paradigms
 
 ### Gaming & Technology
 
-While I played video games extensively in the past, I now find myself more interested in the **design philosophy** and **technical innovation** behind great games. As a longtime Nintendo fan, I appreciate their commitment to creativity and polished user experiences — principles I try to apply in building research tools.
+While I played video games extensively in the past, I now find myself more interested in the **design philosophy** and **technical innovation** behind great games. As a longtime Nintendo fan, I appreciate their commitment to creativity and polished user experiences!

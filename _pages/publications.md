@@ -15,6 +15,20 @@ nav_order: 2
 * Equal contribution &nbsp;·&nbsp; † Corresponding author
 </p>
 
+## Peer-Reviewed Publications
+
 <div class="publications">
-{% bibliography %}
+{% bibliography --query @*[category=published] %}
+</div>
+
+## Manuscripts Under Review
+
+<div class="publications">
+{% bibliography --query @*[category=preprint] %}
+</div>
+
+## Presentations & Posters
+
+<div class="publications">
+{% bibliography --query @*[category=presentation] %}
 </div>

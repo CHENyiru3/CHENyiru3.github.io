@@ -28,7 +28,7 @@ nav_order: 2
 <div class="materials-grid">
 
 <div class="material-item">
-<h4>SpatialTCR — Best Poster Award</h4>
+<h4>SpatialTCR — Best Poster Award of GPB conference</h4>
 <p>An integrated platform for high-resolution spatial sequencing of T cell receptor repertoires. Awarded Best Poster at GPB Omics and Bioinformatics Frontiers Symposium, 2025.</p>
 <img src="/assets/pdf/poster/GPB_2025_SpatialTCR.jpg" alt="SpatialTCR Poster" style="width:100%; border:1px solid #ddd; border-radius:4px;">
 </div>
