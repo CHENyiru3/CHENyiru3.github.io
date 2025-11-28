@@ -38,7 +38,7 @@ Hi there — I’m Yiru CHEN. Glad that you find me here!
 
 ## Quick Background
 
-I grew up in Hunan Province, China. I am an undergraduate student in the Bioinformatics program at the Zhejiang University–University of Edinburgh (ZJE) Institute, Zhejiang University, expected to graduate in 2026. I have collaborated with groups at Vanderbilt University and Georgia Tech on computational biology projects.
+I grew up in Hunan Province, China. Currently, I am an undergraduate student in the Bioinformatics program at the Zhejiang University–University of Edinburgh (ZJE) Institute, Zhejiang University, expected to graduate in 2026. You are very welcomed to contact me with yiru.22@intl.zju.edu.cn or yiru2chen@gmail.com
 
 ---
 
@@ -46,27 +46,34 @@ I grew up in Hunan Province, China. I am an undergraduate student in the Bioinfo
 
 ### Short research statement
 
-I develop computational methods for **spatial multi-omics** and **immunology**. My work focuses on statistical modeling, integrative multimodal analysis, and pipeline and algorithm for spatial transcriptomics and spatial resolved T-cell receptor profiling.
+I develop computational methods for **spatial multi-omics** and **immunology**. My work focuses on statistical modeling, integrative multimodal analysis, and algorithms for spatial transcriptomics and spatially resolved T-cell receptor profiling. Looking ahead, I am eager to explore new research areas while staying grounded in computational approaches — particularly statistical learning and deep learning for biomedcine.
 
 ---
 
 ## Publications
 
-<p class="note" style="font-size:0.9em;color:#666;margin-bottom:1.5em;">* Equal contribution · † Corresponding author</p>
+<style>
+.pub-section { margin-top: 1.2em; margin-bottom: 0.5em; font-size: 1.1em; border-left: 4px solid; padding-left: 10px; }
+.pub-section.published { border-color: #2698BA; }
+.pub-section.preprint { border-color: #FFA500; }
+.pub-section.presentation { border-color: #28A745; }
+</style>
 
-<h3 style="border-left: 4px solid #2698BA; padding-left: 12px; margin-top: 1.5em;">Peer-Reviewed Publications</h3>
+<p class="note" style="font-size:0.9em;color:#666;margin-bottom:1em;">* Equal contribution · † Corresponding author</p>
+
+<h3 class="pub-section published">Peer-Reviewed Publications</h3>
 
 <div class="publications">
 {% bibliography --query @*[category=published] %}
 </div>
 
-<h3 style="border-left: 4px solid #FFA500; padding-left: 12px; margin-top: 1.5em;">Manuscripts Under Review / Submitted</h3>
+<h3 class="pub-section preprint">Manuscripts Under Review / Submitted</h3>
 
 <div class="publications">
 {% bibliography --query @*[category=preprint] %}
 </div>
 
-<h3 style="border-left: 4px solid #28A745; padding-left: 12px; margin-top: 1.5em;">Presentations & Posters</h3>
+<h3 class="pub-section presentation">Presentations & Posters</h3>
 
 <div class="publications">
 {% bibliography --query @*[category=presentation] %}
