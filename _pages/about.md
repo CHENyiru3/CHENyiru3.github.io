@@ -9,7 +9,7 @@ profile:
   image: cyr.jpg
   image_circular: false
   more_info: >
-    <p>This is Yiru, the version on 2026/11/26</p>
+    <p>This is Yiru, the version on 2025/11/26</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
