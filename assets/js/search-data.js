@@ -141,7 +141,7 @@ ninja.data = [{
           title: 'FEAST',
           description: "Simulation and interpolation of spatial transcriptomics from parameter cloud",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_FEAST/";
+              window.location.href = "/projects/3_stmulator/";
             },},{id: "projects-temsomap",
           title: 'TemSOMap',
           description: "Mapping lineage-resolved scRNA-seq data with spatial transcriptomics",
