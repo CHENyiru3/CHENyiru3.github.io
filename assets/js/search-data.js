@@ -116,8 +116,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-excited-to-start-a-new-independent-research-project-on-spatialtcr-developing-an-integrated-platform-for-spatial-t-cell-receptor-sequencing-ut-post-date-2016-01-15-07-59-00-0400-inline-true-related-posts-false-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: '🚀 Excited to start a new independent research project on SpatialTCR - developing...',
+            },},{id: "news-started-a-new-independent-research-project-on-spatialtcr-focused-on-building-an-integrated-platform-for-spatial-t-cell-receptor-sequencing",
+          title: '🚀 Started a new independent research project on SpatialTCR, focused on building an...',
           description: "",
           section: "News",},{id: "news-spatialmeta-paper-accepted",
           title: 'SpatialMETA Paper Accepted',
@@ -127,7 +127,12 @@ ninja.data = [{
             },},{id: "news-best-poster-presentation-award-at-gpb-omics-amp-amp-bioinformatics-frontiers-symposium-for-our-spatialtcr-project",
           title: '🏆 Best Poster Presentation Award at GPB Omics &amp;amp;amp; Bioinformatics Frontiers Symposium for...',
           description: "",
-          section: "News",},{id: "projects-spatialmeta",
+          section: "News",},{id: "news-duke-nus-phd-offer-accepted",
+          title: 'Duke-NUS PhD Offer Accepted',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_4/";
+            },},{id: "projects-spatialmeta",
           title: 'SpatialMETA',
           description: "Integrating Cross-Sample and Cross-Modality Data for Spatial Transcriptomics and Metabolomics with CVAE",
           section: "Projects",handler: () => {
