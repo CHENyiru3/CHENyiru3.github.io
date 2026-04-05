@@ -21,6 +21,7 @@ baseurl:
 last_updated: true
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
+cv_pdf_filename: CHEN_Yiru_CV_2025.12.15.pdf
 
 # -----------------------------------------------------------------------------
 # Theme

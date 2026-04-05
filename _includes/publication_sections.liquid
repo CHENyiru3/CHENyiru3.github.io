@@ -1,22 +1,31 @@
 <p class="note">
-  Featured publications include 2025 papers in <em>Nature Communications</em> and <em>Cell Discovery</em>.
   * Equal contribution. &dagger; Corresponding author.
 </p>
 
-<h3 class="pub-section published">Featured Publications</h3>
+<h3 class="pub-section preprint">Preprints</h3>
 
 <div class="publications">
-  {% bibliography --query @*[category=published] %}
+  {% bibliography --group_by none --query @*[category=preprint] %}
 </div>
 
-<h3 class="pub-section preprint">Manuscripts in Preparation, Under Review, or Forthcoming</h3>
+<h3 class="pub-section published">Publications</h3>
 
 <div class="publications">
-  {% bibliography --query @*[category=preprint] %}
+  <h4 class="pub-year">2025</h4>
+  {% bibliography --group_by none --query @*[category=published,year=2025] %}
 </div>
 
-<h3 class="pub-section presentation">Presentations &amp; Posters</h3>
+<h3 class="pub-section manuscript">Manuscripts in Preparation, Under Review, or Forthcoming</h3>
 
 <div class="publications">
-  {% bibliography --query @*[category=presentation] %}
+  <h4 class="pub-subgroup">Accepted / Forthcoming</h4>
+  {% bibliography --group_by none --query @*[category=manuscript,status=accepted] %}
+  <h4 class="pub-subgroup">In Preparation / Under Review</h4>
+  {% bibliography --group_by none --query @*[category=manuscript,status!=accepted] %}
+</div>
+
+<h3 class="pub-section presentation">Presentations and Posters at Conferences</h3>
+
+<div class="publications">
+  {% bibliography --group_by none --query @*[category=presentation] %}
 </div>
