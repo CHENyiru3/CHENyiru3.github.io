@@ -4,79 +4,47 @@ title: TemSOMap
 description: Mapping lineage-resolved scRNA-seq data with spatial transcriptomics
 importance: 2
 category: work
-related_publications: true
+related_publications: false
 ---
 
 ## TemSOMap: Mapping lineage-resolved scRNA-seq data with spatial transcriptomics
 
-**Status:** Successfully concluded, submitted and under review
+**Status:** Collaborative manuscript in final preparation
 
 **Role:** Research Assistant, Co-author
 
-**Institution:** Prof. Xiuwei Zhang Lab, College of Computing, Georgia Institute of Technology
+**Institution:** ZJU-UoE Institute, Zhejiang University; collaboration with Prof. Xiuwei Zhang Lab, Georgia Tech
 
 **Duration:** April 2024 – September 2025 (Remote collaboration)
 
 ### Project Overview
 
-TemSOMap addresses a fundamental challenge in spatial transcriptomics analysis: how to accurately map single-cell RNA sequencing data with lineage information to spatial transcriptomics data. This project develops a sophisticated machine learning framework that considers both gene expression patterns and lineage relationships to create more accurate cell-to-spot mapping.
+TemSOMap addresses a core problem in spatial transcriptomics: how to map lineage-resolved single-cell RNA-seq profiles back onto spatial measurements. The project develops a lineage-aware computational framework for inferring cell-to-spot assignments while respecting both expression similarity and developmental structure.
 
 ### Technical Approach
 
-The methodology employs advanced machine learning techniques:
+The methodology combines machine learning and structured optimization:
 
 **Core Algorithm:**
 
-- **Loss Function Optimization:** Development of a comprehensive loss function that balances expression similarity and lineage constraints
-- **Cell-to-Spot Mapping:** Inference of probabilistic mapping matrices between single cells and spatial spots
-- **Lineage Integration:** Novel incorporation of lineage tracing information into spatial mapping
+- **Loss-function design:** balances expression agreement with lineage-aware constraints
+- **Cell-to-spot mapping:** infers probabilistic assignment matrices between single cells and spatial spots
+- **Lineage integration:** incorporates developmental information into spatial reconstruction
 
 **Machine Learning Framework:**
 
-- Expression-based similarity metrics
-- Lineage-aware constraint incorporation
-- Optimization algorithms for large-scale mapping problems
+- expression-based similarity metrics
+- lineage-aware regularization
+- scalable optimization for large mapping problems
 
 ### My Contributions
 
-As a research assistant and co-author, my responsibilities included:
+My contributions focused on:
 
-**Downstream Analysis:**
+- downstream analysis and biological validation of mapping results
+- partial benchmark development for method comparison
+- figure preparation, method comparison, and manuscript support
 
-- Development and implementation of comprehensive downstream analysis pipelines
-- Validation of mapping results using biological knowledge and independent datasets
-- Creation of visualization tools for mapping quality assessment
+### Current Positioning
 
-**Benchmarking:**
-
-- Partial development of benchmark datasets for method comparison
-- Performance evaluation against existing mapping methods
-- Statistical analysis of mapping accuracy and reliability
-
-**Manuscript Preparation:**
-
-- Partial contribution to manuscript writing and revision
-- Figure preparation and data presentation
-- Literature review and method comparison
-
-### Collaborative Research Experience
-
-This project provided valuable experience in:
-
-- **Remote International Collaboration:** Effective communication and coordination with US-based research team
-- **Method Development:** Participation in algorithm design and implementation processes
-- **Scientific Rigor:** Learning best practices in computational biology research methodology
-
-### Current Status
-
-The project has been successfully completed and the manuscript has been submitted to a peer-reviewed journal. The work is currently under review, with revisions expected based on reviewer feedback.
-
-### Expected Impact
-
-TemSOMap will contribute to the field by:
-
-- **Improved Spatial Analysis:** More accurate integration of single-cell and spatial transcriptomics data
-- **Lineage-Aware Methods:** Novel consideration of developmental relationships in spatial mapping
-- **Benchmarking Standards:** Establishment of evaluation criteria for mapping method assessment
-
-**Submission:** Pan X, Danies-Lopez A, **Chen Y**, Zhang X*. Mapping lineage-resolved scRNA-seq data with spatial transcriptomics using TemSOMap. *Submitted to PSB2026 conference\*
+TemSOMap helped shape my interest in computational frameworks that connect multiple biological views of the same system. Related lineage-aware work from this collaboration also contributed to the subsequent LineageMap project, which has been accepted at RECOMB 2026 and is expected to appear in <em>Genome Research</em>.

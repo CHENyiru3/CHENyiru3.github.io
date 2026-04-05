@@ -9,7 +9,7 @@ profile:
   image: cyr.jpg
   image_circular: false
   more_info: >
-    <p>This is Yiru, the version on 2025/11/26</p>
+    <p>Website version: 2026/04/05</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -25,56 +25,122 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi there — I’m Yiru CHEN. Glad that you find me here!
+Hi, I'm Yiru Chen.
 
-<a class="btn btn-primary btn-sm" href="/assets/pdf/CHEN_Yiru_CV.pdf" target="_blank" role="button">Download CV (PDF)</a>
+**Decoding biomedical complexity through the lens of AI and algorithms.**
+
+<a class="btn btn-primary btn-sm" href="{{ '/assets/pdf/CHEN_Yiru_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" role="button">Download CV (PDF)</a>
 <span class="ml-3 small">
-<a href="https://orcid.org/0009-0002-5114-4947" target="_blank">ORCID</a>
+<a href="https://orcid.org/0009-0002-5114-4947" target="_blank" rel="noopener noreferrer">ORCID</a>
 &nbsp;·&nbsp;
-<a href="https://scholar.google.com/citations?user=Rfv54HwAAAAJ" target="_blank">Google Scholar</a>
+<a href="https://scholar.google.com/citations?user=Rfv54HwAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
 &nbsp;·&nbsp;
-<a href="https://github.com/CHENyiru3" target="_blank">GitHub</a>
+<a href="https://github.com/CHENyiru3" target="_blank" rel="noopener noreferrer">GitHub</a>
 </span>
 
 ## Quick Background
 
-I grew up in Hunan Province, China. Currently, I am an undergraduate student in the Bioinformatics program at the Zhejiang University–University of Edinburgh (ZJE) Institute, Zhejiang University, expected to graduate in 2026. You are very welcomed to contact me with yiru.22@intl.zju.edu.cn or yiru2chen@gmail.com
+I am currently completing my undergraduate training in Bioinformatics at the Zhejiang University-University of Edinburgh Institute (ZJU-UoE), Zhejiang University. In August 2026, I will join the Quantitative Biology and Medicine (QBM) Program at Duke-NUS Medical School as an incoming PhD student with a full scholarship.
+
+I will work in Associate Professor Jinmiao Chen's laboratory, where I plan to focus on spatial omics and representation learning. You can reach me at yiru.22@intl.zju.edu.cn or yiru2chen@gmail.com.
+
+<div class="journey-strip" aria-label="Academic journey across China, the United Kingdom, the United States, and Singapore">
+  <div class="journey-heading">Academic Journey</div>
+  <div class="journey-grid">
+    <div class="journey-item">
+      <span class="journey-flag" role="img" aria-label="China">🇨🇳</span>
+      <span class="journey-country">China</span>
+      <span class="journey-school">ZJU</span>
+    </div>
+    <div class="journey-item">
+      <span class="journey-flag" role="img" aria-label="United Kingdom">🇬🇧</span>
+      <span class="journey-country">United Kingdom</span>
+      <span class="journey-school">UoE</span>
+    </div>
+    <div class="journey-item">
+      <span class="journey-flags" aria-label="United States and Singapore">
+        <span class="journey-flag" role="img" aria-label="United States">🇺🇸</span>
+        <span class="journey-flag" role="img" aria-label="Singapore">🇸🇬</span>
+      </span>
+      <span class="journey-country">United States + Singapore</span>
+      <span class="journey-school">Duke-NUS</span>
+    </div>
+  </div>
+</div>
 
 ---
 
-**Actively applying for PhD positions (2025–2026).** Open to rotations and funded opportunities in computational biology / bioinformatics!
-
 ### Short research statement
 
-I develop computational methods for **spatial multi-omics** and **immunology**. My work focuses on statistical modeling, integrative multimodal analysis, and algorithms for spatial transcriptomics and spatially resolved T-cell receptor profiling. Looking ahead, I am eager to explore new research areas while staying grounded in computational approaches — particularly statistical learning and deep learning for biomedcine.
+I develop algorithmic and statistical frameworks for **spatial omics**, **computational immunology**, and **biomedical AI**. My current work centers on multimodal integration, spatially resolved T-cell receptor analysis, simulation of spatial transcriptomics, and rigorous evaluation of computational methods. Across projects, I aim to turn mathematical modeling and machine learning into practical tools for decoding complex biological systems.
 
 ---
 
 ## Publications
 
 <style>
+.journey-strip {
+  margin: 1.5rem 0 0.5rem;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 14px;
+  background:
+    linear-gradient(135deg, rgba(38, 152, 186, 0.08), transparent 42%),
+    linear-gradient(315deg, rgba(255, 165, 0, 0.08), transparent 38%),
+    var(--global-card-bg-color);
+}
+.journey-heading {
+  margin-bottom: 0.75rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+}
+.journey-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+.journey-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding-left: 0.85rem;
+  border-left: 2px solid var(--global-theme-color);
+}
+.journey-flags {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+.journey-flag {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+.journey-country {
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+.journey-school {
+  font-size: 0.78rem;
+  color: var(--global-text-color-light);
+}
+.note { margin-bottom: 1em; font-size: 0.95em; color: #666; }
 .pub-section { margin-top: 1.2em; margin-bottom: 0.5em; font-size: 1.1em; border-left: 4px solid; padding-left: 10px; }
 .pub-section.published { border-color: #2698BA; }
 .pub-section.preprint { border-color: #FFA500; }
 .pub-section.presentation { border-color: #28A745; }
+@media (max-width: 768px) {
+  .journey-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 480px) {
+  .journey-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 
-<p class="note" style="font-size:0.9em;color:#666;margin-bottom:1em;">* Equal contribution · † Corresponding author</p>
-
-<h3 class="pub-section published">Peer-Reviewed Publications</h3>
-
-<div class="publications">
-{% bibliography --query @*[category=published] %}
-</div>
-
-<h3 class="pub-section preprint">Manuscripts Under Review / Submitted</h3>
-
-<div class="publications">
-{% bibliography --query @*[category=preprint] %}
-</div>
-
-<h3 class="pub-section presentation">Presentations & Posters</h3>
-
-<div class="publications">
-{% bibliography --query @*[category=presentation] %}
-</div>
+{% include publication_sections.liquid %}

@@ -4,28 +4,28 @@ title: FEAST
 description: Simulation and interpolation of spatial transcriptomics from parameter cloud
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
 ## FEAST: Simulation and interpolation of spatial transcriptomics from parameter cloud
 
-**Status:** Active project, ready for RECOMB 2026 conference submission
+**Status:** Independent first-author project; manuscript in final preparation
 
 **Role:** First author, Independent Research Project
 
-**Institution:** Prof. Maizie Zhou Lab, BME & CS Department, Vanderbilt University
+**Institution:** ZJU-UoE Institute, Zhejiang University; collaboration with Prof. Maizie Zhou Lab, Vanderbilt University
 
 **Duration:** August 2024 – Present (Remote and on-site collaboration)
 
-<a href="/assets/pdf/preprint/FEAST_recomb2026.pdf" class="btn btn-sm btn-outline-primary" target="_blank">
+<a href="{{ '/assets/pdf/preprint/FEAST_recomb2026.pdf' | relative_url }}" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener noreferrer">
   <i class="fas fa-file-pdf"></i> Preprint PDF
 </a>
 
 ### Project Overview
 
-FEAST (FEAture-space based modeling for Spatial Transcriptomics) is a computational infrastructure that models ST data within a parameter cloud — a latent manifold encoding gene-level mean, variance, and sparsity. By sampling and perturbing this manifold, FEAST generates high-fidelity synthetic slices with tunable spatial and transcriptional variation, enabling systematic evaluation of clustering, deconvolution, and spatial alignment algorithms.
+FEAST (FEAture-space based modeling for Spatial Transcriptomics) is an independent first-author project on parameter-cloud modeling for spatial transcriptomics. The framework represents gene-level mean, variance, and sparsity in a latent parameter space, then uses that structure to simulate realistic slices and interpolate tissue states across space.
 
-Beyond two dimensions, FEAST performs 3D parameter-cloud interpolation guided by optimal transport and benchmark alignment, reconstructing continuous tissue architectures while preserving molecular coherence. Together, these capabilities establish FEAST as a foundational platform for standardized benchmarking, data augmentation, and 3D reconstruction in spatial transcriptomics.
+Beyond two dimensions, FEAST extends to 3D interpolation through optimal-transport-guided transitions between parameter clouds, supporting volumetric reconstruction and systematic benchmarking for spatial omics methods.
 
 **Code:** [GitHub](https://github.com/maiziezhoulab/FEAST) · [PyPI](https://pypi.org/project/FEAST-py/)
 
@@ -33,21 +33,21 @@ Beyond two dimensions, FEAST performs 3D parameter-cloud interpolation guided by
 
 **Statistical Modeling:**
 
-- **Parameter Cloud Representation:** Models gene-level mean, variance, and sparsity in a unified latent manifold
-- **C-vine Copula:** Captures nonlinear and asymmetric dependencies among gene parameters
-- **Flexible Count Models:** Supports Poisson, Negative Binomial, ZIP, and ZINB distributions
+- **Parameter-cloud representation:** models gene-level mean, variance, and sparsity in a unified latent space
+- **C-vine copula modeling:** captures nonlinear and asymmetric dependence among gene parameters
+- **Flexible count models:** supports Poisson, Negative Binomial, ZIP, and ZINB distributions
 
 **Simulation Framework:**
 
-- **Single Slice Simulation:** Generates high-fidelity 2D ST slices with controllable alterations
-- **Expression Alteration:** Tunable perturbations in mean, variance, and sparsity for robustness testing
-- **Spatial Transformation:** Controlled geometric transformations for alignment benchmarking
+- **Single-slice simulation:** generates realistic 2D spatial transcriptomics slices with controllable perturbations
+- **Expression alteration:** tunes mean, variance, and sparsity for robustness testing
+- **Spatial transformation:** enables geometry-aware benchmarking for alignment methods
 
 **3D Interpolation:**
 
-- **Optimal Transport:** Wasserstein barycenter-based interpolation between parameter clouds
-- **Alignment-guided Coordinates:** Transport-guided spatial coordinate interpolation
-- **Volumetric Reconstruction:** Generates intermediate slices for continuous 3D tissue architectures
+- **Optimal transport:** Wasserstein-style interpolation between parameter clouds
+- **Alignment-guided coordinates:** transport-informed coordinate interpolation
+- **Volumetric reconstruction:** generates intermediate slices for continuous 3D tissue architectures
 
 ### Key Results
 
@@ -56,39 +56,15 @@ Beyond two dimensions, FEAST performs 3D parameter-cloud interpolation guided by
 - **Alignment evaluation** demonstrated Spateo's robustness over SPACEL under geometric transformations
 - **3D interpolation** achieved >0.9 correlation with ground-truth experimental slices in leave-one-out validation
 
-### Complete Research Cycle
+### Research Scope
 
-This project represents a comprehensive research experience including:
+This project has involved the full cycle of independent method development:
 
-- **Literature Review:** Extensive survey of spatial transcriptomics simulation methods
-- **Idea Exploration:** Creative hypothesis generation and initial concept development
-- **Failure Analysis:** Learning from initial approaches that didn't meet expectations
-- **Method Validation:** Rigorous testing and validation of novel approaches
-- **Model Construction:** Implementation of robust, scalable computational framework
-- **Benchmark Development:** Creating comprehensive evaluation metrics and comparison studies
-- **Application Studies:** Demonstrating utility across diverse biological scenarios
-- **Manuscript Preparation:** Scientific writing and presentation of results
+- literature review and problem formulation
+- model construction and implementation
+- benchmarking and application studies
+- manuscript preparation and figure development
 
-### Professional Development
+### Current Positioning
 
-The project has provided extensive training in:
-
-- **Public Presentation:** Regular presentation of progress at different project milestones
-- **Scientific Communication:** Development of clear, compelling research narratives
-- **Independent Research:** Self-directed project management and problem-solving
-- **International Collaboration:** Remote and on-site work with US-based research team
-
-### Expected Impact
-
-FEAST provides the research community with:
-
-- **Standardized Benchmarking:** Controllable ground-truth datasets for evaluating clustering, deconvolution, and alignment algorithms
-- **Data Augmentation:** Generate realistic synthetic ST data for method development and validation
-- **3D Reconstruction:** Interpolate missing slices to reconstruct continuous tissue volumes from sparse experimental sections
-- **Platform-agnostic Design:** Works across diverse ST technologies with unified parameter-cloud representation
-
-### Conference Submission
-
-The project is currently being prepared for submission to **RECOMB 2026**, one of the premier conferences in computational biology, demonstrating the high quality and significance of this research.
-
-_This project showcases independent research capability and innovative thinking in computational biology._
+FEAST is the clearest expression of my independent research direction so far: building mathematically grounded computational frameworks for simulation, benchmarking, and representation of spatial biological data.

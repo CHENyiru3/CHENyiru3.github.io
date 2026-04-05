@@ -9,35 +9,33 @@ nav_order: 5
 
 ## Beyond Research
 
-I believe that a balanced life fuels creativity and resilience in research. Outside the lab, I enjoy activities that keep me grounded, curious, and connected.
+Research is central to my life, but not the whole of it. The routines and interests below help me stay grounded, curious, and creatively sharp.
 
 ---
 
 ### Sports & Wellness
 
-I stay active through **running**, **swimming**, and various ball games. Table tennis is my competitive sport of choice — it sharpens both reflexes and strategic thinking. Regular exercise helps me maintain focus during long coding and analysis sessions.
+I stay active through **running**, **swimming**, and ball games. Table tennis is the sport I return to most often; I like the combination of rhythm, reflex, and tactical thinking. Regular exercise is also my best reset during long periods of coding, reading, and analysis.
 
 ---
 
 ### Coffee Enthusiast
 
-From selecting beans to perfecting latte art, I approach coffee-making with the same precision I bring to experiments. There's something satisfying about optimizing extraction time, grind size, and temperature — it's chemistry I can drink! (And maybe it can improve my wet lab skill in the future!)
-
-Recently I am trying to make pour over coffee.
+I enjoy the craft of coffee, especially the small decisions that shape a cup: bean choice, grind size, water temperature, and extraction time. Lately I have been spending more time on **pour-over coffee**, which appeals to the same part of me that likes careful experimentation and repeatable process design.
 
 ---
 
 ### History & Culture
 
-I'm fascinated by how ideas and institutions evolve over time. Current interests include:
+I am drawn to the long arc of how ideas, institutions, and cultures evolve. Current interests include:
 
-- **Medieval Western Europe** — understanding the foundations of western world! Challenging but interesting for me.
-- **Chinese history** — 5,000 years of continuity and change, from dynastic cycles to modern transformation in China. Love it!
+- **Medieval Western Europe**: a challenging but rewarding way to think about the foundations of the modern world.
+- **Chinese history**: long-run continuity, political change, and the intellectual traditions that shape society across centuries.
 
-Studying history gives me perspective on how knowledge accumulates and paradigms shift — lessons that apply to scientific inquiry.
+Studying history gives me perspective on how knowledge accumulates, how paradigms shift, and how large systems change over time. Those lessons translate naturally to scientific work.
 
 ---
 
 ### Gaming & Technology
 
-While I played video games extensively in the past, I now find myself more interested in the **design philosophy** and **technical innovation** behind great games. As a longtime Nintendo fan, I appreciate their commitment to creativity and polished user experiences!
+I used to spend more time playing games than I do now, but my interest has shifted toward the **design philosophy** and technical craft behind them. As a longtime Nintendo fan, I admire the way their work combines clarity, creativity, and careful user experience design.

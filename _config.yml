@@ -146,7 +146,7 @@ collections:
   news:
     defaults:
       layout: post
-    output: flase
+    output: false
   projects:
     output: true
 

@@ -15,22 +15,4 @@ nav_order: 2
 .pub-section.presentation { border-color: #28A745; }
 </style>
 
-<p class="note">* Equal contribution · † Corresponding author</p>
-
-<h3 class="pub-section published">Peer-Reviewed Publications</h3>
-
-<div class="publications">
-{% bibliography --query @*[category=published] %}
-</div>
-
-<h3 class="pub-section preprint">Manuscripts Under Review / Submitted</h3>
-
-<div class="publications">
-{% bibliography --query @*[category=preprint] %}
-</div>
-
-<h3 class="pub-section presentation">Presentations & Posters</h3>
-
-<div class="publications">
-{% bibliography --query @*[category=presentation] %}
-</div>
+{% include publication_sections.liquid %}
