@@ -9,7 +9,7 @@ profile:
   image: cyr.jpg
   image_circular: false
   more_info: >
-    <p>Website version: 2026/04/05</p>
+    <p>Yiru's Version: 2026/04/05</p>
     <p class="profile-credential">
       <span class="profile-credential-degree">BS</span>
       <span class="profile-credential-text">@ Bioinformatics, ZJU-UoE</span>
@@ -70,6 +70,16 @@ I develop algorithmic and statistical frameworks for **spatial omics**, **comput
 ## Publications
 
 <style>
+.post .profile {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .post .profile {
+    width: 34%;
+  }
+}
+
 .profile-credential {
   margin: 0.35rem 0 0;
   font-size: 0.82rem;

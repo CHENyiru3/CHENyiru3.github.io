@@ -23,6 +23,7 @@
 ## Homepage
 
 - `_pages/about.md` mixes narrative text, profile metadata, and publication rendering.
+- In `_pages/about.md` `profile.more_info`, the homepage version line should use the label `Yiru's Version`.
 - Treat identity, degree, affiliation, advisor, scholarship, and future-plan statements as protected.
 - Check for duplicated facts in `_pages/cv.md`, `_data/cv.yml`, and `_news/*.md` before finalizing changes.
 

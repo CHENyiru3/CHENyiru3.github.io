@@ -76,6 +76,11 @@ Only change from direct user wording:
 
 ## Formatting contracts
 
+### Homepage profile card rules
+
+- In `_pages/about.md` `profile.more_info`, use the label `Yiru's Version` for the homepage version line.
+- Treat the homepage version line as low-risk UI wording, but preserve the `Yiru's Version` naming unless the user requests a different label.
+
 ### Publication rules
 
 - Keep current top-level sections:

@@ -7,6 +7,7 @@ Future agents may polish these without confirmation as long as meaning stays the
 - Project prose
 - Life page prose
 - Low-risk UI wording
+- Homepage version-line wording, while preserving the `Yiru's Version` label unless the user asks to rename it
 - Readability and formatting in non-sensitive sections
 
 ## Restricted
