@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
+        },{id: "nav-research-radar",
+          title: "Research Radar",
+          description: "Daily academic article recommendations from curated scholarly feeds.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/research-radar/";
+          },
         },{id: "nav-life",
           title: "Life",
           description: "Beyond the lab — interests, hobbies, and what drives me",
@@ -152,6 +159,11 @@ ninja.data = [{
           description: "Mapping lineage-resolved scRNA-seq data with spatial transcriptomics",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_temsomap/";
+            },},{id: "research_radar-research-radar-2026-04-28",
+          title: 'Research Radar — 2026-04-28',
+          description: "",
+          section: "Research_radar",handler: () => {
+              window.location.href = "/research-radar/2026-04-28/";
             },},{
         id: 'social-email',
         title: 'email',
