@@ -39,6 +39,25 @@
 - Items can be inline or full posts.
 - Milestone announcements are fact-sensitive and may affect homepage or CV consistency.
 
+## Research Radar
+
+- Sources:
+  - Daily digest files: `_research_radar/*.md`
+  - Index page: `_pages/research-radar.md`
+  - RSS feed: `_pages/research-radar-feed.xml`
+  - Renderers: `_layouts/research_radar.liquid`, `_includes/research_radar_sections.liquid`, `_includes/research_radar_article.liquid`
+- Research Radar is an academic-article recommendation channel and must remain separate from milestone News.
+- Keep the route `/research-radar/` and feed `/research-radar/feed.xml`.
+- Digest files should use `layout: research_radar`.
+- Preserve the two-section structure:
+  - `relevant_articles`: Top 5 Relevant Reads
+  - `breakthrough_articles`: Top 3 Field Breakthroughs
+- Digest files may include an optional `hot_topic` object with `title`, `summary`, and `signals` to highlight the day's strongest academic theme.
+- Each article item should include rank, title, authors, source, published date, URL, DOI when available, article type, topics, recommendation, summary, relevance rationale, and Zotero-candidate flag.
+- The website renders final Markdown produced by an external agent. It does not perform RSS reading, Zotero inspection, ranking, or automation.
+- Exclude AI industry news, blogs, product announcements, newsletters, policy commentary, and Research Radar's own RSS feed.
+- Do not manually alter article rankings, summaries, or metadata unless the user requests a correction or regeneration.
+
 ## Assets
 
 - Verify referenced PDF, image, and poster paths before finishing.

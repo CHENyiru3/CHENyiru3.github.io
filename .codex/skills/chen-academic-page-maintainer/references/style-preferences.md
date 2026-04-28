@@ -20,6 +20,11 @@
 - Projects:
   - clear and technically grounded
   - preserve meaning when polishing
+- Research Radar:
+  - concise, scannable, and academic
+  - use the Hot Topic hint to foreground the day's strongest research theme when available
+  - separate direct relevance from broader field breakthroughs
+  - preserve source links, DOI information, and recommendation rationale
 - Life page:
   - can be warmer and more personal than research-facing pages
 

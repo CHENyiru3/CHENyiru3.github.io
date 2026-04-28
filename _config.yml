@@ -150,6 +150,9 @@ collections:
     output: false
   projects:
     output: true
+  research_radar:
+    output: true
+    permalink: /research-radar/:name/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

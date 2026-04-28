@@ -1,0 +1,59 @@
+---
+layout: none
+permalink: /research-radar/feed.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | default: site.first_name | append: " - Research Radar" | xml_escape }}</title>
+    <link>{{ site.url }}{{ site.baseurl }}/research-radar/</link>
+    <atom:link href="{{ site.url }}{{ site.baseurl }}/research-radar/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Daily ranked academic article recommendations from Research Radar.</description>
+    <language>en</language>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+
+    {% assign radar_digests = site.research_radar | sort: "date" | reverse %}
+    {% for digest in radar_digests %}
+      {% for article in digest.relevant_articles %}
+        {% if article.url %}
+          {% assign article_link = article.url %}
+        {% else %}
+          {% assign article_link = digest.url | absolute_url %}
+        {% endif %}
+        {% assign article_guid = article.doi | default: article.url | default: article.title %}
+        <item>
+          <title>{{ "[Research Radar: Relevant #" | append: article.rank | append: "] " | append: article.title | xml_escape }}</title>
+          <link>{{ article_link | xml_escape }}</link>
+          <guid isPermaLink="false">{{ digest.date | date: "%Y-%m-%d" }}-relevant-{{ article.rank }}-{{ article_guid | xml_escape }}</guid>
+          <pubDate>{{ digest.generated_at | default: digest.date | date_to_rfc822 }}</pubDate>
+          <description>
+            {{- "Source: " | append: article.source | append: " | Published: " | append: article.published | append: " | DOI: " | append: article.doi | append: " | Recommendation: " | append: article.recommendation | append: " | Summary: " | append: article.summary | append: " | Why it matters: " | append: article.why_it_matters | append: " | Why for Yiru: " | append: article.why_for_me | xml_escape -}}
+          </description>
+          {% for topic in article.topics %}
+            <category>{{ topic | xml_escape }}</category>
+          {% endfor %}
+        </item>
+      {% endfor %}
+      {% for article in digest.breakthrough_articles %}
+        {% if article.url %}
+          {% assign article_link = article.url %}
+        {% else %}
+          {% assign article_link = digest.url | absolute_url %}
+        {% endif %}
+        {% assign article_guid = article.doi | default: article.url | default: article.title %}
+        <item>
+          <title>{{ "[Research Radar: Breakthrough #" | append: article.rank | append: "] " | append: article.title | xml_escape }}</title>
+          <link>{{ article_link | xml_escape }}</link>
+          <guid isPermaLink="false">{{ digest.date | date: "%Y-%m-%d" }}-breakthrough-{{ article.rank }}-{{ article_guid | xml_escape }}</guid>
+          <pubDate>{{ digest.generated_at | default: digest.date | date_to_rfc822 }}</pubDate>
+          <description>
+            {{- "Source: " | append: article.source | append: " | Published: " | append: article.published | append: " | DOI: " | append: article.doi | append: " | Recommendation: " | append: article.recommendation | append: " | Summary: " | append: article.summary | append: " | Why it matters: " | append: article.why_it_matters | append: " | Why for Yiru: " | append: article.why_for_me | xml_escape -}}
+          </description>
+          {% for topic in article.topics %}
+            <category>{{ topic | xml_escape }}</category>
+          {% endfor %}
+        </item>
+      {% endfor %}
+    {% endfor %}
+  </channel>
+</rss>

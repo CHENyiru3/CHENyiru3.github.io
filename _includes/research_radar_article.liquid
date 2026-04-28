@@ -1,0 +1,57 @@
+{% assign article = include.article %}
+{% assign section_label = include.section_label | default: "Recommendation" %}
+{% assign section_class = section_label | downcase %}
+
+<article class="research-radar-card research-radar-card-{{ section_class }}">
+  <div class="research-radar-card-header">
+    <span class="research-radar-rank">{{ section_label }} #{{ article.rank }}</span>
+    {% if article.recommendation %}
+      <span class="research-radar-recommendation">{{ article.recommendation }}</span>
+    {% endif %}
+  </div>
+
+  <h3>
+    {% if article.url %}
+      <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">{{ article.title }}</a>
+    {% else %}
+      {{ article.title }}
+    {% endif %}
+  </h3>
+
+  <p class="research-radar-source">
+    {% if article.source %}{{ article.source }}{% endif %}
+    {% if article.published %}<span>Published {{ article.published }}</span>{% endif %}
+    {% if article.article_type %}<span>{{ article.article_type }}</span>{% endif %}
+    {% if article.doi %}
+      <span>DOI: <a href="https://doi.org/{{ article.doi }}" target="_blank" rel="noopener noreferrer">{{ article.doi }}</a></span>
+    {% endif %}
+  </p>
+
+  {% if article.authors %}
+    <p class="research-radar-authors"><strong>Authors:</strong> {{ article.authors }}</p>
+  {% endif %}
+
+  {% if article.topics %}
+    <p class="research-radar-topics">
+      {% for topic in article.topics %}
+        <span>{{ topic }}</span>
+      {% endfor %}
+    </p>
+  {% endif %}
+
+  <div class="research-radar-notes">
+    {% if article.summary %}
+      <p><strong>Summary:</strong> {{ article.summary }}</p>
+    {% endif %}
+    {% if article.why_it_matters %}
+      <p><strong>Why it matters:</strong> {{ article.why_it_matters }}</p>
+    {% endif %}
+    {% if article.why_for_me %}
+      <p><strong>Why for Yiru:</strong> {{ article.why_for_me }}</p>
+    {% endif %}
+  </div>
+
+  {% if article.zotero_candidate %}
+    <p class="research-radar-zotero">Zotero candidate</p>
+  {% endif %}
+</article>
