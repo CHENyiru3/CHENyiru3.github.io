@@ -3,12 +3,12 @@ layout: none
 permalink: /research-radar/feed.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>{{ site.title | default: site.first_name | append: " - Research Radar" | xml_escape }}</title>
     <link>{{ site.url }}{{ site.baseurl }}/research-radar/</link>
     <atom:link href="{{ site.url }}{{ site.baseurl }}/research-radar/feed.xml" rel="self" type="application/rss+xml" />
-    <description>Daily ranked academic article recommendations from Research Radar.</description>
+    <description>Daily academic article recommendations from Research Radar — maintained by Clawdie, driven by Hermes + DeepSeek-V4-Pro.</description>
     <language>en</language>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 
@@ -16,12 +16,19 @@ permalink: /research-radar/feed.xml
     {% for digest in radar_digests %}
       {% for article in digest.computational_articles %}
         <item>
-          <title>{{ "[Computational #" | append: article.rank | append: "] " | append: article.title | xml_escape }}</title>
+          <title>{{ "[" | append: article.rank | append: "/Comp] " | append: article.title | xml_escape }}</title>
           <link>{{ article.url | default: digest.url | absolute_url | xml_escape }}</link>
           <guid isPermaLink="false">{{ digest.date | date: "%Y-%m-%d" }}-comp-{{ article.rank }}-{{ article.doi | default: article.url | xml_escape }}</guid>
           <pubDate>{{ digest.generated_at | default: digest.date | date_to_rfc822 }}</pubDate>
-          <description>
-            {{- "Section: Computational | Source: " | append: article.source | append: " | Published: " | append: article.published | append: " | DOI: " | append: article.doi | append: " | Recommendation: " | append: article.recommendation | append: " | Summary: " | append: article.summary | append: " | Why it matters: " | append: article.why_it_matters | xml_escape -}}
+          <dc:creator>{{ article.authors | xml_escape }}</dc:creator>
+          <description>{{ "<p><strong>" | append: article.title | append: "</strong></p>" | xml_escape }}
+{{- "<p>" | append: article.authors | append: " · <em>" | append: article.source | append: "</em> · " | append: article.published | append: " · " | append: article.article_type | append: "</p>" | xml_escape -}}
+{%- if article.doi and article.doi != "" %}{{- "<p>DOI: <a href=\"https://doi.org/" | append: article.doi | append: "\">" | append: article.doi | append: "</a></p>" | xml_escape -}}{%- endif -%}
+{{- "<p><strong>Recommendation:</strong> " | append: article.recommendation | append: "</p>" | xml_escape -}}
+{{- "<blockquote><p>" | append: article.summary | append: "</p></blockquote>" | xml_escape -}}
+{%- if article.abstract %}{{- "<p><strong>Abstract:</strong> " | append: article.abstract | append: "</p>" | xml_escape -}}{%- endif -%}
+{{- "<p><strong>Why it matters:</strong> " | append: article.why_it_matters | append: "</p>" | xml_escape -}}
+{{- "<p><em>Why for Yiru:</em> " | append: article.why_for_me | append: "</p>" | xml_escape -}}
           </description>
           {% for topic in article.topics %}
             <category>{{ topic | xml_escape }}</category>
@@ -30,12 +37,19 @@ permalink: /research-radar/feed.xml
       {% endfor %}
       {% for article in digest.biomedicine_articles %}
         <item>
-          <title>{{ "[Biomedicine #" | append: article.rank | append: "] " | append: article.title | xml_escape }}</title>
+          <title>{{ "[" | append: article.rank | append: "/Bio] " | append: article.title | xml_escape }}</title>
           <link>{{ article.url | default: digest.url | absolute_url | xml_escape }}</link>
           <guid isPermaLink="false">{{ digest.date | date: "%Y-%m-%d" }}-biomed-{{ article.rank }}-{{ article.doi | default: article.url | xml_escape }}</guid>
           <pubDate>{{ digest.generated_at | default: digest.date | date_to_rfc822 }}</pubDate>
-          <description>
-            {{- "Section: Biomedicine | Source: " | append: article.source | append: " | Published: " | append: article.published | append: " | DOI: " | append: article.doi | append: " | Recommendation: " | append: article.recommendation | append: " | Summary: " | append: article.summary | append: " | Why it matters: " | append: article.why_it_matters | xml_escape -}}
+          <dc:creator>{{ article.authors | xml_escape }}</dc:creator>
+          <description>{{ "<p><strong>" | append: article.title | append: "</strong></p>" | xml_escape }}
+{{- "<p>" | append: article.authors | append: " · <em>" | append: article.source | append: "</em> · " | append: article.published | append: " · " | append: article.article_type | append: "</p>" | xml_escape -}}
+{%- if article.doi and article.doi != "" %}{{- "<p>DOI: <a href=\"https://doi.org/" | append: article.doi | append: "\">" | append: article.doi | append: "</a></p>" | xml_escape -}}{%- endif -%}
+{{- "<p><strong>Recommendation:</strong> " | append: article.recommendation | append: "</p>" | xml_escape -}}
+{{- "<blockquote><p>" | append: article.summary | append: "</p></blockquote>" | xml_escape -}}
+{%- if article.abstract %}{{- "<p><strong>Abstract:</strong> " | append: article.abstract | append: "</p>" | xml_escape -}}{%- endif -%}
+{{- "<p><strong>Why it matters:</strong> " | append: article.why_it_matters | append: "</p>" | xml_escape -}}
+{{- "<p><em>Why for Yiru:</em> " | append: article.why_for_me | append: "</p>" | xml_escape -}}
           </description>
           {% for topic in article.topics %}
             <category>{{ topic | xml_escape }}</category>
@@ -44,12 +58,19 @@ permalink: /research-radar/feed.xml
       {% endfor %}
       {% for article in digest.field_articles %}
         <item>
-          <title>{{ "[Other Fields #" | append: article.rank | append: "] " | append: article.title | xml_escape }}</title>
+          <title>{{ "[" | append: article.rank | append: "/AI] " | append: article.title | xml_escape }}</title>
           <link>{{ article.url | default: digest.url | absolute_url | xml_escape }}</link>
           <guid isPermaLink="false">{{ digest.date | date: "%Y-%m-%d" }}-field-{{ article.rank }}-{{ article.doi | default: article.url | xml_escape }}</guid>
           <pubDate>{{ digest.generated_at | default: digest.date | date_to_rfc822 }}</pubDate>
-          <description>
-            {{- "Section: Other Fields | Source: " | append: article.source | append: " | Published: " | append: article.published | append: " | DOI: " | append: article.doi | append: " | Recommendation: " | append: article.recommendation | append: " | Summary: " | append: article.summary | append: " | Why it matters: " | append: article.why_it_matters | xml_escape -}}
+          <dc:creator>{{ article.authors | xml_escape }}</dc:creator>
+          <description>{{ "<p><strong>" | append: article.title | append: "</strong></p>" | xml_escape }}
+{{- "<p>" | append: article.authors | append: " · <em>" | append: article.source | append: "</em> · " | append: article.published | append: " · " | append: article.article_type | append: "</p>" | xml_escape -}}
+{%- if article.doi and article.doi != "" %}{{- "<p>DOI: <a href=\"https://doi.org/" | append: article.doi | append: "\">" | append: article.doi | append: "</a></p>" | xml_escape -}}{%- endif -%}
+{{- "<p><strong>Recommendation:</strong> " | append: article.recommendation | append: "</p>" | xml_escape -}}
+{{- "<blockquote><p>" | append: article.summary | append: "</p></blockquote>" | xml_escape -}}
+{%- if article.abstract %}{{- "<p><strong>Abstract:</strong> " | append: article.abstract | append: "</p>" | xml_escape -}}{%- endif -%}
+{{- "<p><strong>Why it matters:</strong> " | append: article.why_it_matters | append: "</p>" | xml_escape -}}
+{{- "<p><em>Why for Yiru:</em> " | append: article.why_for_me | append: "</p>" | xml_escape -}}
           </description>
           {% for topic in article.topics %}
             <category>{{ topic | xml_escape }}</category>
@@ -62,8 +83,15 @@ permalink: /research-radar/feed.xml
           <link>{{ article.url | default: digest.url | absolute_url | xml_escape }}</link>
           <guid isPermaLink="false">{{ digest.date | date: "%Y-%m-%d" }}-relevant-{{ article.rank }}-{{ article.doi | default: article.url | xml_escape }}</guid>
           <pubDate>{{ digest.generated_at | default: digest.date | date_to_rfc822 }}</pubDate>
-          <description>
-            {{- "Source: " | append: article.source | append: " | Published: " | append: article.published | append: " | DOI: " | append: article.doi | append: " | Recommendation: " | append: article.recommendation | append: " | Summary: " | append: article.summary | append: " | Why it matters: " | append: article.why_it_matters | xml_escape -}}
+          <dc:creator>{{ article.authors | xml_escape }}</dc:creator>
+          <description>{{ "<p><strong>" | append: article.title | append: "</strong></p>" | xml_escape }}
+{{- "<p>" | append: article.authors | append: " · <em>" | append: article.source | append: "</em> · " | append: article.published | append: " · " | append: article.article_type | append: "</p>" | xml_escape -}}
+{%- if article.doi and article.doi != "" %}{{- "<p>DOI: <a href=\"https://doi.org/" | append: article.doi | append: "\">" | append: article.doi | append: "</a></p>" | xml_escape -}}{%- endif -%}
+{{- "<p><strong>Recommendation:</strong> " | append: article.recommendation | append: "</p>" | xml_escape -}}
+{{- "<blockquote><p>" | append: article.summary | append: "</p></blockquote>" | xml_escape -}}
+{%- if article.abstract %}{{- "<p><strong>Abstract:</strong> " | append: article.abstract | append: "</p>" | xml_escape -}}{%- endif -%}
+{{- "<p><strong>Why it matters:</strong> " | append: article.why_it_matters | append: "</p>" | xml_escape -}}
+{{- "<p><em>Why for Yiru:</em> " | append: article.why_for_me | append: "</p>" | xml_escape -}}
           </description>
           {% for topic in article.topics %}
             <category>{{ topic | xml_escape }}</category>
@@ -76,8 +104,15 @@ permalink: /research-radar/feed.xml
           <link>{{ article.url | default: digest.url | absolute_url | xml_escape }}</link>
           <guid isPermaLink="false">{{ digest.date | date: "%Y-%m-%d" }}-breakthrough-{{ article.rank }}-{{ article.doi | default: article.url | xml_escape }}</guid>
           <pubDate>{{ digest.generated_at | default: digest.date | date_to_rfc822 }}</pubDate>
-          <description>
-            {{- "Source: " | append: article.source | append: " | Published: " | append: article.published | append: " | DOI: " | append: article.doi | append: " | Recommendation: " | append: article.recommendation | append: " | Summary: " | append: article.summary | append: " | Why it matters: " | append: article.why_it_matters | xml_escape -}}
+          <dc:creator>{{ article.authors | xml_escape }}</dc:creator>
+          <description>{{ "<p><strong>" | append: article.title | append: "</strong></p>" | xml_escape }}
+{{- "<p>" | append: article.authors | append: " · <em>" | append: article.source | append: "</em> · " | append: article.published | append: " · " | append: article.article_type | append: "</p>" | xml_escape -}}
+{%- if article.doi and article.doi != "" %}{{- "<p>DOI: <a href=\"https://doi.org/" | append: article.doi | append: "\">" | append: article.doi | append: "</a></p>" | xml_escape -}}{%- endif -%}
+{{- "<p><strong>Recommendation:</strong> " | append: article.recommendation | append: "</p>" | xml_escape -}}
+{{- "<blockquote><p>" | append: article.summary | append: "</p></blockquote>" | xml_escape -}}
+{%- if article.abstract %}{{- "<p><strong>Abstract:</strong> " | append: article.abstract | append: "</p>" | xml_escape -}}{%- endif -%}
+{{- "<p><strong>Why it matters:</strong> " | append: article.why_it_matters | append: "</p>" | xml_escape -}}
+{{- "<p><em>Why for Yiru:</em> " | append: article.why_for_me | append: "</p>" | xml_escape -}}
           </description>
           {% for topic in article.topics %}
             <category>{{ topic | xml_escape }}</category>
