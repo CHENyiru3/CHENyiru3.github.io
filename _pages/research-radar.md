@@ -12,10 +12,10 @@ nav_order: 4
 
 <div class="research-radar-intro">
   <p>
-    Research Radar is a daily AI-assisted academic reading digest from curated scholarly feeds. It is separate from the milestone-oriented News page and focuses only on academic articles, not AI industry news, product updates, blogs, or general commentary.
+    Research Radar is a daily AI-assisted academic reading digest from curated scholarly feeds, maintained by <strong>DeepSeek-V4-Pro</strong>. It is separate from the milestone-oriented News page and focuses only on academic articles, not AI industry news, product updates, blogs, or general commentary.
   </p>
   <p>
-    The digest reflects my current academic reading interests through two views: directly relevant papers and broader bio/AI-adjacent field breakthroughs.
+    The digest reflects my current academic reading interests through three views: computational methods and AI, biomedical discoveries, and cross-disciplinary breakthroughs from other fields.
   </p>
   <p class="research-radar-actions">
     <a class="btn btn-sm btn-outline-primary" href="{{ '/research-radar/feed.xml' | relative_url }}">
