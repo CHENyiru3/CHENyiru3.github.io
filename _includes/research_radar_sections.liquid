@@ -1,14 +1,24 @@
 {% assign digest = include.digest %}
+{% assign computational_articles = digest.computational_articles %}
+{% assign articles = digest.articles %}
 {% assign relevant_articles = digest.relevant_articles %}
 {% assign breakthrough_articles = digest.breakthrough_articles %}
 {% assign hot_topic = digest.hot_topic %}
-{% assign relevant_count = 0 %}
-{% assign breakthrough_count = 0 %}
+{% assign comp_count = 0 %}
+{% assign art_count = 0 %}
+{% assign rel_count = 0 %}
+{% assign brk_count = 0 %}
+{% if computational_articles %}
+  {% assign comp_count = computational_articles | size %}
+{% endif %}
+{% if articles %}
+  {% assign art_count = articles | size %}
+{% endif %}
 {% if relevant_articles %}
-  {% assign relevant_count = relevant_articles | size %}
+  {% assign rel_count = relevant_articles | size %}
 {% endif %}
 {% if breakthrough_articles %}
-  {% assign breakthrough_count = breakthrough_articles | size %}
+  {% assign brk_count = breakthrough_articles | size %}
 {% endif %}
 
 <div class="research-radar-meta">
@@ -41,36 +51,62 @@
   </aside>
 {% endif %}
 
+{% if comp_count > 0 %}
 <section class="research-radar-section research-radar-section-relevant">
   <div class="research-radar-section-heading">
     <div>
       <p class="research-radar-kicker">Core signal</p>
-      <h2>Top 5 Relevant Reads</h2>
+      <h2>Top {{ comp_count }} Computational</h2>
     </div>
-    <span class="research-radar-count">{{ relevant_count }} selected</span>
+    <span class="research-radar-count">{{ comp_count }} selected</span>
   </div>
-  {% if relevant_count > 0 %}
-    {% for article in relevant_articles %}
-      {% include research_radar_article.liquid article=article section_label="Relevant" %}
-    {% endfor %}
-  {% else %}
-    <p>No relevant academic articles were selected for this digest.</p>
-  {% endif %}
+  {% for article in computational_articles %}
+    {% include research_radar_article.liquid article=article section_label="Computational" %}
+  {% endfor %}
 </section>
+{% endif %}
 
+{% if art_count > 0 %}
+<section class="research-radar-section research-radar-section-relevant">
+  <div class="research-radar-section-heading">
+    <div>
+      <p class="research-radar-kicker">Core signal</p>
+      <h2>Top {{ art_count }} Articles</h2>
+    </div>
+    <span class="research-radar-count">{{ art_count }} selected</span>
+  </div>
+  {% for article in articles %}
+    {% include research_radar_article.liquid article=article section_label="Article" %}
+  {% endfor %}
+</section>
+{% endif %}
+
+{% if rel_count > 0 %}
+<section class="research-radar-section research-radar-section-relevant">
+  <div class="research-radar-section-heading">
+    <div>
+      <p class="research-radar-kicker">Core signal</p>
+      <h2>Top {{ rel_count }} Relevant Reads</h2>
+    </div>
+    <span class="research-radar-count">{{ rel_count }} selected</span>
+  </div>
+  {% for article in relevant_articles %}
+    {% include research_radar_article.liquid article=article section_label="Relevant" %}
+  {% endfor %}
+</section>
+{% endif %}
+
+{% if brk_count > 0 %}
 <section class="research-radar-section research-radar-section-breakthrough">
   <div class="research-radar-section-heading">
     <div>
       <p class="research-radar-kicker">Broader watchlist</p>
-      <h2>Top 3 Field Breakthroughs</h2>
+      <h2>Top {{ brk_count }} Field Breakthroughs</h2>
     </div>
-    <span class="research-radar-count">{{ breakthrough_count }} selected</span>
+    <span class="research-radar-count">{{ brk_count }} selected</span>
   </div>
-  {% if breakthrough_count > 0 %}
-    {% for article in breakthrough_articles %}
-      {% include research_radar_article.liquid article=article section_label="Breakthrough" %}
-    {% endfor %}
-  {% else %}
-    <p>No broader field breakthroughs were selected for this digest.</p>
-  {% endif %}
+  {% for article in breakthrough_articles %}
+    {% include research_radar_article.liquid article=article section_label="Breakthrough" %}
+  {% endfor %}
 </section>
+{% endif %}
