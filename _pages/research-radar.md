@@ -29,6 +29,7 @@ nav_order: 4
 </div>
 
 {% if latest_digest %}
+
   <hr>
   <div class="research-radar-digest-heading">
     <div>

@@ -14,6 +14,7 @@ This skill is intentionally conservative. If a situation is not explicitly cover
 ## Repo map
 
 Read these references before editing:
+
 - `references/repo-map.md`
 - `references/edit-rules.md`
 - `references/content-contracts.md`
@@ -21,6 +22,7 @@ Read these references before editing:
 - `references/skill-evolution.md`
 
 Primary repo locations:
+
 - Homepage: `_pages/about.md`
 - Publications page: `_pages/publications.md`
 - Projects page: `_pages/projects.md`
@@ -61,6 +63,7 @@ Primary repo locations:
 ### Restricted sections
 
 Ask before changing:
+
 - Homepage quick background and profile metadata
 - CV intro paragraph
 - Publication status, category, year, venue, note, or authorship
@@ -70,6 +73,7 @@ Ask before changing:
 ### Exact-wording sections
 
 Only change from direct user wording:
+
 - Affiliation
 - Degree/program labels
 - Advisor/lab names
@@ -129,6 +133,7 @@ Only change from direct user wording:
 ## Approval-required changes
 
 Always ask before changing:
+
 - Identity statements
 - Affiliations
 - Degree status
@@ -145,6 +150,7 @@ Always ask before changing:
 ## Verification checklist
 
 Before finishing:
+
 - Confirm the real source of truth was edited.
 - Check whether the same fact appears on homepage, CV, data files, projects, or news.
 - Ensure derived values were not replaced with hardcoded ones.

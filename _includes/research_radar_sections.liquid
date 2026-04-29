@@ -60,76 +60,76 @@
 {% endif %}
 
 {% if comp_count > 0 %}
-<section class="research-radar-section research-radar-section-relevant">
-  <div class="research-radar-section-heading">
-    <div>
-      <p class="research-radar-kicker">Methods & AI</p>
-      <h2>Computational</h2>
+  <section class="research-radar-section research-radar-section-relevant">
+    <div class="research-radar-section-heading">
+      <div>
+        <p class="research-radar-kicker">Methods & AI</p>
+        <h2>Computational</h2>
+      </div>
+      <span class="research-radar-count">{{ comp_count }} selected</span>
     </div>
-    <span class="research-radar-count">{{ comp_count }} selected</span>
-  </div>
-  {% for article in computational_articles %}
-    {% include research_radar_article.liquid article=article section_label="Computational" %}
-  {% endfor %}
-</section>
+    {% for article in computational_articles %}
+      {% include research_radar_article.liquid article=article section_label="Computational" %}
+    {% endfor %}
+  </section>
 {% endif %}
 
 {% if biomed_count > 0 %}
-<section class="research-radar-section research-radar-section-relevant">
-  <div class="research-radar-section-heading">
-    <div>
-      <p class="research-radar-kicker">Biomedical discoveries</p>
-      <h2>Biomedicine</h2>
+  <section class="research-radar-section research-radar-section-relevant">
+    <div class="research-radar-section-heading">
+      <div>
+        <p class="research-radar-kicker">Biomedical discoveries</p>
+        <h2>Biomedicine</h2>
+      </div>
+      <span class="research-radar-count">{{ biomed_count }} selected</span>
     </div>
-    <span class="research-radar-count">{{ biomed_count }} selected</span>
-  </div>
-  {% for article in biomedicine_articles %}
-    {% include research_radar_article.liquid article=article section_label="Biomedicine" %}
-  {% endfor %}
-</section>
+    {% for article in biomedicine_articles %}
+      {% include research_radar_article.liquid article=article section_label="Biomedicine" %}
+    {% endfor %}
+  </section>
 {% endif %}
 
 {% if field_count > 0 %}
-<section class="research-radar-section research-radar-section-breakthrough">
-  <div class="research-radar-section-heading">
-    <div>
-      <p class="research-radar-kicker">Cross-disciplinary watchlist</p>
-      <h2>Other Fields</h2>
+  <section class="research-radar-section research-radar-section-breakthrough">
+    <div class="research-radar-section-heading">
+      <div>
+        <p class="research-radar-kicker">Cross-disciplinary watchlist</p>
+        <h2>Other Fields</h2>
+      </div>
+      <span class="research-radar-count">{{ field_count }} selected</span>
     </div>
-    <span class="research-radar-count">{{ field_count }} selected</span>
-  </div>
-  {% for article in field_articles %}
-    {% include research_radar_article.liquid article=article section_label="Field" %}
-  {% endfor %}
-</section>
+    {% for article in field_articles %}
+      {% include research_radar_article.liquid article=article section_label="Field" %}
+    {% endfor %}
+  </section>
 {% endif %}
 
 {% if rel_count > 0 %}
-<section class="research-radar-section research-radar-section-relevant">
-  <div class="research-radar-section-heading">
-    <div>
-      <p class="research-radar-kicker">Core signal</p>
-      <h2>Top {{ rel_count }} Relevant Reads</h2>
+  <section class="research-radar-section research-radar-section-relevant">
+    <div class="research-radar-section-heading">
+      <div>
+        <p class="research-radar-kicker">Core signal</p>
+        <h2>Top {{ rel_count }} Relevant Reads</h2>
+      </div>
+      <span class="research-radar-count">{{ rel_count }} selected</span>
     </div>
-    <span class="research-radar-count">{{ rel_count }} selected</span>
-  </div>
-  {% for article in relevant_articles %}
-    {% include research_radar_article.liquid article=article section_label="Relevant" %}
-  {% endfor %}
-</section>
+    {% for article in relevant_articles %}
+      {% include research_radar_article.liquid article=article section_label="Relevant" %}
+    {% endfor %}
+  </section>
 {% endif %}
 
 {% if brk_count > 0 %}
-<section class="research-radar-section research-radar-section-breakthrough">
-  <div class="research-radar-section-heading">
-    <div>
-      <p class="research-radar-kicker">Broader watchlist</p>
-      <h2>Top {{ brk_count }} Field Breakthroughs</h2>
+  <section class="research-radar-section research-radar-section-breakthrough">
+    <div class="research-radar-section-heading">
+      <div>
+        <p class="research-radar-kicker">Broader watchlist</p>
+        <h2>Top {{ brk_count }} Field Breakthroughs</h2>
+      </div>
+      <span class="research-radar-count">{{ brk_count }} selected</span>
     </div>
-    <span class="research-radar-count">{{ brk_count }} selected</span>
-  </div>
-  {% for article in breakthrough_articles %}
-    {% include research_radar_article.liquid article=article section_label="Breakthrough" %}
-  {% endfor %}
-</section>
+    {% for article in breakthrough_articles %}
+      {% include research_radar_article.liquid article=article section_label="Breakthrough" %}
+    {% endfor %}
+  </section>
 {% endif %}

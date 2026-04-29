@@ -39,7 +39,7 @@ The method focuses on:
 
 This project became one of my featured co-author publications and strengthened my interest in building rigorous computational frameworks for spatial multi-omics analysis.
 
-**Publication:** Tian R†, Xue Z†, **Chen Y**, Qi Y, Zhang J, Yuan J, Ruan D, Lin J, Liu J, Wang D, Youqiong Y, Liu W*. Integrating Cross-Sample and Cross-Modal Data for Spatial Transcriptomics and Metabolomics with SpatialMETA. *Nature Communications*, 2025.
+**Publication:** Tian R†, Xue Z†, **Chen Y**, Qi Y, Zhang J, Yuan J, Ruan D, Lin J, Liu J, Wang D, Youqiong Y, Liu W*. Integrating Cross-Sample and Cross-Modal Data for Spatial Transcriptomics and Metabolomics with SpatialMETA. *Nature Communications\*, 2025.
 
 ---
 

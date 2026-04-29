@@ -1,5 +1,5 @@
 {% assign article = include.article %}
-{% assign section_label = include.section_label | default: "Recommendation" %}
+{% assign section_label = include.section_label | default: 'Recommendation' %}
 {% assign section_class = section_label | downcase %}
 
 <article class="research-radar-card research-radar-card-{{ section_class }}">
@@ -20,10 +20,16 @@
 
   <p class="research-radar-source">
     {% if article.source %}{{ article.source }}{% endif %}
-    {% if article.published %}<span>Published {{ article.published }}</span>{% endif %}
-    {% if article.article_type %}<span>{{ article.article_type }}</span>{% endif %}
+    {% if article.published -%}
+      <span>Published {{ article.published }}</span>
+    {%- endif %}
+    {% if article.article_type -%}
+      <span>{{ article.article_type }}</span>
+    {%- endif %}
     {% if article.doi %}
-      <span>DOI: <a href="https://doi.org/{{ article.doi }}" target="_blank" rel="noopener noreferrer">{{ article.doi }}</a></span>
+      <span
+        >DOI: <a href="https://doi.org/{{ article.doi }}" target="_blank" rel="noopener noreferrer">{{ article.doi }}</a></span
+      >
     {% endif %}
   </p>
 
