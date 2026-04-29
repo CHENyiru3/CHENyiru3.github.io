@@ -1,0 +1,27 @@
+{% assign article = include.article %}
+{% assign digest = include.digest %}
+{% assign section = include.section %}
+{% assign article_link = article.url | default: digest.url | absolute_url %}
+{% assign guid = digest.date | date: "%Y-%m-%d" | append: section | append: article.rank | append: article.doi | append: article.url %}
+{% assign article_doi = article.doi %}
+{% if article_doi == "" %}
+  {% assign article_doi = nil %}
+{% endif %}
+<item>
+  <title>{{ "[" | append: section | append: " #" | append: article.rank | append: "] " | append: article.title | xml_escape }}</title>
+  <link>{{ article_link | xml_escape }}</link>
+  <guid isPermaLink="false">{{ guid | xml_escape }}</guid>
+  <pubDate>{{ digest.generated_at | default: digest.date | date_to_rfc822 }}</pubDate>
+  <dc:creator>{{ article.authors | xml_escape }}</dc:creator>
+  <description>{{ article.title | xml_escape }}
+{{ article.authors | xml_escape }} · {{ article.source | xml_escape }} · {{ article.published | xml_escape }} · {{ article.article_type | xml_escape }}
+{% if article_doi %}DOI: {{ article_doi | xml_escape }}
+{% endif %}Recommendation: {{ article.recommendation | xml_escape }}
+Summary: {{ article.summary | xml_escape }}
+{% if article.abstract %}Abstract: {{ article.abstract | xml_escape }}
+{% endif %}Why it matters: {{ article.why_it_matters | xml_escape }}
+Why for Yiru: {{ article.why_for_me | xml_escape }}</description>
+  {% for topic in article.topics %}
+    <category>{{ topic | xml_escape }}</category>
+  {% endfor %}
+</item>

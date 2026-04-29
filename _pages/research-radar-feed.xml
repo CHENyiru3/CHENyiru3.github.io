@@ -8,116 +8,26 @@ permalink: /research-radar/feed.xml
     <title>{{ site.title | default: site.first_name | append: " - Research Radar" | xml_escape }}</title>
     <link>{{ site.url }}{{ site.baseurl }}/research-radar/</link>
     <atom:link href="{{ site.url }}{{ site.baseurl }}/research-radar/feed.xml" rel="self" type="application/rss+xml" />
-    <description>Daily academic article recommendations from Research Radar — maintained by Clawdie, driven by Hermes + DeepSeek-V4-Pro.</description>
+    <description>Daily academic article recommendations — maintained by Clawdie, driven by Hermes + DeepSeek-V4-Pro.</description>
     <language>en</language>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 
     {% assign radar_digests = site.research_radar | sort: "date" | reverse %}
     {% for digest in radar_digests %}
       {% for article in digest.computational_articles %}
-        <item>
-          <title>{{ "[" | append: article.rank | append: "/Comp] " | append: article.title | xml_escape }}</title>
-          <link>{{ article.url | default: digest.url | absolute_url | xml_escape }}</link>
-          <guid isPermaLink="false">{{ digest.date | date: "%Y-%m-%d" }}-comp-{{ article.rank }}-{{ article.doi | default: article.url | xml_escape }}</guid>
-          <pubDate>{{ digest.generated_at | default: digest.date | date_to_rfc822 }}</pubDate>
-          <dc:creator>{{ article.authors | xml_escape }}</dc:creator>
-          <description>{{ "<p><strong>" | append: article.title | append: "</strong></p>" | xml_escape }}
-{{- "<p>" | append: article.authors | append: " · <em>" | append: article.source | append: "</em> · " | append: article.published | append: " · " | append: article.article_type | append: "</p>" | xml_escape -}}
-{%- if article.doi and article.doi != "" %}{{- "<p>DOI: <a href=\"https://doi.org/" | append: article.doi | append: "\">" | append: article.doi | append: "</a></p>" | xml_escape -}}{%- endif -%}
-{{- "<p><strong>Recommendation:</strong> " | append: article.recommendation | append: "</p>" | xml_escape -}}
-{{- "<blockquote><p>" | append: article.summary | append: "</p></blockquote>" | xml_escape -}}
-{%- if article.abstract %}{{- "<p><strong>Abstract:</strong> " | append: article.abstract | append: "</p>" | xml_escape -}}{%- endif -%}
-{{- "<p><strong>Why it matters:</strong> " | append: article.why_it_matters | append: "</p>" | xml_escape -}}
-{{- "<p><em>Why for Yiru:</em> " | append: article.why_for_me | append: "</p>" | xml_escape -}}
-          </description>
-          {% for topic in article.topics %}
-            <category>{{ topic | xml_escape }}</category>
-          {% endfor %}
-        </item>
+        {% include research_radar_item.xml article=article digest=digest section="Computational" %}
       {% endfor %}
       {% for article in digest.biomedicine_articles %}
-        <item>
-          <title>{{ "[" | append: article.rank | append: "/Bio] " | append: article.title | xml_escape }}</title>
-          <link>{{ article.url | default: digest.url | absolute_url | xml_escape }}</link>
-          <guid isPermaLink="false">{{ digest.date | date: "%Y-%m-%d" }}-biomed-{{ article.rank }}-{{ article.doi | default: article.url | xml_escape }}</guid>
-          <pubDate>{{ digest.generated_at | default: digest.date | date_to_rfc822 }}</pubDate>
-          <dc:creator>{{ article.authors | xml_escape }}</dc:creator>
-          <description>{{ "<p><strong>" | append: article.title | append: "</strong></p>" | xml_escape }}
-{{- "<p>" | append: article.authors | append: " · <em>" | append: article.source | append: "</em> · " | append: article.published | append: " · " | append: article.article_type | append: "</p>" | xml_escape -}}
-{%- if article.doi and article.doi != "" %}{{- "<p>DOI: <a href=\"https://doi.org/" | append: article.doi | append: "\">" | append: article.doi | append: "</a></p>" | xml_escape -}}{%- endif -%}
-{{- "<p><strong>Recommendation:</strong> " | append: article.recommendation | append: "</p>" | xml_escape -}}
-{{- "<blockquote><p>" | append: article.summary | append: "</p></blockquote>" | xml_escape -}}
-{%- if article.abstract %}{{- "<p><strong>Abstract:</strong> " | append: article.abstract | append: "</p>" | xml_escape -}}{%- endif -%}
-{{- "<p><strong>Why it matters:</strong> " | append: article.why_it_matters | append: "</p>" | xml_escape -}}
-{{- "<p><em>Why for Yiru:</em> " | append: article.why_for_me | append: "</p>" | xml_escape -}}
-          </description>
-          {% for topic in article.topics %}
-            <category>{{ topic | xml_escape }}</category>
-          {% endfor %}
-        </item>
+        {% include research_radar_item.xml article=article digest=digest section="Biomedicine" %}
       {% endfor %}
       {% for article in digest.field_articles %}
-        <item>
-          <title>{{ "[" | append: article.rank | append: "/AI] " | append: article.title | xml_escape }}</title>
-          <link>{{ article.url | default: digest.url | absolute_url | xml_escape }}</link>
-          <guid isPermaLink="false">{{ digest.date | date: "%Y-%m-%d" }}-field-{{ article.rank }}-{{ article.doi | default: article.url | xml_escape }}</guid>
-          <pubDate>{{ digest.generated_at | default: digest.date | date_to_rfc822 }}</pubDate>
-          <dc:creator>{{ article.authors | xml_escape }}</dc:creator>
-          <description>{{ "<p><strong>" | append: article.title | append: "</strong></p>" | xml_escape }}
-{{- "<p>" | append: article.authors | append: " · <em>" | append: article.source | append: "</em> · " | append: article.published | append: " · " | append: article.article_type | append: "</p>" | xml_escape -}}
-{%- if article.doi and article.doi != "" %}{{- "<p>DOI: <a href=\"https://doi.org/" | append: article.doi | append: "\">" | append: article.doi | append: "</a></p>" | xml_escape -}}{%- endif -%}
-{{- "<p><strong>Recommendation:</strong> " | append: article.recommendation | append: "</p>" | xml_escape -}}
-{{- "<blockquote><p>" | append: article.summary | append: "</p></blockquote>" | xml_escape -}}
-{%- if article.abstract %}{{- "<p><strong>Abstract:</strong> " | append: article.abstract | append: "</p>" | xml_escape -}}{%- endif -%}
-{{- "<p><strong>Why it matters:</strong> " | append: article.why_it_matters | append: "</p>" | xml_escape -}}
-{{- "<p><em>Why for Yiru:</em> " | append: article.why_for_me | append: "</p>" | xml_escape -}}
-          </description>
-          {% for topic in article.topics %}
-            <category>{{ topic | xml_escape }}</category>
-          {% endfor %}
-        </item>
+        {% include research_radar_item.xml article=article digest=digest section="Other Fields" %}
       {% endfor %}
       {% for article in digest.relevant_articles %}
-        <item>
-          <title>{{ "[Relevant #" | append: article.rank | append: "] " | append: article.title | xml_escape }}</title>
-          <link>{{ article.url | default: digest.url | absolute_url | xml_escape }}</link>
-          <guid isPermaLink="false">{{ digest.date | date: "%Y-%m-%d" }}-relevant-{{ article.rank }}-{{ article.doi | default: article.url | xml_escape }}</guid>
-          <pubDate>{{ digest.generated_at | default: digest.date | date_to_rfc822 }}</pubDate>
-          <dc:creator>{{ article.authors | xml_escape }}</dc:creator>
-          <description>{{ "<p><strong>" | append: article.title | append: "</strong></p>" | xml_escape }}
-{{- "<p>" | append: article.authors | append: " · <em>" | append: article.source | append: "</em> · " | append: article.published | append: " · " | append: article.article_type | append: "</p>" | xml_escape -}}
-{%- if article.doi and article.doi != "" %}{{- "<p>DOI: <a href=\"https://doi.org/" | append: article.doi | append: "\">" | append: article.doi | append: "</a></p>" | xml_escape -}}{%- endif -%}
-{{- "<p><strong>Recommendation:</strong> " | append: article.recommendation | append: "</p>" | xml_escape -}}
-{{- "<blockquote><p>" | append: article.summary | append: "</p></blockquote>" | xml_escape -}}
-{%- if article.abstract %}{{- "<p><strong>Abstract:</strong> " | append: article.abstract | append: "</p>" | xml_escape -}}{%- endif -%}
-{{- "<p><strong>Why it matters:</strong> " | append: article.why_it_matters | append: "</p>" | xml_escape -}}
-{{- "<p><em>Why for Yiru:</em> " | append: article.why_for_me | append: "</p>" | xml_escape -}}
-          </description>
-          {% for topic in article.topics %}
-            <category>{{ topic | xml_escape }}</category>
-          {% endfor %}
-        </item>
+        {% include research_radar_item.xml article=article digest=digest section="Relevant" %}
       {% endfor %}
       {% for article in digest.breakthrough_articles %}
-        <item>
-          <title>{{ "[Breakthrough #" | append: article.rank | append: "] " | append: article.title | xml_escape }}</title>
-          <link>{{ article.url | default: digest.url | absolute_url | xml_escape }}</link>
-          <guid isPermaLink="false">{{ digest.date | date: "%Y-%m-%d" }}-breakthrough-{{ article.rank }}-{{ article.doi | default: article.url | xml_escape }}</guid>
-          <pubDate>{{ digest.generated_at | default: digest.date | date_to_rfc822 }}</pubDate>
-          <dc:creator>{{ article.authors | xml_escape }}</dc:creator>
-          <description>{{ "<p><strong>" | append: article.title | append: "</strong></p>" | xml_escape }}
-{{- "<p>" | append: article.authors | append: " · <em>" | append: article.source | append: "</em> · " | append: article.published | append: " · " | append: article.article_type | append: "</p>" | xml_escape -}}
-{%- if article.doi and article.doi != "" %}{{- "<p>DOI: <a href=\"https://doi.org/" | append: article.doi | append: "\">" | append: article.doi | append: "</a></p>" | xml_escape -}}{%- endif -%}
-{{- "<p><strong>Recommendation:</strong> " | append: article.recommendation | append: "</p>" | xml_escape -}}
-{{- "<blockquote><p>" | append: article.summary | append: "</p></blockquote>" | xml_escape -}}
-{%- if article.abstract %}{{- "<p><strong>Abstract:</strong> " | append: article.abstract | append: "</p>" | xml_escape -}}{%- endif -%}
-{{- "<p><strong>Why it matters:</strong> " | append: article.why_it_matters | append: "</p>" | xml_escape -}}
-{{- "<p><em>Why for Yiru:</em> " | append: article.why_for_me | append: "</p>" | xml_escape -}}
-          </description>
-          {% for topic in article.topics %}
-            <category>{{ topic | xml_escape }}</category>
-          {% endfor %}
-        </item>
+        {% include research_radar_item.xml article=article digest=digest section="Breakthrough" %}
       {% endfor %}
     {% endfor %}
   </channel>
