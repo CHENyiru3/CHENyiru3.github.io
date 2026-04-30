@@ -2,12 +2,14 @@
 {% assign computational_articles = digest.computational_articles %}
 {% assign biomedicine_articles = digest.biomedicine_articles %}
 {% assign field_articles = digest.field_articles %}
+{% assign biotech_articles = digest.biotech_articles %}
 {% assign relevant_articles = digest.relevant_articles %}
 {% assign breakthrough_articles = digest.breakthrough_articles %}
 {% assign hot_topic = digest.hot_topic %}
 {% assign comp_count = 0 %}
 {% assign biomed_count = 0 %}
 {% assign field_count = 0 %}
+{% assign biotech_count = 0 %}
 {% assign rel_count = 0 %}
 {% assign brk_count = 0 %}
 {% if computational_articles %}
@@ -18,6 +20,9 @@
 {% endif %}
 {% if field_articles %}
   {% assign field_count = field_articles | size %}
+{% endif %}
+{% if biotech_articles %}
+  {% assign biotech_count = biotech_articles | size %}
 {% endif %}
 {% if relevant_articles %}
   {% assign rel_count = relevant_articles | size %}
@@ -100,6 +105,21 @@
     </div>
     {% for article in field_articles %}
       {% include research_radar_article.liquid article=article section_label="Field" %}
+    {% endfor %}
+  </section>
+{% endif %}
+
+{% if biotech_count > 0 %}
+  <section class="research-radar-section research-radar-section-biotech">
+    <div class="research-radar-section-heading">
+      <div>
+        <p class="research-radar-kicker">Friday delivery</p>
+        <h2>BioTech News Delivery</h2>
+      </div>
+      <span class="research-radar-count">{{ biotech_count }} selected</span>
+    </div>
+    {% for article in biotech_articles %}
+      {% include research_radar_article.liquid article=article section_label="BioTech" %}
     {% endfor %}
   </section>
 {% endif %}
