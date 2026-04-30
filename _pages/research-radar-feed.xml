@@ -23,6 +23,9 @@ permalink: /research-radar/feed.xml
       {% for article in digest.field_articles %}
         {% include research_radar_item.xml article=article digest=digest section="Other Fields" %}
       {% endfor %}
+      {% for article in digest.biotech_articles %}
+        {% include research_radar_item.xml article=article digest=digest section="BioTech" %}
+      {% endfor %}
       {% for article in digest.relevant_articles %}
         {% include research_radar_item.xml article=article digest=digest section="Relevant" %}
       {% endfor %}
