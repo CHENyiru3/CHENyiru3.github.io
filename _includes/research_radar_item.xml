@@ -2,25 +2,29 @@
 {% assign digest = include.digest %}
 {% assign section = include.section %}
 {% assign article_link = article.url | default: digest.url | absolute_url %}
-{% assign guid = digest.date | date: "%Y-%m-%d" | append: section | append: article.rank | append: article.doi | append: article.url %}
+{% assign guid = digest.date | date: "%Y-%m-%d" | append: "-" | append: section | append: "-" | append: article.rank %}
 {% assign article_doi = article.doi %}
 {% if article_doi == "" %}
   {% assign article_doi = nil %}
 {% endif %}
 <item>
-  <title>{{ "[" | append: section | append: " #" | append: article.rank | append: "] " | append: article.title | xml_escape }}</title>
+  <title>[{{ section }} #{{ article.rank }}] {{ article.title | xml_escape }}</title>
   <link>{{ article_link | xml_escape }}</link>
   <guid isPermaLink="false">{{ guid | xml_escape }}</guid>
   <pubDate>{{ digest.generated_at | default: digest.date | date_to_rfc822 }}</pubDate>
   <dc:creator>{{ article.authors | xml_escape }}</dc:creator>
-  <description>{{ article.title | xml_escape }}
-{{ article.authors | xml_escape }} · {{ article.source | xml_escape }} · {{ article.published | xml_escape }} · {{ article.article_type | xml_escape }}
-{% if article_doi %}DOI: {{ article_doi | xml_escape }}
-{% endif %}Recommendation: {{ article.recommendation | xml_escape }}
-Summary: {{ article.summary | xml_escape }}
-{% if article.abstract %}Abstract: {{ article.abstract | xml_escape }}
-{% endif %}Why it matters: {{ article.why_it_matters | xml_escape }}
-Why for Yiru: {{ article.why_for_me | xml_escape }}</description>
+  <description><![CDATA[
+    <p><strong>{{ article.title | xml_escape }}</strong></p>
+    <p>{{ article.authors | xml_escape }} &middot; <em>{{ article.source | xml_escape }}</em> &middot; {{ article.published | xml_escape }} &middot; {{ article.article_type | xml_escape }}</p>
+    {% if article_doi %}<p>DOI: <a href="https://doi.org/{{ article_doi | xml_escape }}">{{ article_doi | xml_escape }}</a></p>{% endif %}
+    {% if article.url and article.url != "" %}<p>🔗 <a href="{{ article.url | xml_escape }}">{{ article.url | xml_escape }}</a></p>{% endif %}
+    <hr>
+    <p><strong>Summary</strong><br>{{ article.summary | xml_escape }}</p>
+    <p><strong>Why it matters</strong><br>{{ article.why_it_matters | xml_escape }}</p>
+    <p><strong>Why for Yiru</strong><br>{{ article.why_for_me | xml_escape }}</p>
+    <hr>
+    <p>📋 {{ article.recommendation | xml_escape }}</p>
+  ]]></description>
   {% for topic in article.topics %}
     <category>{{ topic | xml_escape }}</category>
   {% endfor %}
