@@ -15,6 +15,7 @@
 - `/news/`: `_pages/news.md`
 - `/life/`: `_pages/life.md`
 - `/tech-blog/`: `_pages/tech-blog.md`
+- `/tech-blog/feed.xml`: `_pages/tech-blog-feed.xml`
 - `/research-radar/`: `_pages/research-radar.md`
 - `/research-radar/feed.xml`: `_pages/research-radar-feed.xml`
 - Blog posts, if enabled by navigation or links: `_posts/*.md`
@@ -50,6 +51,7 @@ Inspect shared renderers before editing repeated content on visible pages.
 - JSONResume asset and config: `assets/json/resume.json`, `_config.yml` `jekyll_get_json` / `jsonresume`
 - Projects: `_projects/*.md`
 - Tech Blog posts: `_posts/*.md` with `categories: tech-blog`, `categories: tech`, or `tags: tech`
+- Tech Blog RSS feed: `_pages/tech-blog-feed.xml`, using the same intentional-post filter as `_pages/tech-blog.md`
 - News items: `_news/*.md`
 - Research Radar digests: `_research_radar/*.md`
 - External Website Management notes: `/Users/eric_yiru/Desktop/Home/Main_branch/Notes/03_Resources/Website_management`
@@ -78,6 +80,7 @@ Inspect shared renderers before editing repeated content on visible pages.
   - `_pages/publications.md`
 - Project narratives may restate publication or status information already represented in `papers.bib`.
 - Tech Blog uses the general blog post collection but filters out default/sample posts unless they are intentionally tagged or categorized for Tech Blog.
+- Tech Blog RSS must keep the same filter as the Tech Blog landing page so sample/general posts do not appear in the feed.
 - Life page uses local gallery-ready markup and CSS in `_pages/life.md`; keep photo placeholders and responsive behavior in sync when editing sections.
 - Website Management notes are an external editable mirror and drafting bridge. They can request changes across About, Life, Project, Publications, CV, News, and Tech Blog, but website files remain the rendered source of truth.
 - `Website_management/TechBlog/Current Tech Blog.md` mirrors the landing page; new Markdown files directly under `Website_management/TechBlog/` are post candidates when the user asks to sync them.

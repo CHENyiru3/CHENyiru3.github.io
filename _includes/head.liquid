@@ -74,6 +74,13 @@
 {% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+{% assign page_is_tech_post = false %}
+{% if page.categories contains 'tech-blog' or page.categories contains 'tech' or page.tags contains 'tech' %}
+  {% assign page_is_tech_post = true %}
+{% endif %}
+{% if page.permalink == '/tech-blog/' or page_is_tech_post %}
+  <link rel="alternate" type="application/rss+xml" title="Tech Blog RSS" href="{{ '/tech-blog/feed.xml' | absolute_url }}">
+{% endif %}
 
 <!-- Dark Mode -->
 <script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>

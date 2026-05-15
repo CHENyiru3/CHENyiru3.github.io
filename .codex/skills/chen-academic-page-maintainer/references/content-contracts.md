@@ -39,16 +39,19 @@
 ## Tech Blog
 
 - Source page: `_pages/tech-blog.md`
+- RSS feed: `_pages/tech-blog-feed.xml`, rendered at `/tech-blog/feed.xml`
 - Post source: `_posts/*.md`
 - External mirror/draft source: `/Users/eric_yiru/Desktop/Home/Main_branch/Notes/03_Resources/Website_management/TechBlog/*.md`
 - The Tech Blog page should list only posts with `categories: tech-blog`, `categories: tech`, or `tags: tech`.
+- The Tech Blog RSS feed should use the same intentional-post filter as the Tech Blog page.
 - Keep the route `/tech-blog/` and navigation title `Tech Blog`.
+- Keep a visible RSS subscribe link on the Tech Blog landing page when the feed exists.
 - Keep Tech Blog adjacent to Research Radar in the nav order unless the user requests a different menu order.
 - Default al-folio sample posts should not appear there unless the user intentionally retags or recategorizes them.
 - New Markdown files directly under the external `TechBlog/` folder are post candidates when the user asks to sync them. Ignore `README.md`, `Current Tech Blog.md`, and template files.
 - Paired English/Chinese Tech Blog drafts should become one `_posts/YYYY-MM-DD-slug.md` entry with English title/description/default view and an in-page English/Chinese switcher. Avoid duplicate language-specific index entries.
 - Tech Blog posts should disable the related-post recommendation block with `related_posts: false` unless the user explicitly requests recommendations.
-- Tech Blog post images and screenshots should be responsive to the article/window width, keep their original aspect ratio, and avoid horizontal overflow.
+- Tech Blog post images and screenshots should be responsive to the article/window size, keep their original aspect ratio, avoid horizontal overflow, and stay short enough that the whole image can be inspected in one viewport.
 
 ## Life
 

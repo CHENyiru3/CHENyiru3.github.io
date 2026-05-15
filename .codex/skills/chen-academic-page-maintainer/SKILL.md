@@ -31,6 +31,7 @@ Primary repo locations:
 - CV page: `_pages/cv.md`
 - Life page: `_pages/life.md`
 - Tech Blog page: `_pages/tech-blog.md`
+- Tech Blog feed: `_pages/tech-blog-feed.xml`
 - News page: `_pages/news.md`
 - Research Radar page: `_pages/research-radar.md`
 - Research Radar feed: `_pages/research-radar-feed.xml`
@@ -133,12 +134,15 @@ Only change from direct user wording:
 ### Tech Blog rules
 
 - Keep the Tech Blog route at `/tech-blog/`, backed by `_pages/tech-blog.md`.
+- Keep the Tech Blog RSS feed at `/tech-blog/feed.xml`, backed by `_pages/tech-blog-feed.xml`.
 - Tech Blog entries should be ordinary `_posts/*.md` posts tagged `tech` or categorized as `tech` / `tech-blog`.
+- The Tech Blog RSS feed must use the same intentional-post filter as the Tech Blog page: `categories: tech-blog`, `categories: tech`, or `tags: tech`.
 - Do not surface default/sample posts on the Tech Blog page unless the user explicitly reclassifies them.
+- Do not surface default/sample posts in the Tech Blog RSS feed unless the user explicitly reclassifies them.
 - Keep Tech Blog adjacent to Research Radar in navigation by preserving its nav ordering unless the user requests a different menu order.
 - If English and Chinese versions of the same Tech Blog draft are provided, publish them as one post with English front matter/default view and an in-page language switcher. Do not create a separate `-zh` post unless the user explicitly asks.
 - New Tech Blog posts should set `related_posts: false` unless the user explicitly asks for a recommendation block; avoid surfacing al-folio sample posts below Tech Blog articles.
-- Tech Blog post images and screenshots should scale within the article/window, preserving aspect ratio and preventing horizontal overflow.
+- Tech Blog post images and screenshots should scale within the article/window, preserving aspect ratio, preventing horizontal overflow, and staying short enough that the whole image can be inspected in one viewport.
 
 ### Website Management notes bridge
 
@@ -205,6 +209,7 @@ Before finishing:
 - If applying Website Management notes, confirm the note path, request type, and target website file before editing.
 - If applying a `TechBlog/` note, classify it as either the Tech Blog landing-page mirror or a new post candidate before editing.
 - Confirm Tech Blog only lists posts intentionally tagged/categorized for that section if touched.
+- Confirm the Tech Blog RSS feed only includes posts intentionally tagged/categorized for that section if touched.
 - Confirm bilingual Tech Blog posts appear as one index entry with English as the default view if touched.
 - Confirm Life page sections remain gallery-ready if touched.
 - Confirm Life photos are explicitly user-provided and approved before adding or retaining image assets.

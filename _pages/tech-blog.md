@@ -10,8 +10,14 @@ nav_order: 5
 <div class="tech-blog-shell">
   <section class="tech-blog-lede">
     <p class="tech-blog-kicker">Technical notes</p>
-    <p>
+    <p class="tech-blog-description">
       A focused space for practical write-ups on code, research tooling, computational workflows, and the engineering details behind reproducible biomedical analysis.
+    </p>
+    <p class="tech-blog-actions">
+      <a class="btn btn-sm btn-outline-primary" href="{{ '/tech-blog/feed.xml' | relative_url }}">
+        <i class="fa-solid fa-square-rss"></i>
+        Subscribe via RSS
+      </a>
     </p>
   </section>
 
@@ -75,10 +81,19 @@ nav_order: 5
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-.tech-blog-lede p:last-child {
+.tech-blog-description {
   max-width: 46rem;
   margin-bottom: 0;
   color: var(--global-text-color-light);
+}
+.tech-blog-actions {
+  margin: 0.8rem 0 0;
+}
+.tech-blog-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 700;
 }
 .tech-blog-topic-row {
   display: grid;
