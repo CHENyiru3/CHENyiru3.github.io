@@ -25,6 +25,8 @@
   - keep the index scannable with dates, tags, descriptions, and direct read links
   - do not mix general sample posts into the Tech Blog index
   - bilingual posts should default to English and expose a compact English/Chinese switcher without duplicating cards on the index
+  - disable the al-folio related-post block for Tech Blog articles unless the user explicitly asks for recommendations
+  - keep Tech Blog screenshots responsive to the article/window size and preserve aspect ratio
   - Website Management TechBlog drafts may be polished lightly for clarity, but preserve technical claims and code unless the user asks for editing
 - Life page:
   - warmer and more personal than research-facing pages

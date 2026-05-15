@@ -11,6 +11,7 @@ categories:
   - tech-blog
 bilingual: true
 default_lang: en
+related_posts: false
 title_zh: "Research Radar 工作原理：一套自动化学术文献策展管线（不止是玩玩而已）"
 description_zh: "幕后揭秘：一套自动化管线如何扫描学术 RSS 源、用 AI 策展推荐论文、并渲染出每日研究简报——从 cron 任务到 Jekyll 模板。"
 ---
@@ -219,6 +220,16 @@ Research Radar 不是什么复杂系统——一个 cron 任务、一次 API 调
 }
 .bilingual-post-panel {
   min-width: 0;
+}
+.bilingual-post-panel img {
+  display: block;
+  width: auto;
+  max-width: min(100%, calc(100vw - 2rem));
+  max-height: 72vh;
+  height: auto;
+  object-fit: contain;
+  margin: 1.25rem auto;
+  border-radius: 8px;
 }
 </style>
 

@@ -137,6 +137,8 @@ Only change from direct user wording:
 - Do not surface default/sample posts on the Tech Blog page unless the user explicitly reclassifies them.
 - Keep Tech Blog adjacent to Research Radar in navigation by preserving its nav ordering unless the user requests a different menu order.
 - If English and Chinese versions of the same Tech Blog draft are provided, publish them as one post with English front matter/default view and an in-page language switcher. Do not create a separate `-zh` post unless the user explicitly asks.
+- New Tech Blog posts should set `related_posts: false` unless the user explicitly asks for a recommendation block; avoid surfacing al-folio sample posts below Tech Blog articles.
+- Tech Blog post images and screenshots should scale within the article/window, preserving aspect ratio and preventing horizontal overflow.
 
 ### Website Management notes bridge
 

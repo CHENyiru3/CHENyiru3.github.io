@@ -48,6 +48,7 @@ Only change from direct user wording:
 - Do not blindly sync the external Website Management folder into the website repo; translate only the requested note content.
 - Do not treat every Markdown file in `Website_management/TechBlog/` as publish-ready automatically. Publish a Tech Blog post candidate only when the user asks to sync/apply it, and ignore `README.md`, `Current Tech Blog.md`, and templates.
 - Do not publish paired English/Chinese Tech Blog drafts as duplicate posts unless the user explicitly asks; use one English-default bilingual post.
+- Do not leave the default related-post recommendation block enabled on new Tech Blog posts unless the user explicitly asks for it.
 - Do not import Life page photos from Website Management notes unless the user explicitly provides and confirms those images for the website.
 - Do not mirror Research Radar into the external Website Management notes; Research Radar stays managed from the website repo.
 - Do not initialize a nested git repository in `Website_management`; it is already inside the notes git repo.

@@ -47,6 +47,8 @@
 - Default al-folio sample posts should not appear there unless the user intentionally retags or recategorizes them.
 - New Markdown files directly under the external `TechBlog/` folder are post candidates when the user asks to sync them. Ignore `README.md`, `Current Tech Blog.md`, and template files.
 - Paired English/Chinese Tech Blog drafts should become one `_posts/YYYY-MM-DD-slug.md` entry with English title/description/default view and an in-page English/Chinese switcher. Avoid duplicate language-specific index entries.
+- Tech Blog posts should disable the related-post recommendation block with `related_posts: false` unless the user explicitly requests recommendations.
+- Tech Blog post images and screenshots should be responsive to the article/window width, keep their original aspect ratio, and avoid horizontal overflow.
 
 ## Life
 
