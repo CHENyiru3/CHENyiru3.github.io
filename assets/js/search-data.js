@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/life/";
           },
-        },{id: "post-a-post-that-can-be-cited",
+        },{id: "post-how-the-research-radar-works-an-automated-literature-curation-pipeline-not-just-for-fun",
+        
+          title: "How the Research Radar Works: An Automated Literature Curation Pipeline (Not Just for...",
+        
+        description: "A behind-the-scenes look at the automated pipeline that scans academic RSS feeds, curates recommendations with AI, and renders a daily research digest — from cron jobs to Jekyll templates.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/how-research-radar-works/";
+          
+        },
+      },{id: "post-a-post-that-can-be-cited",
         
           title: "a post that can be cited",
         
