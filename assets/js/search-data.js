@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/research-radar/";
           },
+        },{id: "nav-tech-blog",
+          title: "Tech Blog",
+          description: "Notes on tooling, engineering, and computational workflows.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/tech-blog/";
+          },
         },{id: "nav-life",
           title: "Life",
           description: "Beyond the lab — interests, hobbies, and what drives me",
