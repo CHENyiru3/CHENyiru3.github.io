@@ -99,6 +99,10 @@ nav_order: 6
         <img src="{{ '/assets/img/life/photography-03.jpeg' | relative_url }}" alt="Close-up of yellow flowers with an insect">
         <figcaption>Details</figcaption>
       </figure>
+      <figure class="life-photo-slot life-photo-image">
+        <img src="{{ '/assets/img/life/photography-04.jpeg' | relative_url }}" alt="Tree-lined road under green leaves">
+        <figcaption>Landscape</figcaption>
+      </figure>
     </div>
   </section>
 </div>
