@@ -77,6 +77,30 @@ nav_order: 6
       <figure class="life-photo-slot life-photo-large"><span>Design</span></figure>
     </div>
   </section>
+
+  <section class="life-section-card">
+    <div class="life-section-copy">
+      <p class="life-section-index">05</p>
+      <h2>Take Photos</h2>
+      <p>
+        I like recording daily life with my iPhone or Nikon Z50 II. I photograph landscapes and buildings that catch my eye, and I also enjoy photographing animals such as birds, cats, dogs, and insects.
+      </p>
+    </div>
+    <div class="life-photo-grid" aria-label="Photography gallery">
+      <figure class="life-photo-slot life-photo-image life-photo-large">
+        <img src="{{ '/assets/img/life/photography-02.jpeg' | relative_url }}" alt="Modern tower above trees and yellow flowers">
+        <figcaption>Architecture</figcaption>
+      </figure>
+      <figure class="life-photo-slot life-photo-image life-photo-cat">
+        <img src="{{ '/assets/img/life/photography-01.jpeg' | relative_url }}" alt="Cat resting in sunlit grass">
+        <figcaption>Animals</figcaption>
+      </figure>
+      <figure class="life-photo-slot life-photo-image">
+        <img src="{{ '/assets/img/life/photography-03.jpeg' | relative_url }}" alt="Close-up of yellow flowers with an insect">
+        <figcaption>Details</figcaption>
+      </figure>
+    </div>
+  </section>
 </div>
 
 <style>
@@ -153,6 +177,37 @@ nav_order: 6
   padding: 0.2rem 0.55rem;
   background: var(--global-bg-color);
   color: var(--global-text-color);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.life-photo-image {
+  position: relative;
+  display: block;
+  padding: 0;
+  border-style: solid;
+  background: var(--global-code-bg-color);
+}
+.life-photo-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.life-photo-cat img {
+  object-position: 78% center;
+}
+.life-photo-image figcaption {
+  position: absolute;
+  left: 0.7rem;
+  bottom: 0.7rem;
+  display: inline-flex;
+  align-items: center;
+  max-width: calc(100% - 1.4rem);
+  min-height: 1.6rem;
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #1f2933;
   font-size: 0.78rem;
   font-weight: 700;
 }
