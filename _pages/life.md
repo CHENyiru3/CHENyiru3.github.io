@@ -15,7 +15,7 @@ nav_order: 6
     </p>
   </section>
 
-  <section class="life-section-card">
+  <section class="life-section-card life-section-text-only">
     <div class="life-section-copy">
       <p class="life-section-index">01</p>
       <h2>Sports &amp; Wellness</h2>
@@ -23,14 +23,9 @@ nav_order: 6
         I stay active through <strong>running</strong>, <strong>swimming</strong>, and ball games. Table tennis is the sport I return to most often; I like the combination of rhythm, reflex, and tactical thinking. Regular exercise is also my best reset during long periods of coding, reading, and analysis.
       </p>
     </div>
-    <div class="life-photo-grid" aria-label="Sports and wellness photo gallery">
-      <figure class="life-photo-slot life-photo-large"><span>Running</span></figure>
-      <figure class="life-photo-slot"><span>Swimming</span></figure>
-      <figure class="life-photo-slot"><span>Table tennis</span></figure>
-    </div>
   </section>
 
-  <section class="life-section-card">
+  <section class="life-section-card life-section-text-only">
     <div class="life-section-copy">
       <p class="life-section-index">02</p>
       <h2>Coffee Enthusiast</h2>
@@ -38,14 +33,9 @@ nav_order: 6
         I enjoy the craft of coffee, especially the small decisions that shape a cup: bean choice, grind size, water temperature, and extraction time. Lately I have been spending more time on <strong>pour-over coffee</strong>, which appeals to the same part of me that likes careful experimentation and repeatable process design.
       </p>
     </div>
-    <div class="life-photo-grid" aria-label="Coffee photo gallery">
-      <figure class="life-photo-slot"><span>Beans</span></figure>
-      <figure class="life-photo-slot life-photo-large"><span>Pour-over</span></figure>
-      <figure class="life-photo-slot"><span>Setup</span></figure>
-    </div>
   </section>
 
-  <section class="life-section-card">
+  <section class="life-section-card life-section-text-only">
     <div class="life-section-copy">
       <p class="life-section-index">03</p>
       <h2>History &amp; Culture</h2>
@@ -56,25 +46,15 @@ nav_order: 6
         Studying history gives me perspective on how knowledge accumulates, how paradigms shift, and how large systems change over time. Those lessons translate naturally to scientific work.
       </p>
     </div>
-    <div class="life-photo-grid" aria-label="History and culture photo gallery">
-      <figure class="life-photo-slot life-photo-large"><span>Museums</span></figure>
-      <figure class="life-photo-slot"><span>Books</span></figure>
-      <figure class="life-photo-slot"><span>Places</span></figure>
-    </div>
   </section>
 
-  <section class="life-section-card">
+  <section class="life-section-card life-section-text-only">
     <div class="life-section-copy">
       <p class="life-section-index">04</p>
       <h2>Gaming &amp; Technology</h2>
       <p>
         I used to spend more time playing games than I do now, but my interest has shifted toward the <strong>design philosophy</strong> and technical craft behind them. As a longtime Nintendo fan, I admire the way their work combines clarity, creativity, and careful user experience design.
       </p>
-    </div>
-    <div class="life-photo-grid" aria-label="Gaming and technology photo gallery">
-      <figure class="life-photo-slot"><span>Hardware</span></figure>
-      <figure class="life-photo-slot"><span>Games</span></figure>
-      <figure class="life-photo-slot life-photo-large"><span>Design</span></figure>
     </div>
   </section>
 
@@ -87,9 +67,21 @@ nav_order: 6
       </p>
     </div>
     <div class="life-photo-grid" aria-label="Photography gallery">
-      <figure class="life-photo-slot life-photo-large"><span>Landscapes</span></figure>
-      <figure class="life-photo-slot"><span>Buildings</span></figure>
-      <figure class="life-photo-slot"><span>Animals</span></figure>
+      <figure class="life-photo-slot life-photo-image life-photo-large">
+        <img src="{{ '/assets/img/life/train-station-01.jpg' | relative_url }}" alt="Green train beside a modern station building">
+      </figure>
+      <figure class="life-photo-slot life-photo-image">
+        <img src="{{ '/assets/img/life/photography-02.jpeg' | relative_url }}" alt="Modern tower rising above yellow flowers">
+      </figure>
+      <figure class="life-photo-slot life-photo-image life-photo-cat">
+        <img src="{{ '/assets/img/life/photography-01.jpeg' | relative_url }}" alt="Cat resting in sunlit grass">
+      </figure>
+      <figure class="life-photo-slot life-photo-image">
+        <img src="{{ '/assets/img/life/photography-03.jpeg' | relative_url }}" alt="Yellow flowers with a visiting insect">
+      </figure>
+      <figure class="life-photo-slot life-photo-image">
+        <img src="{{ '/assets/img/life/photography-04.jpeg' | relative_url }}" alt="Tree-lined road under green leaves">
+      </figure>
     </div>
   </section>
 </div>
@@ -127,6 +119,9 @@ nav_order: 6
   padding: 1rem;
   background: var(--global-bg-color);
 }
+.life-section-text-only {
+  grid-template-columns: 1fr;
+}
 .life-section-copy h2 {
   margin: 0 0 0.65rem;
   font-size: 1.25rem;
@@ -159,17 +154,20 @@ nav_order: 6
 .life-photo-large {
   grid-row: span 2;
 }
-.life-photo-slot span {
-  display: inline-flex;
-  align-items: center;
-  max-width: 100%;
-  min-height: 1.6rem;
-  border-radius: 999px;
-  padding: 0.2rem 0.55rem;
-  background: var(--global-bg-color);
-  color: var(--global-text-color);
-  font-size: 0.78rem;
-  font-weight: 700;
+.life-photo-image {
+  display: block;
+  padding: 0;
+  border-style: solid;
+  background: var(--global-code-bg-color);
+}
+.life-photo-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.life-photo-cat img {
+  object-position: 78% center;
 }
 @media (max-width: 767px) {
   .life-section-card {

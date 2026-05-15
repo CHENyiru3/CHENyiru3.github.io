@@ -156,7 +156,7 @@ Only change from direct user wording:
 
 - Keep `_pages/life.md` organized as gallery-ready interest sections.
 - Each small Life section should pair short personal prose with a photo grid or gallery area.
-- Placeholder gallery slots may be replaced with real photos later; preserve responsive grid behavior and section labels.
+- Do not create fake Life photo frames for sections with no confirmed images; keep those sections text-only until photos are provided.
 - Only import Life photos when the user explicitly provides and confirms them for the website. Do not use third-party, accidental, incomplete, or unconfirmed image URLs from notes.
 
 ### Research Radar rules

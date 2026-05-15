@@ -27,7 +27,7 @@
   - Website Management TechBlog drafts may be polished lightly for clarity, but preserve technical claims and code unless the user asks for editing
 - Life page:
   - warmer and more personal than research-facing pages
-  - each small section should feel gallery-ready, pairing concise prose with photo slots or real photos
+  - pair concise prose with real photos when available; keep sections text-only when no photos are provided
 - Research Radar:
   - concise, scannable, and research-facing
   - use the Hot Topic hint to foreground the day's strongest theme when available
@@ -41,7 +41,7 @@
 - Reuse shared includes and existing patterns before introducing new ones.
 - Avoid adding new duplicated styles or hardcoded factual values when a shared source of truth exists.
 - Keep Tech Blog immediately next to Research Radar in navigation unless the user requests a different order.
-- Preserve Life page responsive gallery grids when editing or replacing placeholders.
+- Preserve Life page responsive gallery grids when real photos are present, but do not add fake frames for sections without photos.
 - When applying Website Management notes, preserve exact protected wording and make only the minimum website changes implied by the editable mirror or draft note.
 - When applying a new `Website_management/TechBlog/*.md` post candidate, keep the prose practical and readable while preserving technical claims, code, filenames, and commands.
 - For Research Radar, preserve generated article wording unless the user asks for a correction or regeneration.

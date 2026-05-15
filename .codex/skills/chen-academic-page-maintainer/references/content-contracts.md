@@ -51,8 +51,8 @@
 
 - Source: `_pages/life.md`
 - External mirror/draft source: `/Users/eric_yiru/Desktop/Home/Main_branch/Notes/03_Resources/Website_management/Life/*.md`
-- Keep each interest section as a gallery-ready block with short prose and a responsive photo grid.
-- Placeholder slots are acceptable until the user provides real images.
+- Keep each interest section as short prose, adding a responsive photo grid only when that section has confirmed real photos.
+- Do not create fake photo frames for sections with no confirmed images.
 - When replacing placeholders with photos, verify image paths and preserve alt text / accessible labels.
 - Only add or retain Life photo assets when the user explicitly provides and confirms those images for website use. Ignore third-party, accidental, incomplete, or unconfirmed image URLs in notes.
 
