@@ -157,6 +157,7 @@ Only change from direct user wording:
 - Keep `_pages/life.md` organized as gallery-ready interest sections.
 - Each small Life section should pair short personal prose with a photo grid or gallery area.
 - Placeholder gallery slots may be replaced with real photos later; preserve responsive grid behavior and section labels.
+- Only import Life photos when the user explicitly provides and confirms them for the website. Do not use third-party, accidental, incomplete, or unconfirmed image URLs from notes.
 
 ### Research Radar rules
 
@@ -202,6 +203,7 @@ Before finishing:
 - If applying a `TechBlog/` note, classify it as either the Tech Blog landing-page mirror or a new post candidate before editing.
 - Confirm Tech Blog only lists posts intentionally tagged/categorized for that section if touched.
 - Confirm Life page sections remain gallery-ready if touched.
+- Confirm Life photos are explicitly user-provided and approved before adding or retaining image assets.
 - Confirm Research Radar remains separate from milestone News if touched.
 - Confirm Friday BioTech items remain clearly labeled as the exception if touched.
 - If a new uncovered issue appeared, confirm the user defined how to handle it.

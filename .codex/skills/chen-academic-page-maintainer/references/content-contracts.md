@@ -54,6 +54,7 @@
 - Keep each interest section as a gallery-ready block with short prose and a responsive photo grid.
 - Placeholder slots are acceptable until the user provides real images.
 - When replacing placeholders with photos, verify image paths and preserve alt text / accessible labels.
+- Only add or retain Life photo assets when the user explicitly provides and confirms those images for website use. Ignore third-party, accidental, incomplete, or unconfirmed image URLs in notes.
 
 ## Website Management Notes
 
