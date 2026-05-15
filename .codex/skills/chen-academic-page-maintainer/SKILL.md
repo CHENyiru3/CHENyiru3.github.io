@@ -1,15 +1,17 @@
 ---
 name: chen-academic-page-maintainer
-description: Maintain this specific academic website repo safely and consistently. Use this skill whenever the user asks to update, review, polish, reorganize, or extend this website, especially when the request touches homepage identity statements, publications, CV assets, shared templates, or duplicated academic content.
+description: Maintain this specific Jekyll al-folio academic website repo safely and consistently. Use this skill whenever the user asks to update, review, polish, reorganize, or extend this website, especially when the request touches homepage identity statements, publications, CV assets, shared templates, Tech Blog, Life page galleries, Research Radar digests, or duplicated academic content.
 ---
 
 # CHEN Academic Page Maintainer
 
 ## What this skill does
 
-This skill maintains the personal academic website in this repo conservatively and consistently. The site is a Jekyll `al-folio` academic homepage with structured publication, CV, news, and project content. The main objective is to keep factual academic content accurate, preserve the current site structure unless the user approves changes, and prevent drift across duplicated identity and status statements.
+This skill maintains the personal academic website in this repo conservatively and consistently. The site is a Jekyll `al-folio` academic homepage with structured homepage, publication, CV, project, Tech Blog, Life, milestone news, and Research Radar content. The site can also be driven from a Markdown management workspace in the user's notes vault. The main objective is to keep factual academic content accurate, preserve the current site structure unless the user approves changes, and prevent drift across duplicated identity, status, publication, and timeline statements.
 
-This skill is intentionally conservative. If a situation is not explicitly covered here, do not guess. Ask the user how to handle it. After the issue is resolved, ask whether the new rule should be added to this skill so future agents handle similar cases consistently.
+This skill is intentionally conservative. If a situation is not explicitly covered here or in the reference files, do not guess. Ask the user how to handle it. After the issue is resolved, ask whether the new rule should be added to this skill so future agents handle similar cases consistently.
+
+If the request is about revising this maintenance skill itself, use `page-keeper` first, inspect the current repo structure, then update this skill and the relevant reference files together.
 
 ## Repo map
 
@@ -28,27 +30,33 @@ Primary repo locations:
 - Projects page: `_pages/projects.md`
 - CV page: `_pages/cv.md`
 - Life page: `_pages/life.md`
+- Tech Blog page: `_pages/tech-blog.md`
 - News page: `_pages/news.md`
 - Research Radar page: `_pages/research-radar.md`
 - Research Radar feed: `_pages/research-radar-feed.xml`
+- Blog posts: `_posts/*.md`
 - Publications data: `_bibliography/papers.bib`
 - CV data: `_data/cv.yml`
 - Social data: `_data/socials.yml`
+- Timeline data: `_data/timeline.yml`
+- Publication venue/coauthor data: `_data/venues.yml`, `_data/coauthors.yml`
 - Research Radar digests: `_research_radar/*.md`
 - Site config: `_config.yml`
 - Shared publication renderer: `_includes/publication_sections.liquid`
-- Shared Research Radar renderers: `_includes/research_radar_sections.liquid`, `_includes/research_radar_article.liquid`
+- Shared Research Radar renderers: `_layouts/research_radar.liquid`, `_includes/research_radar_sections.liquid`, `_includes/research_radar_article.liquid`, `_includes/research_radar_item.xml`
+- External Website Management notes: `/Users/eric_yiru/Desktop/Home/Main_branch/Notes/03_Resources/Website_management`
+- External notes git root: `/Users/eric_yiru/Desktop/Home/Main_branch/Notes`
 
 ## Default workflow
 
-1. Inspect the target page and the underlying source of truth before editing.
+1. Inspect the target page, source data, and shared renderer before editing.
 2. Determine whether the requested section is freely editable, restricted, or exact-wording-only.
 3. Prefer shared includes, config, BibTeX, and data files over duplicated page-by-page edits.
 4. Preserve formatting contracts, labels, ordering, and derived values.
 5. Ask before changing restricted or sensitive content.
 6. If the issue is not covered by the skill, ask the user what to do.
 7. After the user resolves an uncovered case, ask whether this rule should be added to the skill for future reuse.
-8. Verify mirrored facts across homepage, CV, publications, and news.
+8. Verify mirrored facts across homepage, CV, publications, projects, timeline data, and news.
 
 ## Edit permissions
 
@@ -56,7 +64,9 @@ Primary repo locations:
 
 - Project prose where meaning stays the same
 - Life page prose
+- Tech Blog index UI and non-sensitive page prose
 - Low-risk UI wording
+- Research Radar page and renderer UI wording when article facts and the current section schema are preserved
 - Readability improvements in non-sensitive sections
 - Minor formatting cleanup that does not alter structure or facts
 
@@ -68,6 +78,7 @@ Ask before changing:
 - CV intro paragraph
 - Publication status, category, year, venue, note, or authorship
 - News items about offers, acceptances, affiliations, or major milestones
+- Research Radar digest article facts, rankings, summaries, recommendations, provider/scope metadata, and generator identity text
 - Any duplicated academic-status text that appears in multiple places
 
 ### Exact-wording sections
@@ -81,6 +92,7 @@ Only change from direct user wording:
 - Future plans and start dates
 - Identity statements
 - User-supplied article wording and fact statements
+- Research Radar correction text supplied by the user
 
 ## Formatting contracts
 
@@ -118,15 +130,42 @@ Only change from direct user wording:
 - If centralization or restructuring would improve maintainability, propose it and ask first.
 - Do not implement major layout or architecture changes without approval.
 
+### Tech Blog rules
+
+- Keep the Tech Blog route at `/tech-blog/`, backed by `_pages/tech-blog.md`.
+- Tech Blog entries should be ordinary `_posts/*.md` posts tagged `tech` or categorized as `tech` / `tech-blog`.
+- Do not surface default/sample posts on the Tech Blog page unless the user explicitly reclassifies them.
+- Keep Tech Blog adjacent to Research Radar in navigation by preserving its nav ordering unless the user requests a different menu order.
+
+### Website Management notes bridge
+
+- Treat `/Users/eric_yiru/Desktop/Home/Main_branch/Notes/03_Resources/Website_management` as an external Markdown mirror, drafting, and request workspace, not as the published website source.
+- Read `Website Source Map.md` first when working from the Website Management notes; it maps each management note to the real Jekyll source file.
+- Treat `Current ...` notes in that folder as editable mirrors of current website content. User edits there are intended to be translated into website repo changes, but verify the live website repo before editing.
+- When the user asks to sync or apply Website Management notes, inspect the relevant note first and translate it into website repo changes.
+- Treat new Markdown files directly under `TechBlog/` as Tech Blog post candidates when the user asks to sync them. Ignore `README.md`, `Current Tech Blog.md`, and files under `Templates/` for post creation.
+- Use `TechBlog/*.md` post candidates to create or update `_posts/YYYY-MM-DD-slug.md` with `categories: tech-blog` or `tags: tech`, deriving missing dates/slugs conservatively from front matter, filename, or current date.
+- Use `Life/*.md`, `Project/*.md`, and `About/*.md` notes as editable mirrors or request specs for `_pages/life.md`, `_projects/*.md` / `_pages/projects.md`, and `_pages/about.md`.
+- Research Radar is excluded from the Website Management mirror workflow. Do not create, sync, or expect `ResearchRadar/` mirror notes; manage `_research_radar/` and Research Radar pages only in the website repo when explicitly requested.
+- Protected identity, affiliation, degree, advisor, scholarship, future timeline, and publication-status wording still require exact user wording even when provided through notes.
+- Do not blindly mirror the notes folder into the website. The website repo remains the source of truth for rendered pages.
+- The Website Management folder is inside the existing notes git repo at `/Users/eric_yiru/Desktop/Home/Main_branch/Notes`; do not initialize a nested git repo there.
+- If asked to stage or commit notes changes, only operate on `03_Resources/Website_management/` unless the user explicitly includes other notes.
+
+### Life gallery rules
+
+- Keep `_pages/life.md` organized as gallery-ready interest sections.
+- Each small Life section should pair short personal prose with a photo grid or gallery area.
+- Placeholder gallery slots may be replaced with real photos later; preserve responsive grid behavior and section labels.
+
 ### Research Radar rules
 
-- Treat Research Radar as a daily academic-article recommendation channel, not as milestone News.
+- Treat Research Radar as a recommendation channel rendered by the website, not as milestone News.
 - Keep Research Radar under `/research-radar/`, backed by `_research_radar/*.md` and `/research-radar/feed.xml`.
 - Keep `_news/` and `/news/` reserved for academic milestones and announcements.
-- Research Radar should include scholarly articles only: papers, preprints, and formal academic outputs.
-- Exclude AI industry news, product announcements, blogs, newsletters, policy commentary, and Research Radar's own RSS feed.
-- The website consumes final digest Markdown files generated by an external agent; do not implement NetNewsWire, Zotero, or ranking automation in this repo unless the user asks.
-- Preserve the two-section digest structure: `Top 5 Relevant Reads` and `Top 3 Field Breakthroughs`.
+- Research Radar is mostly academic article recommendations. Friday `biotech_articles` are allowed as the labeled `BioTech News Delivery` exception for industry-news context.
+- The current digest schema uses `computational_articles`, `biomedicine_articles`, `field_articles`, optional Friday `biotech_articles`, and optional legacy `relevant_articles` / `breakthrough_articles`.
+- The website consumes final digest Markdown files generated by Clawdie/Hermes/DeepSeek outside this repo; do not implement RSS, Zotero, ranking, or generator automation in this repo unless the user asks.
 - Preserve the optional `hot_topic` digest hint when present; it summarizes the day's strongest academic theme.
 - Do not manually alter article rankings, summaries, or metadata unless the user asks for a correction or regeneration.
 
@@ -145,6 +184,7 @@ Always ask before changing:
 - Shared template structure
 - Cross-page content centralization
 - Major style or layout changes
+- Research Radar generator workflow, provider labels, rankings, article selections, or generated article text
 - Any issue not explicitly covered by this skill
 
 ## Verification checklist
@@ -158,6 +198,11 @@ Before finishing:
 - Verify all asset paths and PDF links.
 - Confirm publication rendering still matches BibTeX categories and statuses.
 - Confirm homepage and dedicated pages stay consistent.
+- If applying Website Management notes, confirm the note path, request type, and target website file before editing.
+- If applying a `TechBlog/` note, classify it as either the Tech Blog landing-page mirror or a new post candidate before editing.
+- Confirm Tech Blog only lists posts intentionally tagged/categorized for that section if touched.
+- Confirm Life page sections remain gallery-ready if touched.
 - Confirm Research Radar remains separate from milestone News if touched.
+- Confirm Friday BioTech items remain clearly labeled as the exception if touched.
 - If a new uncovered issue appeared, confirm the user defined how to handle it.
 - Ask whether the new rule should be added to the skill for future reuse.
