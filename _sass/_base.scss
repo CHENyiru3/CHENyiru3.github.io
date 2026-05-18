@@ -241,6 +241,14 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+.page-last-updated {
+  border-top: 1px solid var(--global-divider-color);
+  color: var(--global-text-color-light);
+  font-size: 0.875rem;
+  margin-top: 2rem;
+  padding-top: 0.75rem;
+}
+
 // Navbar customization
 
 .navbar {

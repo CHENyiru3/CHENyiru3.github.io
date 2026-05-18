@@ -8,6 +8,7 @@ on:
     paths:
       - "assets/**"
       - "_sass/**"
+      - "_plugins/**"
       - "_scripts/**"
       - "**.bib"
       - "**.html"
@@ -37,6 +38,7 @@ on:
     paths:
       - "assets/**"
       - "_sass/**"
+      - "_plugins/**"
       - "_scripts/**"
       - "**.bib"
       - "**.html"
@@ -71,6 +73,8 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
