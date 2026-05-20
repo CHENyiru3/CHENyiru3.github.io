@@ -32,7 +32,7 @@ module Jekyll
       relative_path = source_relative_path(item)
       return unless relative_path
 
-      path = site.in_source_dir(relative_path)
+      path = File.join(site.source, relative_path)
       File.exist?(path) ? File.mtime(path) : nil
     end
 
