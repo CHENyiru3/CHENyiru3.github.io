@@ -28,7 +28,7 @@ nav_order: 5
     <span><i class="fa-solid fa-chart-line"></i> Methods</span>
   </div>
 
-  {% assign has_tech_posts = false %}
+{% assign has_tech_posts = false %}
 
   <section class="tech-blog-list" aria-label="Tech blog posts">
     {% for post in site.posts %}
@@ -61,6 +61,7 @@ nav_order: 5
         <p>No tech notes published yet.</p>
       </div>
     {% endunless %}
+
   </section>
 </div>
 

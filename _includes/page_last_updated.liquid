@@ -2,6 +2,6 @@
   {% assign page_last_updated = page.page_last_updated | default: page.last_updated | default: page.date | default: site.time %}
   <div class="page-last-updated">
     Page Last Updated:
-    <time datetime="{{ page_last_updated | date_to_xmlschema }}">{{ page_last_updated | date: "%B %d, %Y" }}</time>
+    <time datetime="{{ page_last_updated | date_to_xmlschema }}">{{ page_last_updated | date: '%B %d, %Y' }}</time>
   </div>
 {% endunless %}
