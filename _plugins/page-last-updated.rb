@@ -4,23 +4,23 @@ module Jekyll
   module PageLastUpdated
     module_function
 
-    def apply(item, site)
+    def apply(item, _site_drop)
       return if item.data['show_page_last_updated'] == false
 
       item.data['page_last_updated'] =
-        explicit_update(item) || git_update(item, site) || file_update(item, site) || site.time
+        explicit_update(item) || git_update(item) || file_update(item) || item.site.time
     end
 
     def explicit_update(item)
       item.data['page_last_updated'] || item.data['last_updated']
     end
 
-    def git_update(item, site)
+    def git_update(item)
       relative_path = source_relative_path(item)
       return unless relative_path
 
       stdout, status = Open3.capture2(
-        'git', '-C', site.source, 'log', '-1', '--format=%cs', '--', relative_path
+        'git', '-C', item.site.source, 'log', '-1', '--format=%cs', '--', relative_path
       )
       date = stdout.strip
       status.success? && !date.empty? ? date : nil
@@ -28,11 +28,11 @@ module Jekyll
       nil
     end
 
-    def file_update(item, site)
+    def file_update(item)
       relative_path = source_relative_path(item)
       return unless relative_path
 
-      path = File.join(site.source, relative_path)
+      path = File.join(item.site.source, relative_path)
       File.exist?(path) ? File.mtime(path) : nil
     end
 
