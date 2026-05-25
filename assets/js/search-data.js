@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/life/";
           },
-        },{id: "post-how-the-research-radar-works-an-automated-literature-curation-pipeline-not-just-for-fun",
+        },{id: "post-ai-engineering-mindsets-and-practices-for-computational-biologists-part-i",
+        
+          title: "AI Engineering Mindsets and Practices for Computational Biologists (Part I)",
+        
+        description: "Exploring how Spec-Driven Development shifts AI-assisted coding from vibe coding to controlled system building, and why this engineering mindset matters deeply for computational biologists.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/ai-engineering-mindsets-computational-biologists-part-1/";
+          
+        },
+      },{id: "post-how-the-research-radar-works-an-automated-literature-curation-pipeline-not-just-for-fun",
         
           title: "How the Research Radar Works: An Automated Literature Curation Pipeline (Not Just for...",
         
