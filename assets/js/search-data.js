@@ -343,6 +343,11 @@ ninja.data = [{
           description: "",
           section: "Research_radar",handler: () => {
               window.location.href = "/research-radar/2026-06-01/";
+            },},{id: "research_radar-research-radar-2026-06-02",
+          title: 'Research Radar — 2026-06-02',
+          description: "",
+          section: "Research_radar",handler: () => {
+              window.location.href = "/research-radar/2026-06-02/";
             },},{
         id: 'social-email',
         title: 'email',
