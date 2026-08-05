@@ -6,6 +6,6 @@ related_posts: false
 title: Duke-NUS PhD Offer Accepted
 ---
 
-Thrilled to share that I have accepted a PhD offer from **Duke-NUS Medical School** with a full scholarship. I will join the Quantitative Biology and Medicine (QBM) Program in August 2026 and begin my PhD training in Singapore.
+Thrilled to share that I have accepted a PhD offer from **Duke-NUS Medical School** with a full scholarship. I will join the Quantitative Biology and Medicine (QBM) Programme in August 2026 and begin my PhD training in Singapore.
 
 I am especially excited to join Associate Professor Jinmiao Chen's laboratory and continue working on spatial omics and representation learning.
