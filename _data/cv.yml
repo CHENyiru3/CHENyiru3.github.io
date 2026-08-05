@@ -2,161 +2,100 @@
   type: map
   contents:
     - name: Full Name
-      value: CHEN, Yiru
+      value: CHEN Yiru
     - name: Institution
-      value: Zhejiang University-University of Edinburgh Institute (ZJU-UoE), Zhejiang University; incoming PhD student at Duke-NUS Medical School
-    - name: Location
-      value: Zhejiang, China
+      value: Duke-NUS Medical School, National University of Singapore
     - name: Email
-      value: yiru.22@intl.zju.edu.cn
-    - name: Phone
-      value: +86 17373145269
+      value: yiru_chen@u.duke.nus.edu
     - name: GitHub
       value: github.com/CHENyiru3
-    - name: Research Interests
-      value: Spatial Omics, Computational Immunology, Representation Learning, Computational Method Development for Biomedical Data
 
 - title: Education
   type: time_table
   contents:
     - title: PhD in Quantitative Biology and Medicine
-      institution: Duke-NUS Medical School, Singapore
+      institution: Duke-NUS Medical School, National University of Singapore, Singapore
       year: 2026-Present
+
+    - title: Bachelor of Science in Bioinformatics
+      institution: Zhejiang University, Zhejiang University-University of Edinburgh Institute, China
+      year: 2022-2026
+
+    - title: Bachelor of Science with Honours in Biomedical Informatics
+      institution: The University of Edinburgh, United Kingdom
+      year: 2022-2026
       description:
-        - Incoming PhD student in the QBM Program
-        - Joining Associate Professor Jinmiao Chen's laboratory in August 2026
-        - Research focus on spatial omics and representation learning
-
-    - title: B.S. in Bioinformatics (Dual-Award)
-      institution: Zhejiang University-University of Edinburgh Institute, Zhejiang University, China
-      year: 2022-2026 (expected)
-      description:
-        - Average Score 85.66/100, Rank 10/46
-        - Dual-Award Bachelor of Science in Bioinformatics
-        - Strong foundation in computational biology, statistics, and programming
-
-- title: Research Experience
-  type: time_table
-  contents:
-    - title: Independent Research Project (Co-first author)
-      institution: Prof. Wanlu Liu Lab, ZJU-UoE Institute, Zhejiang University
-      year: Jan. 2025 – Present
-      description:
-        - "Project: SpatialTCR - An integrated platform for high-resolution spatial sequencing of T cell receptor repertoires"
-        - Collaborated with wet lab members to develop spatial TCR sequencing method
-        - Developed computational methods spanning upstream processing and downstream TCR-omics analysis
-        - Active project with ongoing development
-
-    - title: Research Assistant (Co-author)
-      institution: Prof. Wanlu Liu Lab, ZJU-UoE Institute, Zhejiang University
-      year: Nov. 2024 – Spring 2025
-      description:
-        - "Project: SpatialMETA - Integrating Cross-Sample and Cross-Modal Data for Spatial Transcriptomics and Metabolomics"
-        - Algorithm development using conditional variation autoencoder for integration of spatial transcriptomics and spatial metabolomics
-        - Responsible for setting comprehensive benchmark and metrics for the multimodal spatial integration task
-        - Project successfully concluded and accepted for publication
-
-    - title: Independent Research Project (First author)
-      institution: ZJU-UoE Institute, Zhejiang University; external collaboration with Prof. Maizie Zhou Lab, Vanderbilt University
-      year: Aug. 2024 – Present
-      description:
-        - "Project: FEAST - Simulation and interpolation of spatial transcriptomics from parameter cloud"
-        - Developed a parameter-cloud framework for spatial transcriptomics simulation and 3D interpolation
-        - Built vine-copula-based statistical modeling on parameter space
-        - Interpolation with optimal transport-driven geodesic path
-        - Complete research cycle including literature review, idea exploration, model construction, benchmark and application, manuscript preparation
-        - Independent first-author project in final manuscript preparation
-
-    - title: Research Assistant (Co-author)
-      institution: ZJU-UoE Institute, Zhejiang University; external collaboration with Prof. Xiuwei Zhang Lab, Georgia Institute of Technology
-      year: Apr. 2024 – Sep. 2025
-      description:
-        - "Project: TemSOMap - Mapping lineage-resolved scRNA-seq data with spatial transcriptomics"
-        - Infer cell-to-spot mapping matrix by minimizing a loss function based on expression and lineage in ML framework
-        - Performed downstream analyses using TemSOMap, partial benchmark, partial manuscript preparation
-        - Collaborative manuscript in final preparation
-
-- title: Publications
-  type: time_table
-  contents:
-    - title: "A pan-disease and population-level single-cell TCRαβ repertoire reference"
-      institution: Cell Discovery
-      year: 2025
-      description:
-        - "Authors: Xue Z†, Wu L†, Gao B†, Tian R, Chen Y, Qi Y, Dong T, Bai Y, Zhao Y, He B, Wang L, Liu Z, Yao J, Lu L*, Liu W*"
-        - Co-author contribution to large-scale TCR repertoire analysis
-
-    - title: "Integrating Cross-Sample and Cross-Modal Data for Spatial Transcriptomics and Metabolomics with SpatialMETA"
-      institution: Nature Communications
-      year: 2025
-      description:
-        - "Authors: Tian R†, Xue Z†, Chen Y, Qi Y, Zhang J, Yuan J, Ruan D, Lin J, Liu J, Wang D, Youqiong Y, Liu W*"
-        - Co-author contribution to spatial multi-omics integration methodology
-
-    - title: "Recent Advances in Single-Cell Isoform Profiling"
-      institution: Genomics, Proteomics & Bioinformatics (Under Review)
-      year: 2025
-      description:
-        - "Authors: Yu Z, Chen Y, Chen Y, Qi Y, Liu W*"
-        - Review article on single-cell isoform analysis methods
-
-    - title: "From features to slice: parameter-cloud modeling of spatial transcriptomics for simulation and 3D interpolatory augmentation"
-      institution: First-author manuscript in final preparation
-      year: 2026
-      description:
-        - "Authors: Chen Y*, Xie M*, Hu Y, Yuan W, Sarkar H, Li B, Zhang L*, Zhou X. M.*"
-        - Independent first-author project on spatial transcriptomics simulation and 3D interpolation
-
-    - title: "Mapping lineage-resolved scRNA-seq data with spatial transcriptomics using TemSOMap"
-      institution: Collaborative manuscript in final preparation
-      year: 2026
-      description:
-        - "Authors: Pan X, Danies-Lopez A, Chen Y, Zhang X*"
-        - Co-author work on lineage-aware mapping between scRNA-seq and spatial transcriptomics
-
-    - title: "Integrative Inference of Spatially Resolved Cell Lineage Trees using LineageMap"
-      institution: Accepted at RECOMB 2026; to appear in Genome Research
-      year: 2026
-      description:
-        - "Authors: Pan X, Chen Y, Zhang X*"
-        - Co-author contribution to lineage-aware spatial inference
-
-- title: Conference Presentations
-  type: time_table
-  contents:
-    - title: "SpatialTCR: An integrated platform for high-resolution spatial sequencing of T cell receptor repertoires"
-      institution: GPB Omics & Bioinformatics Frontiers Symposium, Zhejiang, China
-      year: 2025
-      description:
-        - "Presenters: Tian R†, Chen Y†#, Qi Y†, Xue Z, Yu Z, Liu W*"
-        - Best Poster Presentation Award
-        - Co-first author and presenting author
-
-- title: Technical Skills
-  type: nested_list
-  contents:
-    - title: Programming & Development
-      items:
-        - "Programming Languages: Advanced in Python, R, and Bash; formal coursework in Java, SQL, and JavaScript; beginner exposure to C++"
-        - "Development Tooling: Linux-based research environments, Git, Docker, Conda, Bash, and standard computational biology software stacks"
-        - "Research Software: Experience building web-facing research tools, bioinformatics databases, and visualization workflows"
-    - title: Theoretical and Statistical Tools (learned and used in projects)
-      items:
-        - "Machine Learning & AI: Statistical learning, variational autoencoders, graph-based modeling, representation learning for biomedical data, and PyTorch-based deep learning for multi-omics analysis"
-        - "Automation & Agents: Reproducible research workflows, coding automation, and LLM-assisted agent workflows for literature, prototyping, and analysis support"
-        - "Statistics: Frequent-use statistical testing, vine-copula modeling, Bayesian inference, maximum-likelihood optimization, hidden Markov models, and Monte Carlo methods"
-    - title: Language & Other Academic Skills
-      items:
-        - "English Proficiency: English Academic environment in undergraduate courses; TOEFL iBT 105 (Reading 30/30, Listening 28/30, Speaking 23/30, Writing 24/30); Fluent communication in international collaborations"
-        - "Professional Content Creation: Proficient in Adobe Illustrator and LaTeX for academic manuscript and presentations; Using Adobe Premiere Pro for academic (or personal) video production"
-
-- title: Languages
-  type: list
-  contents:
-    - "<u>English:</u> Fluent (TOEFL iBT 105/120)"
-    - "<u>Chinese:</u> Native"
+        - First Class Honours
 
 - title: Research Interests
   type: list
   contents:
-    - "<u>Primary Focus:</u> Spatial Omics, Computational Immunology, Representation Learning, and Algorithm Development for Biomedical Data"
+    - "Computational biology; single-cell and spatial omics; spatial perturbation and pharmacology; statistical simulation and benchmarking; multimodal representation learning."
+
+- title: Publications
+  type: time_table
+  contents:
+    - title: "Integrating Cross-Sample and Cross-Modal Data for Spatial Transcriptomics and Metabolomics with SpatialMETA"
+      institution: Nature Communications, 16, 8855
+      year: 2025
+      description:
+        - "† Equal contribution; * Corresponding author."
+        - "R. Tian†, Z. Xue†, Y. Chen, Y. Qi, J. Zhang, J. Yuan, D. Ruan, J. Lin, J. Liu, D. Wang, Y. Ye, and W. Liu*."
+        - Peer-reviewed journal article
+
+    - title: "A Pan-Disease and Population-Level Single-Cell TCRαβ Repertoire Reference"
+      institution: Cell Discovery, 11, 82
+      year: 2025
+      description:
+        - "Z. Xue, L. Wu, B. Gao, R. Tian, Y. Chen, Y. Qi, T. Dong, Y. Bai, Y. Zhao, B. He, L. Wang, Z. Liu, J. Yao, L. Lu, and W. Liu."
+        - Peer-reviewed journal article
+
+    - title: "Integrative Inference of Spatially Informed Cell Lineage Trees using LineageMap"
+      institution: Accepted at the 30th Annual International Conference on Research in Computational Molecular Biology (RECOMB 2026)
+      year: 2026
+      description:
+        - "X. Pan, Y. Chen, and X. Zhang."
+        - Peer-reviewed conference paper
+
+    - title: "From Parameter Clouds to Virtual Slices: Layout-Aware Simulation and Benchmark Construction for Spatial Transcriptomics"
+      institution: Preprint
+      year: 2025
+      description:
+        - "Y. Chen†, M. Xie†, Y. Hu, W. Yuan, H. Sarkar, B. Li, L. Zhang*, and X. M. Zhou*."
+
+- title: Selected Conference Presentations
+  type: time_table
+  contents:
+    - title: "SpatialTCR: An Integrated Platform for High-Resolution Spatial Sequencing of T Cell Receptor Repertoires"
+      institution: GPB Omics & Bioinformatics Frontiers Symposium, Zhejiang, China
+      year: 2025
+      description:
+        - "R. Tian†, Y. Chen† (presenter), Y. Qi†, Z. Xue, Z. Yu, and W. Liu*."
+        - Best Poster Presentation Award
+
+- title: Honors & Awards
+  type: time_table
+  contents:
+    - title: Khoo Pre-Doctoral Fellowship
+      institution: Duke-NUS Medical School
+      year: 2026
+
+    - title: Outstanding Graduate of Zhejiang University
+      institution: University-level graduate distinction, Zhejiang University
+      year: 2026
+
+- title: Technical Skills
+  type: nested_list
+  contents:
+    - title: Programming
+      items:
+        - "Python, R, and Bash/Shell; working knowledge of Java, SQL, and JavaScript."
+    - title: Machine Learning and Statistical Computing
+      items:
+        - "PyTorch, PyTorch Geometric, scikit-learn, scvi-tools, graph neural networks, variational autoencoders, transformers, generalized linear models, Bayesian inference, maximum-likelihood estimation, Monte Carlo methods, and copula modeling."
+    - title: Computational Biology
+      items:
+        - "Scanpy, AnnData, Bioconductor, single-cell RNA sequencing, spatial transcriptomics, bulk RNA sequencing, TCR repertoire analysis, and multimodal omics integration."
+    - title: Research Computing
+      items:
+        - "Linux and HPC environments, Git, Docker, Conda, Snakemake, and Python package development."

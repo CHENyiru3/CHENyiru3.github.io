@@ -10,8 +10,6 @@ permalink: /cv/
 
 # Curriculum Vitae
 
-Current snapshot: I am completing my undergraduate training at the Zhejiang University-University of Edinburgh Institute (ZJU-UoE), Zhejiang University, and will join the Quantitative Biology and Medicine Program at Duke-NUS Medical School as an incoming PhD student in August 2026.
-
 PDF version currently shown below: **{{ cv_pdf_date }}**.
 
 <div class="cv-embed" style="max-width:960px;margin:0 auto;">

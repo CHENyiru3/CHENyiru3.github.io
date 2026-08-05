@@ -6,17 +6,17 @@ subtitle:
 
 profile:
   align: right
-  image: cyr.jpg
+  image: cyr-2026.jpg
   image_circular: false
   more_info: >
-    <p>Yiru's Version: 2026/04/05</p>
+    <p>Yiru's Version: 2026/08/05</p>
     <p class="profile-credential">
       <span class="profile-credential-degree">BS</span>
       <span class="profile-credential-text">@ Bioinformatics, ZJU-UoE</span>
       <span class="profile-credential-flags" aria-label="China and United Kingdom">🇨🇳 🇬🇧</span>
     </p>
     <p class="profile-credential">
-      <span class="profile-credential-degree">PhD</span>
+      <span class="profile-credential-degree">PhD Student</span>
       <span class="profile-credential-text">@ Quantitative Biology and Medicine, Duke-NUS</span>
       <span class="profile-credential-flags" aria-label="Singapore and United States">🇸🇬 🇺🇸</span>
     </p>
@@ -55,9 +55,9 @@ Hi, I'm Yiru Chen.
 
 ## Quick Background
 
-I am currently completing my undergraduate training in Bioinformatics at the Zhejiang University-University of Edinburgh Institute (ZJU-UoE), Zhejiang University. In August 2026, I will join the Quantitative Biology and Medicine (QBM) Program at Duke-NUS Medical School as an incoming PhD student with a full scholarship.
+I am a PhD student in the Quantitative Biology and Medicine (QBM) Program at Duke-NUS Medical School, Singapore. My undergraduate training in Bioinformatics was at the Zhejiang University-University of Edinburgh Institute (ZJU-UoE), Zhejiang University.
 
-My research interests center on spatial omics and representation learning. You can reach me at yiru.22@intl.zju.edu.cn or yiru2chen@gmail.com.
+My research interests center on spatial omics and computational immunology, with a general interest in AI for biomedicine. You can reach me at yiru_chen@u.duke.nus.edu or yiru2chen@gmail.com.
 
 ---
 

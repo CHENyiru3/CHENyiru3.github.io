@@ -9,7 +9,7 @@ last_name: CHEN
 contact_note: >
   Feel free to email me!
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Undergraduate student in Bioinformatics at Zhejiang University. Passionate about developing computational methods for spatial multi-omics and computational immunology.
+  PhD student in Quantitative Biology and Medicine at Duke-NUS Medical School, working on spatial omics and computational immunology, with general interests in AI for biomedicine.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: Spatial Multi-Omics, Computational Immunology, Computational Method Development, AI, Bioinformatics, Spatial Transcriptomics
@@ -21,7 +21,7 @@ baseurl:
 last_updated: true
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
-cv_pdf_filename: CHEN_Yiru_CV_2025.12.15.pdf
+cv_pdf_filename: CHEN_Yiru_CV_2026.08.05.pdf
 
 # -----------------------------------------------------------------------------
 # Theme
