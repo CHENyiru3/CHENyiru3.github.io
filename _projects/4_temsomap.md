@@ -47,4 +47,4 @@ My contributions focused on:
 
 ### Current Positioning
 
-TemSOMap helped shape my interest in computational frameworks that connect multiple biological views of the same system. Related lineage-aware work from this collaboration also contributed to the subsequent LineageMap project, which has been accepted at RECOMB 2026 and is expected to appear in <em>Genome Research</em>.
+TemSOMap helped shape my interest in computational frameworks that connect multiple biological views of the same system. Related lineage-aware work from this collaboration also contributed to the subsequent LineageMap project, which was published in the <em>RECOMB 2026 Proceedings</em>.

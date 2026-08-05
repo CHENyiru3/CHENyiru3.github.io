@@ -9,18 +9,31 @@
 <h3 class="pub-section published">Publications</h3>
 
 <div class="publications">
+  <h4 class="pub-year">2026</h4>
+  {% bibliography --group_by none --query @*[category=published,year=2026] %}
   <h4 class="pub-year">2025</h4>
   {% bibliography --group_by none --query @*[category=published,year=2025] %}
 </div>
 
-<h3 class="pub-section manuscript">Manuscripts in Preparation, Under Review, or Forthcoming</h3>
-
-<div class="publications">
-  <h4 class="pub-subgroup">Accepted / Forthcoming</h4>
+{% capture accepted_manuscripts %}
   {% bibliography --group_by none --query @*[category=manuscript,status=accepted] %}
-  <h4 class="pub-subgroup">In Preparation / Under Review</h4>
+{% endcapture %}
+{% capture other_manuscripts %}
   {% bibliography --group_by none --query @*[category=manuscript,status!=accepted] %}
-</div>
+{% endcapture %}
+{% if accepted_manuscripts contains 'class="row"' or other_manuscripts contains 'class="row"' %}
+  <h3 class="pub-section manuscript">Manuscripts in Preparation, Under Review, or Forthcoming</h3>
+  <div class="publications">
+    {% if accepted_manuscripts contains 'class="row"' %}
+      <h4 class="pub-subgroup">Accepted / Forthcoming</h4>
+      {{ accepted_manuscripts }}
+    {% endif %}
+    {% if other_manuscripts contains 'class="row"' %}
+      <h4 class="pub-subgroup">In Preparation / Under Review</h4>
+      {{ other_manuscripts }}
+    {% endif %}
+  </div>
+{% endif %}
 
 <h3 class="pub-section presentation">Presentations and Posters at Conferences</h3>
 
