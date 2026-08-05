@@ -9,14 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-projects",
-          title: "Projects",
-          description: "Research projects, posters, and coursework.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
-        },{id: "nav-research-radar",
+  },{id: "nav-research-radar",
           title: "Research Radar",
           description: "Daily academic article recommendations from curated scholarly feeds.",
           section: "Navigation",
@@ -523,7 +516,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%69%72%75.%32%32@%69%6E%74%6C.%7A%6A%75.%65%64%75.%63%6E", "_blank");
+          window.open("mailto:%79%69%72%75_%63%68%65%6E@%75.%64%75%6B%65.%6E%75%73.%65%64%75", "_blank");
         },
       },{
         id: 'social-github',
