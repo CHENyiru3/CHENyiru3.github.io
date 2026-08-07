@@ -9,7 +9,7 @@ profile:
   image: cyr-2026.jpg
   image_circular: false
   more_info: >
-    <p>Yiru's Version: 2026/08/05</p>
+    <p>Yiru's Version: 2026/06/30</p>
     <p class="profile-credential">
       <span class="profile-credential-degree">BS</span>
       <span class="profile-credential-text">@ Bioinformatics, ZJU-UoE</span>
