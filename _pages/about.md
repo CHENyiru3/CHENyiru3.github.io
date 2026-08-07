@@ -55,7 +55,7 @@ Hi, I'm Yiru Chen.
 
 ## Quick Background
 
-I am a PhD student in the Quantitative Biology and Medicine (QBM) Programme at Duke-NUS Medical School, Singapore. My undergraduate training in Bioinformatics was at the Zhejiang University-University of Edinburgh Institute (ZJU-UoE), Zhejiang University.
+I am a PhD student in the Quantitative Biology and Medicine (QBM) Programme at Duke-NUS Medical School, National University of Singapore. My undergraduate training in Bioinformatics was at the Zhejiang University-University of Edinburgh Institute (ZJU-UoE), Zhejiang University.
 
 My research interests center on spatial omics and computational immunology, with a general interest in AI for biomedicine. You can reach me at yiru_chen@u.duke.nus.edu or yiru2chen@gmail.com.
 
