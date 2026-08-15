@@ -43,11 +43,13 @@ def validate_digest(filepath):
                        'doi', 'article_type', 'topics', 'recommendation',
                        'summary', 'why_it_matters', 'why_for_me']
 
+    total_articles = 0
     for section in sections:
         articles = data.get(section, [])
-        if not articles:
-            errors.append(f"{section}: empty or missing (requires >= 1 article)")
+        if not isinstance(articles, list):
+            errors.append(f"{section}: must be a list when present")
             continue
+        total_articles += len(articles)
         for i, article in enumerate(articles):
             prefix = f"{section}[{i}] (rank {article.get('rank', '?')})"
             for field in required_fields:
@@ -61,14 +63,16 @@ def validate_digest(filepath):
                 if 'Last Author' in au or 'Last, F.' in au:
                     errors.append(f"{prefix}: placeholder author detected: '{au[:80]}'")
 
-    # Friday check
-    from datetime import date
-    today = date.today()
+    # A high-quality one-paper edition is valid. Section diversity is a goal,
+    # not a precondition that forces padding with weak content.
+    if total_articles < 1:
+        errors.append("No academic articles selected (requires >= 1 across all sections)")
+
+    # BioTech is optional, including on Fridays; if present it is the explicitly
+    # labelled industry-news exception.
     biotech = data.get('biotech_articles', [])
-    if today.weekday() == 4 and not biotech:  # Friday
-        errors.append("Friday edition: biotech_articles section missing")
-    if today.weekday() != 4 and biotech:
-        errors.append(f"Non-Friday edition has biotech_articles ({len(biotech)} items)")
+    if biotech and not isinstance(biotech, list):
+        errors.append("biotech_articles must be a list when present")
 
     if errors:
         print(f"✗ {len(errors)} issue(s) found:")
