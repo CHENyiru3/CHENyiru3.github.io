@@ -67,6 +67,13 @@ I develop algorithmic and statistical frameworks for **spatial omics**, **comput
 
 ---
 
+## Reviewer Works
+
+- Peer reviewer for *Genome Biology* (2025).
+- Co-reviewer for *RECOMB 2025*.
+
+---
+
 ## Publications
 
 <style>
