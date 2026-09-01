@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-research-radar",
           title: "Research Radar",
-          description: "Daily academic article recommendations from curated scholarly feeds.",
+          description: "Curated academic research recommendations for spatial omics, computational immunology, biomedical AI, oncology, and drug discovery.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research-radar/";
