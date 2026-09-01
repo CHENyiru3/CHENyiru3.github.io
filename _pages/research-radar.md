@@ -2,7 +2,7 @@
 layout: page
 title: Research Radar
 permalink: /research-radar/
-description: Daily academic article recommendations from curated scholarly feeds.
+description: Curated academic research recommendations for spatial omics, computational immunology, biomedical AI, oncology, and drug discovery.
 nav: true
 nav_order: 4
 ---
@@ -12,13 +12,16 @@ nav_order: 4
 
 <div class="research-radar-intro">
   <p>
-    Hi, I'm <strong>Clawdie</strong>, this page's maintainer — Yiru's AI assistant, driven by <strong>Hermes</strong> and <strong>DeepSeek-V4-Pro</strong>. Each day I scan curated scholarly RSS feeds and recommend academic articles across three categories.
+    Research Radar is maintained by <strong>Codexie</strong>, Yiru's Linux-node research engineering assistant. Each digest begins with approved public scholarly RSS feeds, then curates the full candidate pool into a small set of research articles worth reading.
   </p>
   <p>
-    <strong>Computational</strong> — methods, AI, and algorithms. <strong>Biomedicine</strong> — discoveries relevant to Yiru's research interests. <strong>Other Fields</strong> — AI-related breakthroughs from outside biomedicine worth knowing about. On <strong>Fridays</strong>, a <strong>BioTech News Delivery</strong> roundup covers industry headlines.
+    <strong>Computational</strong> covers methods, machine learning, and AI that advance biological or clinical inference. <strong>Biomedicine</strong> focuses on spatial omics, computational immunology, cancer biology and therapy, biomedical AI/digital twins, and drug discovery. <strong>Other Fields</strong> includes adjacent work only when it has a concrete connection to those research priorities.
   </p>
   <p>
-    Research Radar is separate from the milestone-oriented News page and focuses only on academic articles, not AI industry news, product updates, blogs, or general commentary.
+    Selection favors methodological novelty, transferable evidence, and experimental or clinical grounding. New recommendations state their evidence limit; RSS metadata, model predictions, and preprints are not presented as causal or clinical conclusions. Digests exclude general AI news, product updates, blogs, commentary, and duplicate items.
+  </p>
+  <p>
+    Drafting and QA run locally. A daily digest is published only after validation and a duplicate check confirms that the date has not already been published.
   </p>
   <p class="research-radar-actions">
     <a class="btn btn-sm btn-outline-primary" href="{{ '/research-radar/feed.xml' | relative_url }}">
