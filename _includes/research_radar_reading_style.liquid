@@ -1,0 +1,29 @@
+<style>
+  .research-radar-reading {
+    max-width: 74ch;
+    margin: 2.5rem auto;
+    padding: 1.5rem clamp(1rem, 3vw, 2rem);
+    border: 1px solid var(--global-divider-color);
+    border-top: 3px solid var(--global-theme-color);
+    border-radius: 0.5rem;
+    background: var(--global-card-bg-color);
+    line-height: 1.75;
+    overflow-wrap: break-word;
+    scroll-margin-top: 6rem;
+  }
+  .research-radar-reading h2 { font-size: 1.65rem; line-height: 1.3; }
+  .research-radar-reading h3 { margin-top: 2rem; font-size: 1.3rem; line-height: 1.4; }
+  .research-radar-reading p { margin-bottom: 1.1rem; }
+  .research-radar-reading li { margin-bottom: 1rem; }
+  .research-radar-reading mjx-container[display="true"] {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.35rem 0;
+  }
+  @media (max-width: 576px) {
+    .research-radar-reading { margin: 2rem 0; }
+    .research-radar-reading h2 { font-size: 1.4rem; }
+  }
+</style>

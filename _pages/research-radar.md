@@ -24,6 +24,9 @@ nav_order: 4
     Drafting and QA run locally. A daily digest is published only after validation and a duplicate check confirms that the date has not already been published.
   </p>
   <p class="research-radar-actions">
+    {% if latest_digest.methodology_review %}
+      <a class="btn btn-sm btn-outline-primary" href="#methodology-review">Read Methodology Review</a>
+    {% endif %}
     <a class="btn btn-sm btn-outline-primary" href="{{ '/research-radar/feed.xml' | relative_url }}">
       <i class="fa-solid fa-square-rss"></i>
       Subscribe via RSS
@@ -42,6 +45,15 @@ nav_order: 4
     <a class="research-radar-detail-link" href="{{ latest_digest.url | relative_url }}">Open digest page</a>
   </div>
   {% include research_radar_sections.liquid digest=latest_digest %}
+
+{% if latest_digest.methodology_review %}
+{% include research_radar_reading_style.liquid %}
+<section id="methodology-review" class="research-radar-reading" aria-label="Methodology Review">
+<p class="research-radar-kicker">In-depth reading · Latest edition</p>
+<p><a href="{{ latest_digest.url | relative_url }}#methodology-review">Open this review in the dated digest</a></p>
+{{ latest_digest.content }}
+</section>
+{% endif %}
 
   <hr>
   <h2>Recent Archive</h2>

@@ -3,4 +3,12 @@ layout: page
 ---
 {% include research_radar_sections.liquid digest=page %}
 
-{{ content }}
+{% if page.methodology_review %}
+  {% include research_radar_reading_style.liquid %}
+  <section id="methodology-review" class="research-radar-reading" aria-label="Methodology Review">
+    {{ content }}
+  </section>
+{% else %}
+  {{ content }}
+{% endif %}
+
