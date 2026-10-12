@@ -48,6 +48,7 @@ nav_order: 4
 
 {% if latest_digest.methodology_review %}
 {% include research_radar_reading_style.liquid %}
+
 <section id="methodology-review" class="research-radar-reading" aria-label="Methodology Review">
 <p class="research-radar-kicker">In-depth reading · Latest edition</p>
 <p><a href="{{ latest_digest.url | relative_url }}#methodology-review">Open this review in the dated digest</a></p>
