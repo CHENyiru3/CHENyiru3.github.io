@@ -791,6 +791,11 @@ ninja.data = [{
           description: "",
           section: "Research_radar",handler: () => {
               window.location.href = "/research-radar/2026-10-18/";
+            },},{id: "research_radar-research-radar-2026-10-19",
+          title: 'Research Radar — 2026-10-19',
+          description: "",
+          section: "Research_radar",handler: () => {
+              window.location.href = "/research-radar/2026-10-19/";
             },},{
         id: 'social-email',
         title: 'email',
